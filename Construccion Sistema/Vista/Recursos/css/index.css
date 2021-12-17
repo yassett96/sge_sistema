@@ -57,24 +57,29 @@ button{
 
 footer{
     background-color:#102461;
-    height: 50%;
+    height: 40%;
+    width: 100%;
+    position: absolute;
 }
 
-#p_contactenos{
-    color: #FFFFFF;
-    font-size: 25px;
-    position: relative;
-    right: 0%; 
-}
-
-.p_detalles_footer{
+#h4_contactenos{
     color: #FFFFFF;
     font-size: 20px;
     position: relative;
-    left: 10%; 
+    left: 3%;    
 }
 
-#ul_footer{
-    position: relative;
-    
+.h5_detalles_footer{
+    color: #FFFFFF;
+    font-size: 15px;
+    position: absolute;             
+    width: 100px;
+    margin-left: 10%; 
+    margin-top: 10px;
+}
+
+.footer_h5{ 
+    margin-left: 50%;    
+    margin-top: 10px;
+    font-size: 15px;  
 }
