@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #102461;
+    height: 70px
+}
+.logo{
+    width: 30%;
+    height: 70px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 40px;
+}
+ul{
+    margin-right: 60px;
+}
+
+li{
+    margin-top: 15px;
+    margin-right: 60px; 
+}
+#texto{
+    color: white;
+}
+button{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 15px;
+    width: 13%;
+}
+body{
+    background-color: #FFFFFF;
+}
+
+
+.h4{
+    margin-left: 15%;
+    margin-top: 20px;
+    color: #102461;  
+}
+   
+.cuadro_fondo2{
+    background-color: #b7c8e8;    
+    width: 50%;
+    height: 245px; 
+    margin-left: 27%;
+    margin-top: 5%;
+    border-radius: 10px;
+    padding: 10px;       
+}
+
+.cuadro{
+    background-color: #86a2da;
+    color: black;
+    width: 95%;
+    height: 200px;
+    text-align: justify;
+    border-radius: 10px;
+    padding: 17px;    
+    display: flex;
+    margin: 2%;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+footer{
+    background-color:#102461;
+    height: 40%;
+    width: 100%;
+    margin-top: 10%;
+    left: 0%;
+    position: absolute;
+}
+
+#h4_contactenos{
+    color: #FFFFFF;
+    position: relative;
+    left: 3%;  
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    
+}
+
+.h5_detalles_footer{
+    color: #FFFFFF;
+    position: absolute;             
+    width: 100px;
+    margin-left: 10%; 
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    
+    
+}
+
+.footer_h5{ 
+    margin-left: 50%;    
+    margin-top: 10px;
+    position: absolute;  
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    
+    
+}
+
+
+.img_footer{
+    margin-left: 75%;    
+    margin-top: 60px;
+}
+
+.espacio_img{
+    margin-left: 40px; 
+}
+
+.p_footer{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+
+    
+}
+#p_footer_style{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
