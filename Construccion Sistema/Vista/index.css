@@ -8,3 +8,8 @@
 .liMenu a{
     color: black;
 }
+
+#carouselExampleIndicators{
+    z-index: 1;
+    background-color: black;
+}
