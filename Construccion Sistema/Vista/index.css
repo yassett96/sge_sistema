@@ -1,0 +1,10 @@
+#divMarcoMenuBar{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    
+}
+
+.liMenu a{
+    color: black;
+}
