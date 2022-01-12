@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Vista/Recursos/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Vista/Recursos/css/RegistroEstudiantes.css">
+    <title>Registro estudiantes</title>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+            <img src="../Vista/Recursos/Imagenes/FCyS balnco.png" height="50px">
+            </div>
+        </div>
+    </header>
+    <a class="nav-link active" id="texto_atras" href="index.html" > << Atrás  </a>
+
+    <h4 class="h4">Bienvenido/a</h4>
+    <h4 class="h4">Ingrese los datos para registrarse</h4>
+    <div class="formulario_estudiantes">
+        <form action="" method="post" id="form_estu">
+            <h4 class="h4_formulario">Estudiantes</h4>
+                <div  class="row">
+                    <div class="form-group col-md-6">
+                        <img class="icono1" src="../Vista/Recursos/Imagenes/icono5.png">
+                        <p type="Nombres:" id="pNombre"></p>
+                        <input type="text" id="pInputNombre">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <img class="icono2" src="../Vista/Recursos/Imagenes/icono5.png">
+                        <p type="Apellidos: " id="pApellido"></p>
+                        <input type="text" id="pInputApellido">
+                    </div>
+                </div>
+                <div  class="row">
+                    <div class="form-group col-md-6">
+                        <img class="icono3" src="../Vista/Recursos/Imagenes/iconoCel.png">
+                        <p type="Teléfono:" id="pTelefono"></p>
+                        <input type="tel" id="pInput_tel" >
+                    </div>
+                    <div class="form-group col-md-6">
+                        <img class="icono4" src="../Vista/Recursos/Imagenes/icono5.png">
+                        <p type="Sede: " id="pSede"></p>
+                        <input type="text" id="pInputSede">
+                    </div>
+                </div>
+                <div class="form-group col-md-10">
+                    <img class="icono5" src="../Vista/Recursos/Imagenes/icono7Arroba.png">
+                    <p type="Email: " id="pEmail"></p>
+                    <input type="email" id="pInputEmail">
+                </div>
+                <div class="form-group col-md-10">
+                    <img class="icono6" src="../Vista/Recursos/Imagenes/icono4.png">
+                    <p type="Usuario: " id="pUsuario"></p>
+                    <input type="text" id="pInputUsuario">
+                </div>
+                <div class="form-group col-md-10">
+                    <img class="icono7" src="../Vista/Recursos/Imagenes/icono8Candado.png">
+                    <p type="Contraseña: " id="pContraseña"></p>
+                    <input type="password" id="pInputContraseña">
+                </div>
+                <div class="form-group col-md-10">
+                    <img class="icono8" src="../Vista/Recursos/Imagenes/icono4Combinacion.png">
+                    <p type="Repetir Contraseña: " id="pRepContraseña"></p>
+                    <input type="password" id="pInputRepContraseña">
+                </div>
+                <button class="BotonFormulariolimpiar">Limpiar Campos</button>
+                <button class="BotonFormularioRegistrarse">Registrarse</button>
+            <a class="nav-link active" id="h4_formulario_Abajo" href="index.html" >¿Olvidó su contraseña?</a>
+            <a class="nav-link active" id="h4_formulario_Abajo2" href="index.html" >Cancelar</a>
+        </form>
+
+    </div>
+    <br>
+
+    <footer>
+        <h4 id="h4_contactenos"> Contáctenos </h4>
+        <div class="h5_detalles_footer">
+            <h5>Teléfono: </h5>    
+            <h5> Correo: </h5> 
+            <h5> Dirección: </h5>
+        </div>
+        <div class="footer_h5">
+            <h5><a class="nav-link active" id="texto" href="index.html" >Inicio</a></h5> 
+            
+        </div>
+        <div class="img_footer">
+            <img src="../Vista/Recursos/Imagenes/facebook.png" alt="20px" width="20px">
+            <img class="espacio_img" src="../Vista/Recursos/Imagenes/global.png" alt="20px" width="20px">
+        </div>
+        <div class="p_footer">
+            <p id ="p_footer_style">© 2021 Universidad Nacional de Ingeniería - FCYS</p>
+        </div>
+    </footer>
+</body>
+</html>
