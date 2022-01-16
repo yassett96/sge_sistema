@@ -49,7 +49,7 @@ function showSlides() {
     dots[slideIndex - 1].className += " active";
 }
 
-time = setInterval(showSlides, 1500);
+time = setInterval(showSlides, 4000);
 
  // Cancele el carrusel cuando el mouse se mueva
 box.onmouseenter = function () {
@@ -57,5 +57,5 @@ box.onmouseenter = function () {
 }
  // Carrusel continúa cuando el ratón se va
 box.onmouseleave = function () {    
-    time = setInterval(showSlides, 1500);
+    time = setInterval(showSlides, 4000);
 }

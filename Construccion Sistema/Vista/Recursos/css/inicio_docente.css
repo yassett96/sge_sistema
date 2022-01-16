@@ -63,7 +63,7 @@ form .grupo{
     color: white;
 }
 
-input, select{
+input{
     background: none;
     color: #78788c;    
     display: block;
@@ -72,6 +72,17 @@ input, select{
     border: none;
     border-bottom: 1px solid #ffffff;  
     margin-top: -18px;          
+}
+
+select, option{
+    background: none;
+    color: #78788c;    
+    display: block;
+    width: 60%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #ffffff;  
+    margin-top: -18px;
 }
 
 input:focus, select:focus{

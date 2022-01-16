@@ -18,7 +18,7 @@
             <img src="../Vista/Recursos/Imagenes/FCyS balnco.png" height="50px">
             </div>
             <ul class="nav justify-content-end">
-                <li class="nav-item"><a class="nav-link " id="texto" href="index.html" >Inicio</a></li>
+                <li class="nav-item"><a class="nav-link " id="texto" href="index.php" >Inicio</a></li>
                 <li class="nav-item"><a class="nav-link " id="texto" href="Eventos.html">Eventos</a></li>
                 <li class="nav-item"><a class="nav-link " id="texto" href="QueEs_InfoSis.html">¿Qué es SGE-FCYS?</a></li>
                 <button><a href="Inicio_Docente.html" id="texto">Iniciar Sesión</a></button>
@@ -32,21 +32,21 @@
 <!--========== INICIO CARRUSEL ==========-->    
 <div class="slideshow-container">
   <div class="mySlides fade1">
-      <div class="numbertext">1 / 3</div>
+      <div class="numbertext"></div>
       <img src="./Recursos/Imagenes/jornada_uni.jpg" style="width:100%;height: 450px">
-      <div class = "text"> Imagen 1 </div>
+      <div class = "text">  </div>
   </div>
 
   <div class="mySlides fade1">
-      <div class="numbertext">2 / 3</div>
+      <div class="numbertext"></div>
       <img src="./Recursos/Imagenes/navidad_uni.jpg" style="width:100%;height: 450px">
-      <div class = "text"> Imagen 2 </div>
+      <div class = "text">  </div>
   </div>
 
   <div class="mySlides fade1">
-      <div class="numbertext">3 / 3</div>
+      <div class="numbertext"></div>
       <img src="./Recursos/Imagenes/uni_tv.jpg" style="width:100%;height: 450px">
-      <div class = "text"> Imagen 3 </div>
+      <div class = "text">  </div>
   </div>
 
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -61,8 +61,36 @@
 </div> 
 <br>  
 <!--========== FIN CARRUSEL ========== -->
-    
-   <script src="./Recursos/js/index.js"></script> 
+
+<!--========== INICIO NOTICIAS ======= -->
+<div id="div_Contenedor_Noticias">
+    <div id="div_Contenedor_Noticia_Principal">
+        <img src="Recursos/Imagenes/Noti1.png">
+        <br><br><br><br>
+        <h3></h3>
+        <h5></h5>
+        <div class="div_Animacion"><h3 style="color:white;">Se consolida la conciencia de prevención</h3></div>
+    </div>
+    <div Class="div_Contenedor_Noticia_Secundario">
+        <img src="Recursos/Imagenes/Noti2.png">
+        <br><br><br><br>
+        <h3></h3>
+        <h5></h5>
+        <div></div>
+    </div>
+    <div Class="div_Contenedor_Noticia_Secundario">
+        <img src="Recursos/Imagenes/Noti3.png">
+        <br><br><br><br>
+        <h3></h3>
+        <h5></h5>
+        <div></div>
+    </div>
+
+</div>
+
+<!--========== FIN NOTICIAS ======= -->
+   <script src="Recursos/js/index.js"></script> 
+   
 </body>
 <footer>
   <h4 id="h4_contactenos"> Contáctenos </h4>
@@ -72,7 +100,7 @@
       <h5> Dirección: </h5>
   </div>
   <div class="footer_h5">
-      <h5><a class="nav-link " id="texto" href="index.html" >Inicio</a></h5> 
+      <h5><a class="nav-link " id="texto" href="index.php" >Inicio</a></h5> 
       <h5><a class="nav-link " id="texto" href="Eventos.html" >Eventos</a></h5>
       <h5><a class="nav-link " id="texto" href="#">¿Qué es SGE-FCYS?</a></h5>
   </div>
@@ -82,8 +110,7 @@
   </div>
   <div class="p_footer">
       <p>© 2021 Universidad Nacional de Ingeniería - FCYS</p>
-  </div>
-        
+  </div>        
 </footer>
 
 </html>
