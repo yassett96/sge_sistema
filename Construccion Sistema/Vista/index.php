@@ -61,7 +61,7 @@
 </div> 
 <br>  
 <!--========== FIN CARRUSEL ========== -->
-
+<!-- CAMBIO 2 XD SAMIR-->
 <!--========== INICIO NOTICIAS ======= -->
 <div id="div_Contenedor_Noticias">
     <div id="div_Contenedor_Noticia_Principal">
