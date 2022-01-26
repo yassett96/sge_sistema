@@ -42,7 +42,6 @@ form{
     width: 35%;
     height: 460px;
     border-radius: 5px;
-    /*margin: 20px 0px 2% 400px;*/
     box-shadow: 0 0 4px 4px #000a1d67;
     margin: auto;
     margin-top: 20px;
@@ -51,21 +50,16 @@ form{
 form .grupo{
     position: relative;
     margin: 37px;
-    top: 10px;    
-}
-
-#pestaña{
-    width: 33.3%;
-    text-align: center;
+    top: 15px;    
 }
 
 #texto{
     color: white;
 }
 
-input{
+input, select{
     background: none;
-    color: #78788c;    
+    color: #ffffff;    
     display: block;
     width: 60%;
     margin: auto;
@@ -74,15 +68,8 @@ input{
     margin-top: -18px;          
 }
 
-select, option{
-    background: none;
-    color: #78788c;    
-    display: block;
-    width: 60%;
-    margin: auto;
-    border: none;
-    border-bottom: 1px solid #ffffff;  
-    margin-top: -18px;
+select option{
+    color: black;
 }
 
 input:focus, select:focus{
@@ -113,7 +100,7 @@ label{
 }
 
 .active{  
-    font-weight: bold; 
+    font-weight: bold;        
 } 
 
 .BotonIniciarSesion{
@@ -135,10 +122,40 @@ label{
     transition:all .3s
 }
 
+.BotonRegistrarse{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 590px;
+    padding:8px 12px;
+    margin:10px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF ;
+    border:2px solid #78788c;
+    background:0;
+    color: #9B9B9B;
+    box-shadow: 1px 1px 5px#000000 ;
+    cursor:pointer;
+    transition:all .3s
+}
+
 button:hover{
     background:#78788c;
     color:#fff;
 } 
+
+#enlace_registro{
+    color: #ffffff;
+    margin-top: -5px;
+}
+
+.h6_textopequeño{
+    color: #ffffff;
+    margin-top: 110px;
+    margin-left: 220px; 
+}
 
 .iconos{
       width: 30px;
@@ -147,7 +164,7 @@ button:hover{
 }
 
 #formulario_abajo{
-    margin-top: 120px; 
+    margin-top: 95px; 
     margin-left: 12px;
     position: absolute;
     color: #ffffff;
@@ -156,7 +173,7 @@ button:hover{
 }
 
 #formulario_abajo2{
-    margin-top: 120px; 
+    margin-top: 95px; 
     margin-left: 310px;
     position: absolute;
     color: #ffffff; 
@@ -168,7 +185,7 @@ footer{
     background-color:#102461;
     height: 40%;
     width: 100%;
-    position: absolute;
+    position: absolute;    
 }
 
 #h4_contactenos{
