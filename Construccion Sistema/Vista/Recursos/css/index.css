@@ -201,16 +201,6 @@ button{
   bottom: 5px;
 }
 
-.div_Contenedor_Noticia_Secundario{  
-  width: 50%;
-  height: 43%;
-  Position: relative;
-  bottom: 225px;
-  float: right;
-  display: block;
-  margin: 10px 10px 0px 10px;
-}
-
 .div_Contenedor_Noticia_Secundario > img{  
   width: 100%;
   height: 100%;
@@ -218,37 +208,124 @@ button{
 }
 
       /*INICIO ANIMACION NOTICIAS*/
-     
+      #div_Contenedor_Noticia_Principal{
+        cursor: pointer;
+      }     
 
       #div_Contenedor_Noticia_Principal > div{
         height: 1px;
         width: 100%;
         background-color: gray;
-        opacity: 0.6;
+        opacity: 0.1;
         position: relative;
         Top: 120px;
-        Transition: all 2s ease-in-out;        
-      }
-
-       #div_Contenedor_Noticia_Principal:hover ~ div:first{
+        Transition: all 1s ease-in-out;  
+        overflow: hidden;              
+      }       
+      
+      #div_Contenedor_Noticia_Principal:hover > div{
         height: 111px;
         width: 100%;
         background-color: gray;
-        opacity: 0.6;
+        opacity: 0.7;
         position: relative;
-        Top: 10px;
+        Top: 10px;        
+      }  
+
+      #div_Contenedor_Noticia_Principal > div > h3{
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+      }
+
+      #div_Contenedor_Noticia_Principal:hover > div > h3{
+        visibility: visible;
+        opacity: 1;
       }
       
-      #div_Contenedor_Noticia_Principal > div:hover{
-        height: 111px;
+      #div_Noticia_Secundario{
+        cursor: pointer;
+        width: 50%;
+        height: 43%;
+        Position: relative;
+        bottom: 225px;
+        float: right;
+        display: block;
+        margin: 10px 10px 0px 10px;
+      }
+
+      #div_Noticia_Secundario > div{
+        height: 0px;
         width: 100%;
         background-color: gray;
-        opacity: 0.6;
+        opacity: 0.1;
+        position: relative;        
+        top: 5px;
+        Transition: all 1s ease-in-out;          
+      }
+
+      #div_Noticia_Secundario:hover > div{
+        height: 70px;
+        width: 100%;        
+        background-color: gray;
+        opacity: 0.7;
         position: relative;
-        Top: 10px;
+        top: -61%;        
+      }
 
-      }     
+      #div_Noticia_Secundario > div > h3{
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+      }
 
+      #div_Noticia_Secundario:hover > div > h3{
+        visibility: visible;
+        opacity: 1;
+      }
+
+      #div_Noticia_Terciario{
+        cursor: pointer;
+        width: 50%;
+        height: 43%;
+        Position: relative;
+        bottom: 225px;
+        float: right;
+        display: block;
+        margin: 10px 10px 0px 10px;
+      }
+      
+      #div_Noticia_Terciario > div{
+        height: 0px;
+        width: 100%;
+        background-color: gray;
+        opacity: 0.1;
+        position: relative;        
+        top: 5px;
+        Transition: all 1s ease-in-out; 
+      }
+
+      #div_Noticia_Terciario:hover > div{
+        height: 70px;
+        width: 100%;        
+        background-color: gray;
+        opacity: 0.7;
+        position: relative;
+        top: -61%;
+      }
+
+      #div_Noticia_Terciario > div > h3{
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+      }
+
+      #div_Noticia_Terciario:hover > div > h3{
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .h3_Titulo_Noticia{
+        visibility: hidden;
+        transition: all 1s ease-in-out;
+      }
 
       /*FIN ANIMACION NOTICIAS*/
 

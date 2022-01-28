@@ -63,7 +63,6 @@
 <!--========== FIN CARRUSEL ========== -->
 
 
-<!-- CAMBIO 2 XD SAMIR-->
 <!--========== INICIO NOTICIAS ======= -->
 <div id="div_Contenedor_Noticias">
     <div id="div_Contenedor_Noticia_Principal">
@@ -71,23 +70,22 @@
         <br><br><br><br>
         <h3></h3>
         <h5></h5>
-        <div class="div_Animacion"><h3 style="color:white;">Se consolida la conciencia de prevención</h3></div>
+        <div class="div_Animacion"><h3 style="color:white;" class="h3_Titulo_Noticia">Se consolida la conciencia de prevención</h3></div>
     </div>
-    <div Class="div_Contenedor_Noticia_Secundario">
+    <div Class="div_Contenedor_Noticia_Secundario" id="div_Noticia_Secundario">
         <img src="Recursos/Imagenes/Noti2.png">
         <br><br><br><br>
         <h3></h3>
         <h5></h5>
-        <div></div>
+        <div class="div_Animacion"><h3 style="color:white;" class="h3_Titulo_Noticia">Las pastorelas de la UNI son de Nicaragua</h3></div>
     </div>
-    <div Class="div_Contenedor_Noticia_Secundario">
+     <div Class="div_Contenedor_Noticia_Secundario" id="div_Noticia_Terciario">
         <img src="Recursos/Imagenes/Noti3.png">
         <br><br><br><br>
         <h3></h3>
         <h5></h5>
-        <div></div>
-    </div>
-
+        <div class="div_Animacion"><h3 style="color:white;" class="h3_Titulo_Noticia">Rescatando la cultura ancestral Nic.</h3></div>
+    </div> 
 </div>
 
 <!--========== FIN NOTICIAS ======= -->
