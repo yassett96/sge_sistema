@@ -48,10 +48,17 @@
                 <div class="grupo">
                     <img class="iconos" src="../Vista/Recursos/Imagenes/sede.png" alt="">
                     <select class="form-select" aria-label="Default select example">
-                    <option selected>Sede</option>
+                    
                     <?php 
-                        require( "../Controlador/connect.php");
-                        try {
+                        require_once( "../Controlador/sede.php");                    
+                        //require_once("../Modelo/connect.php");
+                         try{
+                            
+                            echo conConsultaDatosSede();
+                        }catch (PDOException $pe) {
+                            die("Could not connect to the database $dbname :" . $pe->getMessage());
+                        } 
+                         /* try {
                             $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
                             $sql = "SELECT * FROM sede"; 
                             $query = $conn -> prepare($sql); 
@@ -66,7 +73,7 @@
                             }
                         } catch (PDOException $pe) {
                             die("Could not connect to the database $dbname :" . $pe->getMessage());
-                        }
+                        } */ 
                     ?>                     
                   </select> 
                 </div>  
