@@ -1,0 +1,991 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: #102461;
+    height: 70px;
+   
+}
+
+#mosaicoDER{
+  float: right;
+  
+}
+
+.logo{
+    width: 30%;
+    height: 70px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 40px;
+}
+
+#texto_atras{
+    margin-left: 5%;
+    margin-top: 20px;
+    color: #102461; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.h4{
+    margin-left: 20%;
+    margin-top: 20px;
+    color: #102461;  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+/*inicia formulario*/
+
+.formulario_estudiantes{
+    background-color: #181D43;    
+    width: 60%;
+    height: 750px; 
+    margin-left: 20%;
+    margin-top: 40px;
+    padding: 10px;   
+    box-shadow: 0px 3px 50px #2000FF;    
+    
+}
+
+.h4_formulario{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF ;
+    padding: 10px;
+}
+
+input, select{
+  background: none;
+  color: #78788c;    
+  display: block;
+  width: 65%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px;  
+  font-family: sans-serif;
+}
+
+select option{
+  color: black;
+}
+
+
+
+input:focus, select:focus{
+  outline: none;
+  font-family: sans-serif;
+  color: #ffffff;    
+}
+
+input:focus~label,
+input:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #78788c;
+}
+label{
+  color: #78788c;
+  font-size: 15px;
+  position: absolute;
+  left: 80px;
+  top: 5px;
+  transition: 0.3s ease all;    
+  pointer-events: none;
+}
+
+.icono1{  
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.icono2{  
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.icono3{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.icono4{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.icono5{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.icono6{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+#pInputUsuario{
+  background: none;
+  color: #78788c;    
+  display: block;
+  width: 380px;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px;
+}
+
+#pInputUsuario:focus{
+  outline: none;
+  color: #ffffff;    
+}
+#pInputUsuario:focus~label,
+#pInputUsuario:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 12px;
+  color: #78788c;
+}
+
+.icono7{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+#pInputContraseña{
+  background: none;
+  color: #78788c;    
+  display: block;
+  width: 380px;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px;
+}
+#pInputContraseña:focus{
+  outline: none;
+  color: #ffffff;    
+}
+#pInputContraseña:focus~label,
+#pInputContraseña:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 12px;
+  color: #78788c;
+}
+
+.icono8{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+#pInputRepContraseña{
+  background: none;
+  color: #78788c;    
+  display: block;
+  width: 380px;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px;
+}
+#pInputRepContraseña:focus{
+  outline: none;
+  color: #ffffff;    
+}
+#pInputRepContraseña:focus~label,
+#pInputRepContraseña:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 12px;
+  color: #78788c;
+}
+
+p{
+  color: #A6ADB4;
+  font-family: sans-serif;
+}
+p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a
+}
+
+.BotonFormulariolimpiar{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 400px;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF ;
+  border:2px solid #78788c;
+  background:0;
+  color: #9B9B9B;
+  box-shadow: 1px 1px 5px#000000 ;
+  cursor:pointer;
+  transition:all .3s
+}
+
+.BotonFormularioRegistrarse{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 750px;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF ;
+  border:2px solid #78788c;
+  background:0;
+  color: #9B9B9B;
+  box-shadow: 1px 1px 5px#000000 ;
+  cursor:pointer;
+  transition:all .3s
+}
+
+.botongestiones{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 750px;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF ;
+  border:2px solid #78788c;
+  background:0;
+  color: #9B9B9B;
+  box-shadow: 1px 1px 5px#000000 ;
+  cursor:pointer;
+  transition:all .3s
+}
+
+button:hover{
+  background:#78788c;
+  color:#fff
+}
+
+#h4_formulario_Abajo{
+  font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90%;
+    color: #FFFFFF ;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+#h4_formulario_Abajo2{
+  font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90%;
+    color: #FFFFFF ;
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 150px;
+}
+
+/*termina formulario */
+
+#mosaicoIZQ{
+  float: left;
+  position: relative;
+  bottom: 135px;
+  
+}
+
+/* inicio footer */
+
+
+
+
+footer{
+  background-color:#102461;
+  height: 40%;
+  width: 100%;
+  position: absolute;
+}
+
+#h4_contactenos{
+  color: #ffffff;
+  position:absolute;
+  left: 3%;  
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic; 
+}
+
+.h5_detalles_footer{
+  
+  width: 25%;
+  height: 50%;
+  margin-left: 5%;
+  margin-top: 45px; 
+  text-align:left;
+
+  position: absolute;  
+  background-color: #1f4318;
+  display:inline;
+}
+
+.Info_{
+  background-color: #431818;
+  margin: 0px auto;
+  color: #FFFFFF;   
+  padding-top: 25px;        
+  text-align: justify;
+  width: 99%;
+  height: 90%;
+  
+}
+
+.p_info{
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  
+}
+
+.footer_h5{ 
+  width: 50%;    
+  float: left;
+  position: absolute;  
+  color: #ffffff;
+  background-color: #ff00aa;
+  display:inline;
+}
+
+.Info_Menu{
+  background-color: #00ff95;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+}
+
+.img_footer{
+  margin-left: 75%;    
+  margin-top: 60px;
+}
+
+.espacio_img{
+  margin-left: 40px; 
+}
+
+.p_footer{
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+}
+
+/*****************************************************************************************LAPTOP*/
+
+
+@media screen and (max-width: 1200px){
+
+  header{
+      background-color: #102461;
+      height: 70px;
+  }
+  
+  .formulario_estudiantes{
+    background-color: #181D43;    
+    width: 70%;
+    height: 750px; 
+    margin-left: 20%;
+    margin-top: 40px;
+    padding: 10px;   
+    box-shadow: 0px 3px 50px #2000FF;     
+  }
+  
+  input{
+    background: none;
+    color: #78788c;    
+    display: block;
+    width: 75%;
+    margin-left: 70px;
+    /*margin: auto;*/
+    border: none;
+    border-bottom: 1px solid #ffffff;  
+    margin-top: -18px;  
+    font-family: sans-serif;
+  }
+  
+  label{
+    color: #78788c;
+    font-size: 18px;
+    position: absolute;
+    left: 80px;
+    top: 5px;
+    transition: 0.3s ease all;    
+    pointer-events: none;
+  }
+  
+  input:focus~label,
+  input:valid~label{
+    position: absolute;
+    top: -5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #78788c;
+  }
+  
+  #pInput_tel{
+    background: none;
+    color: #78788c;    
+    display:block;
+    margin-left: 70px;
+    width: 400px;
+    /*margin: auto;*/
+    border: none;
+    border-bottom: 1px solid #ffffff;  
+    margin-top: -18px; 
+  }
+  
+  #pInputEmail{
+    background: none;
+    color: #78788c;    
+    display: block;
+    margin-left: 70px;
+    width: 400px;
+    /*margin: auto;*/
+    border: none;
+    border-bottom: 1px solid #ffffff;  
+    margin-top: -18px; 
+  }
+  
+  #pInputUsuario{
+    background: none;
+    color: #78788c;    
+    display: block;
+    margin-left: 70px;
+    width: 400px;
+    /*margin: auto;*/
+    border: none;
+    border-bottom: 1px solid #ffffff;  
+    margin-top: -18px;
+  }
+  
+  #pInputContraseña{
+    background: none;
+    color: #78788c;    
+    display: block;
+    margin-left: 70px;
+    width: 400px;
+    /*margin: auto;*/
+    border: none;
+    border-bottom: 1px solid #ffffff;  
+    margin-top: -18px;
+  }
+  
+  #pInputRepContraseña{
+    background: none;
+    color: #78788c;    
+    display: block;
+    margin-left: 70px;
+    width: 400px;
+    /*margin: auto;*/
+    border: none;
+    border-bottom: 1px solid #ffffff;  
+    margin-top: -18px;
+  }
+  
+  .BotonFormulariolimpiar{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 300px;
+    padding:8px 12px;
+    margin: 40px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF ;
+    border:2px solid #78788c;
+    background:0;
+    color: #9B9B9B;
+    box-shadow: 1px 1px 5px#000000 ;
+    cursor:pointer;
+    transition:all .3s
+  }
+  
+  .BotonFormularioRegistrarse{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 800px;
+    padding:8px 12px;
+    margin:40px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF ;
+    border:2px solid #78788c;
+    background:0;
+    color: #9B9B9B;
+    box-shadow: 1px 1px 5px#000000 ;
+    cursor:pointer;
+    transition:all .3s
+  }
+  
+  #h4_formulario_Abajo{
+    font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 100%;
+      color: #FFFFFF ;
+      position: absolute;
+      margin-left: 20px;
+      margin-top: 150px;
+  }
+  
+  #h4_formulario_Abajo2{
+    font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 100%;
+      color: #FFFFFF ;
+      position: absolute;
+      margin-left: 680px;
+      margin-top: 150px;
+  }
+  
+  
+  #h4_contactenos{
+    color: #ffffff;
+    position:absolute;
+    left: 1%;  
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 130%;
+  }
+  
+  footer{
+    position:relative;
+    bottom: 0px;
+  }
+  .main-content{
+    display:flex;
+  }
+  .main-content .box{
+    flex-basis: 30%;
+    padding: 30px 10px;
+  }
+  
+  .box .content{
+    margin: 5px 0 0 0;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .left .content .fas{
+    font-size: 1.2000rem;
+    /*box-shadow: 1px 1px 5px#000000 ;*/
+    height: 10px;
+    width: 10px;
+    line-height: 5px;
+    text-align: center;
+    border-radius: 30%;
+    transition: 0.3s;
+  }
+  
+  .left .content .text{
+    font-size: 95%;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+  
+  .left .content .phone{
+    margin: 15px 0;
+  }
+  .center .content .footer_h5{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    width:20%;
+    color: #ffffff;
+  }
+  .right .content .social a{
+    padding: 0 2px;
+    color: #ffffff;
+  }
+  .right .content .social a span{
+    height: 40px;
+    width: 40px;
+    box-shadow: 1px 1px 5px#ffffff ;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .right .content .social a span:hover{
+    background: #102461;
+    /*background: #ff0000;*/
+  }
+  .bottom center{
+    padding: 5px;
+    font-size: 90%;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+  }
+    
+  }
+  
+  
+    
+  /*************************************************************************************MOVIL*/
+  
+  @media screen and (max-width: 480px) {
+      header{
+          background-color: #102461;
+          height: 70px;
+          /*width: 768px;*/
+      }
+  
+      #mosaicoDER{
+        float: right;
+        width: 20%;
+        height: 20%;
+        
+      }
+      
+      .logo{
+          width: 30%;
+          height: 70px;
+          float: left;
+          margin-top: 9px;
+          margin-left: 40px;
+      }
+      
+      #texto_atras{
+          margin-left: 5%;
+          margin-top: 20px;
+          color: #102461; 
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          font-size: 125%;
+      }
+  
+      .h4{
+        margin-left: 15%;
+        margin-top: 20px;
+        color: #102461;  
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 120%;
+    }
+      
+      .formulario_estudiantes{
+        background-color: #181D43;    
+        width: 80%;
+        height: 950px; 
+        margin-left: 12%;
+        margin-top: 40px;
+        padding: 10px;   
+        box-shadow: 0px 3px 50px #2000FF;     
+      }
+      
+      input{
+        background: none;
+        color: #78788c;    
+        display: block;
+        width: 65%;
+        margin-left: 70px;
+        /*margin: auto;*/
+        border: none;
+        border-bottom: 1px solid #ffffff;  
+        margin-top: -18px;  
+        font-family: sans-serif;
+      }
+      
+      label{
+        color: #78788c;
+        font-size: 18px;
+        position: absolute;
+        left: 80px;
+        top: 5px;
+        transition: 0.3s ease all;    
+        pointer-events: none;
+      }
+      
+      input:focus~label,
+      input:valid~label{
+        position: absolute;
+        top: -5px;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #78788c;
+      }
+      
+      #pInput_tel{
+        background: none;
+        color: #78788c;    
+        display:block;
+        margin-left: 70px;
+        width: 65%;
+        /*margin: auto;*/
+        border: none;
+        border-bottom: 1px solid #ffffff;  
+        margin-top: -18px; 
+      }
+      
+      #pInputEmail{
+        background: none;
+        color: #78788c;    
+        display: block;
+        margin-left: 70px;
+        width: 65%;
+        /*margin: auto;*/
+        border: none;
+        border-bottom: 1px solid #ffffff;  
+        margin-top: -18px; 
+      }
+      
+      #pInputUsuario{
+        background: none;
+        color: #78788c;    
+        display: block;
+        margin-left: 70px;
+        width: 65%;
+        /*margin: auto;*/
+        border: none;
+        border-bottom: 1px solid #ffffff;  
+        margin-top: -18px;
+      }
+      
+      #pInputContraseña{
+        background: none;
+        color: #78788c;    
+        display: block;
+        margin-left: 70px;
+        width: 65%;
+        /*margin: auto;*/
+        border: none;
+        border-bottom: 1px solid #ffffff;  
+        margin-top: -18px;
+      }
+      
+      #pInputRepContraseña{
+        background: none;
+        color: #78788c;    
+        display: block;
+        margin-left: 70px;
+        width: 65%;
+        /*margin: auto;*/
+        border: none;
+        border-bottom: 1px solid #ffffff;  
+        margin-top: -18px;
+      }
+      
+      .BotonFormulariolimpiar{
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        left: 85px;
+        padding:4px 6px;
+        margin: 30px 0 0;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 75%;
+        color: #FFFFFF ;
+        border:2px solid #78788c;
+        background:0;
+        color: #9B9B9B;
+        box-shadow: 1px 1px 5px#000000 ;
+        cursor:pointer;
+        transition:all .3s
+      }
+      
+      .BotonFormularioRegistrarse{
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        left: 275px;
+        padding:4px 6px;
+        margin:30px 0 0;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 75%;
+        color: #FFFFFF ;
+        border:2px solid #78788c;
+        background:0;
+        color: #9B9B9B;
+        box-shadow: 1px 1px 5px#000000 ;
+        cursor:pointer;
+        transition:all .3s
+      }
+      
+      #h4_formulario_Abajo{
+        font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 75%;
+          color: #FFFFFF ;
+          position: absolute;
+          margin-left: 5px;
+          margin-top: 150px;
+      }
+      
+      #h4_formulario_Abajo2{
+        font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 75%;
+          color: #FFFFFF ;
+          position: absolute;
+          margin-left: 275px;
+          margin-top: 150px;
+      }
+      
+      #mosaicoIZQ{
+        float: left;
+        position: relative;
+        bottom: 46px;
+        width: 20%;
+        height: 20%;
+        
+      }
+      
+      #h4_contactenos{
+        color: #ffffff;
+        position:absolute;
+        left: 1%;  
+        /*margin-top: 2px;*/
+        bottom: 270px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-size: 100%;
+      }
+  
+      .text{
+        color: #ffffffd3;
+        position:relative;
+        left: 3%;  
+        margin-top: 1px; 
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+      }
+      
+      footer{
+        position:relative;
+        bottom: 0px;
+      }
+      .main-content{
+        flex-wrap:wrap;
+        flex-direction:row;
+      }
+      .main-content .box{
+        flex-basis: 30%;
+        padding: 20px 5px;
+      }
+      
+      .box .content{
+        margin: 5px 0 0 0;
+        position:relative;
+        color: #ffffff;
+      }
+  
+      
+    
+      .left .content .fas{
+        font-size: 1.2000rem;
+        /*box-shadow: 1px 1px 5px#000000 ;*/
+        height: 5px;
+        width: 5px;
+        line-height: 10px;
+        text-align: center;
+        border-radius: 30%;
+        transition: 0.3s;
+      }
+      
+      .left .content .text{
+        font-size: 75%;
+        padding-left: 20px;
+      }
+  
+      
+      
+      .left .content .phone{
+        margin: 10px 0 ;
+      }
+  
+  
+      .center .content .footer_h5{
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        width:20%;
+        color: #ffffff;
+      }
+      .right .content .social a{
+        padding: 0 2px;
+        color: #ffffff;
+      }
+      .right .content .social a span{
+        height: 40px;
+        width: 40px;
+        box-shadow: 1px 1px 5px#ffffff ;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .right .content .social a span:hover{
+        background: #102461;
+        /*background: #ff0000;*/
+      }
+      .bottom center{
+        padding: 5px;
+        font-size: 90%;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+      }
+  
+  }

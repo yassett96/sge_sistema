@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #102461;
+    height: 70px
+}
+
+.logo{
+    width: 30%;
+    height: 70px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 40px;
+}
+
+ul{
+    margin-right: 60px;
+}
+
+li{
+    margin-top: 15px;
+    margin-right: 60px; 
+}
+
+#texto{
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 15px;
+    width: 13%;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+.h4{
+  margin-left: 15%;
+  margin-top: 20px;
+  color: #102461;  
+}
+
+.cuadro_fondo{
+    background-color: #b7c8e8;    
+    width: 60%;
+    height: 285px; 
+    margin-left: 20%;
+    border-radius: 10px;
+    padding: 2px 0px 0px 3px;
+    
+}    
+
+.cuadro1{
+    background-color: #86a2da;
+    width: 18%;
+    height: 250px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 0px 2% 16px;
+    border-radius: 10px;
+    position: absolute; 
+}
+
+.cuadro2{    
+    background-color: #86a2da;
+    width: 18%;
+    height: 250px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 0px 2% 21%;
+    border-radius: 10px;
+    position: absolute;    
+}
+
+.cuadro3{
+    background-color: #86a2da;
+    width: 29%;
+    height: 250px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 0px 2% 68%;
+    border-radius: 10px;
+}
+
+.cuadro_fondo2{
+    background-color: #b7c8e8;    
+    width: 45%;
+    height: 240px; 
+    margin-left: 27%;
+    border-radius: 10px;
+    padding: 10px;       
+}
+
+.cuadro{
+    background-color: #86a2da;
+    color: black;
+    width: 95%;
+    height: 200px;
+    text-align: justify;
+    border-radius: 10px;
+    padding: 17px;    
+    display: flex;
+    margin: 2%;
+}
+
+footer{
+    background-color:#102461;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+}
+
+#h4_contactenos{
+    color: #FFFFFF;
+    position: relative;
+    left: 3%;  
+    margin-top: 5px;  
+}
+
+.h5_detalles_footer{
+    color: #FFFFFF;
+    position: absolute;             
+    width: 100px;
+    margin-left: 10%; 
+    margin-top: 10px;
+}
+
+.footer_h5{ 
+    margin-left: 50%;    
+    margin-top: 10px;
+    position: absolute;  
+}
+
+.img_footer{
+    margin-left: 75%;    
+    margin-top: 60px;
+}
+
+.espacio_img{
+    margin-left: 40px; 
+}
+
+.p_footer{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
