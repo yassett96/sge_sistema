@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../Assets/css/RegistroEstudiantes.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../../Assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Registro estudiantes</title>
 </head>
 <body>
@@ -125,30 +125,50 @@
     <img src="../../Assets/Imagenes/mosaicos2.png" id="mosaicoIZQ" height="180px" width="180px">
     <br>
     <br>
-    <footer>
-        <h4 id="h4_contactenos"> Contáctenos </h4>
-        <div class="h5_detalles_footer">
-            <div class="Info_">
-                <h6 class="p_info">Teléfono: +505 2249 6429</h6>    
-                <h6 class="p_info"> Correo: decanatura@fcys.uni.edu.ni </h6> 
-                <h6 class="p_info"> Dirección: Semáforos Villa Progreso 2 1/2 cuadras arriba.</h6>
-            <div>
-        </div>
-        <div class="footer_h5">
-            <div class="Info_Menu">
-                <h5><a class="nav-link active" id="texto" href="../../index.php" >Inicio</a></h5> 
-                <h5><a class="nav-link active" id="texto" href="../../Vista/VEvento/Eventos.html" >Eventos</a></h5>
-                <h5><a class="nav-link active" id="texto" href="../../Vista/VQueessge/QueEs_InfoSis.html">¿Qué es SGE-FCYS?</a></h5>
+    <div class="container"></div>
+        <footer>
+          <!-- Footer main -->
+          <section class="ft-main">
+            <div class="ft-main-item">
+              <h2 class="ft-title">Contactenos</h2>
+              <ul class="fa-ul">
+                <li><i class="fa-li fa fa-phone fa-1x" aria-hidden="true"></i>+505 2249 6429</li>
+                <li><i class="fa-li fa fa-envelope-o  fa-1x" aria-hidden="true"></i></i>decanatura@fcys.uni.edu.ni</li>
+                <li><i class="fa-li fa fa-map-marker  fa-1x" aria-hidden="true"></i></i>Semáforos Villa Progreso 2 1/2 cuadras arriba</li>
+              </ul>
             </div>
-        </div>
-        <div class="img_footer">
-            <img src="../../Assets/Imagenes/facebook.png" alt="20px" width="20px">
-            <img class="espacio_img" src="../../Assets/Imagenes/global.png" alt="20px" width="20px">
-        </div>
-        <div class="p_footer">
-            <p>© 2021 Universidad Nacional de Ingeniería - FCYS</p>
-        </div>
-    </footer>
-  
+            <div class="ft-main-item_2">
+              <h2 class="ft-title"></h2>
+              <ul>
+                <li><a href="../../index.php">Inicio</a></li>
+               
+              </ul>
+              
+            </div>
+            <!--
+            <div class="ft-main-item_2">
+              <h2 class="ft-title"></h2>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">¿Qué es SGE-FCYS?</a></li>
+              </ul>
+              -->
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title"></h2>
+              <ul class="ft-social-list">
+                <a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+              </ul>
+            </div>
+            
+          </section>
+          <section class="ft-legal">
+            <ul class="ft-legal-list">
+              <li>&copy; Universidad Nacional De Ingenieria 2022</li>
+            </ul>
+          </section>
+          </footer>
 </body>
 </html>
