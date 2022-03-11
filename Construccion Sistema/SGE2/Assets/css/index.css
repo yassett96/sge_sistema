@@ -1,0 +1,379 @@
+header{
+    width: 100%;
+    height: 70px;    
+    box-shadow: inset 200px 200px 200px 200px rgba(0, 0, 0, 0.233)    
+}
+
+.logo{
+    width: 30%;
+    height: 70px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 40px;
+}
+
+#fondo{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+body{
+    background-image: url('../Imagenes/Fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    z-index: -1;   
+}
+
+ul{
+    margin-right: 60px;
+}
+
+li{
+    margin-top: 15px;
+    margin-right: 60px; 
+}
+
+#texto{
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+#h1_tituloinicio{
+    color: #FFFFFF;
+    font-size: 50px;
+    position: relative;
+    right: 10%;    
+}
+
+/*=======INICIO CARRUSEL=======*/
+* {
+    box-sizing: border-box
+  }
+  
+  body {
+    font-family: Verdana, sans-serif;
+  }
+  
+  .mySlides {
+    display: none
+  }
+  
+  .mySlides:nth-child(1) {
+    display: block
+  }
+  
+   /* Contenedor de diapositivas */
+  .slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+  }
+  
+   /* Botones siguiente y anterior */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+   /* Coloque el botón "Siguiente" a la derecha */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+   /* Texto del título */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+   /* Símbolo de marca */
+  .dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+   /* Desvanecer animación */
+  .fade1 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0
+    }
+  
+    to {
+      opacity: 1
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+  
+    to {
+      opacity: 1
+    }
+  }
+
+/*=======FIN CARRUSEL=======*/
+
+/*=======INICIO NOTICIAS=======*/
+#div_Contenedor_Noticias{
+  width: 57%;
+  height: 250px;
+  margin-bottom: 40px;
+  background-color: #b6bacf;
+  position: relative;
+  left: 22%;
+}
+
+#div_Contenedor_Noticia_Principal{
+  width: 45%;
+  height: 90%;  
+  background-color:#ffffff;
+  position: relative;
+  left: 10px;
+  top:10px;
+}
+
+#div_Contenedor_Noticia_Principal>img{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+}
+
+#div_Contenedor_Noticia_Principal > h3{
+  color: blue;
+  position: relative;
+  bottom: 5px;
+}
+
+#div_Contenedor_Noticia_Principal > h5{
+  color: white;
+  Position: relative;
+  bottom: 5px;
+}
+
+.div_Contenedor_Noticia_Secundario > img{  
+  width: 100%;
+  height: 100%;
+  position:absolute;
+}
+
+      /*INICIO ANIMACION NOTICIAS*/
+      #div_Contenedor_Noticia_Principal{
+        cursor: pointer;
+      }     
+
+      #div_Contenedor_Noticia_Principal > div{
+        height: 1px;
+        width: 100%;
+        background-color: gray;
+        opacity: 0.1;
+        position: relative;
+        Top: 120px;
+        Transition: all 1s ease-in-out;  
+        overflow: hidden;              
+      }       
+      
+      #div_Contenedor_Noticia_Principal:hover > div{
+        height: 111px;
+        width: 100%;
+        background-color: gray;
+        opacity: 0.7;
+        position: relative;
+        Top: 10px;        
+      }  
+
+      #div_Contenedor_Noticia_Principal > div > h3{
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+      }
+
+      #div_Contenedor_Noticia_Principal:hover > div > h3{
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      #div_Noticia_Secundario{
+        cursor: pointer;
+        width: 50%;
+        height: 43%;
+        Position: relative;
+        bottom: 225px;
+        float: right;
+        display: block;
+        margin: 10px 10px 0px 10px;
+      }
+
+      #div_Noticia_Secundario > div{
+        height: 0px;
+        width: 100%;
+        background-color: gray;
+        opacity: 0.1;
+        position: relative;        
+        top: 5px;
+        Transition: all 1s ease-in-out;          
+      }
+
+      #div_Noticia_Secundario:hover > div{
+        height: 70px;
+        width: 100%;        
+        background-color: gray;
+        opacity: 0.7;
+        position: relative;
+        top: -61%;        
+      }
+
+      #div_Noticia_Secundario > div > h3{
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+      }
+
+      #div_Noticia_Secundario:hover > div > h3{
+        visibility: visible;
+        opacity: 1;
+      }
+
+      #div_Noticia_Terciario{
+        cursor: pointer;
+        width: 50%;
+        height: 43%;
+        Position: relative;
+        bottom: 225px;
+        float: right;
+        display: block;
+        margin: 10px 10px 0px 10px;
+      }
+      
+      #div_Noticia_Terciario > div{
+        height: 0px;
+        width: 100%;
+        background-color: gray;
+        opacity: 0.1;
+        position: relative;        
+        top: 5px;
+        Transition: all 1s ease-in-out; 
+      }
+
+      #div_Noticia_Terciario:hover > div{
+        height: 70px;
+        width: 100%;        
+        background-color: gray;
+        opacity: 0.7;
+        position: relative;
+        top: -61%;
+      }
+
+      #div_Noticia_Terciario > div > h3{
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+      }
+
+      #div_Noticia_Terciario:hover > div > h3{
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .h3_Titulo_Noticia{
+        visibility: hidden;
+        transition: all 1s ease-in-out;
+      }
+
+      /*FIN ANIMACION NOTICIAS*/
+
+    /*=======FIN NOTICIAS=======*/
+
+footer{
+    background-color:#102461;
+    height: 33%;
+    width: 100%;
+    position: absolute;
+}
+
+#h4_contactenos{
+    color: #FFFFFF;
+    position: relative;
+    left: 5%; 
+    top: 5%; 
+    margin-top: 5px;
+    width: 10px;
+    height: 50px;    
+}
+
+.h5_detalles_footer{
+    color: #FFFFFF;
+    position: absolute;             
+    width: 100px;
+    margin-left: 10%; 
+    margin-top: 10px;
+}
+
+.footer_h5{ 
+    margin-left: 50%;    
+    margin-top: 10px;
+    position: absolute;  
+}
+
+.img_footer{
+    margin-left: 75%;    
+    margin-top: 60px;
+}
+
+.espacio_img{
+    margin-left: 40px; 
+}
+
+.p_footer{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+

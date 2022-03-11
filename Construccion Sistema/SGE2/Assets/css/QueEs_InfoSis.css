@@ -1,0 +1,457 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #102461;
+  height: 70px
+}
+.logo{
+  width: 30%;
+  height: 70px;
+  float: left;
+  margin-top: 9px;
+  margin-left: 40px;
+}
+/* Importante Ocultar Menu Movil*/
+.main-header{
+display: none;  
+}
+
+#mosaicoDER{
+float: right;
+width: 125px;
+height: 125px;
+
+}
+ul{
+  margin-right: 60px;
+}
+
+li{
+  margin-top: 15px;
+  margin-right: 60px; 
+}
+#texto{
+  color: white;
+}
+button{
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 15px;
+  width: 13%;
+}
+body{
+  background-color: #FFFFFF;
+}
+
+
+.h4{
+  margin-left: 15%;
+  margin-top: 20px;
+  color: #102461;  
+}
+ 
+.cuadro_fondo2{
+  background-color: #b7c8e8;    
+  width: 50%;
+  height: 245px; 
+  margin-left: 27%;
+  margin-top: 5%;
+  border-radius: 10px;
+  padding: 10px;       
+}
+
+.cuadro{
+  background-color: #86a2da;
+  color: black;
+  width: 95%;
+  height: 200px;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 17px;    
+  display: flex;
+  margin: 2%;
+}
+
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+
+/*
+
+
+*/
+
+#mosaicoIZQ{
+  float: left;
+  position: relative;
+  width: 125px;
+height: 125px;
+  bottom: 100px;
+  
+}
+/* INICIA FOOTER*/
+
+footer {
+  background-color: #102461;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  flex-direction: column;
+  
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+  
+}
+a:hover {
+  text-decoration: underline;
+}
+.ft-title {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif, serif;
+  font-size:  150%;
+  padding-bottom: 0.625rem;
+  list-style:none; 
+}
+
+.p_datos{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif, serif;
+  font-size: 95%;
+  padding-bottom: 0.625rem;
+  
+}
+.ft-social{
+color: #fff;
+font-family: 'Montserrat', sans-serif, serif;
+font-size: 1.375rem;
+padding-bottom: 0.625rem;
+list-style:none; 
+}
+
+.container {
+flex: 1;    /* same as flex-grow: 1; */
+}
+
+.ft-main {
+padding: 1.25rem 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.ft-main-item {
+padding: 1.25rem;
+min-width: 12.5rem /*200px*/;
+list-style:none;  
+
+}
+
+.ft-main-item_2 {
+padding: 1.25rem;
+min-width: 12.5rem /*200px*/;
+list-style:none;  
+margin-left: -60px; 
+}
+
+.ft-main-item_2 li {
+list-style:none; 
+}
+.ft-main-item li {
+list-style:none; 
+}
+.ft-social-list {
+padding: 1.25rem;
+min-width: 12.5rem /*200px*/;
+list-style:none; 
+margin-right: 60px;
+}
+
+.ft-main-item_2 {
+padding: 1.25rem;
+min-width: 12.5rem /*200px*/;
+list-style:none; 
+}
+
+.ft-social {
+padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list li {
+margin: 0.5rem;
+font-size: 1.25rem;
+}
+
+.ft-legal {
+padding: 5px;
+font-size: 90%;
+color: #ffffff;
+font-family: 'Montserrat', sans-serif;
+
+
+}
+.ft-legal-list {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+list-style:none;
+justify-content: center;
+}
+.ft-legal-list li {
+margin: 0.125rem 0.625rem;
+white-space: nowrap;
+
+}
+
+/*TERMINA FOOTER*/
+
+/*****************************************************************************************LAPTOP*/
+
+@media screen and (max-width: 1200px){
+
+header{
+  background-color: #102461;
+  height: 70px
+}
+
+/* Importante Ocultar Menu Movil*/
+.main-header{
+display: none;  
+}
+
+.logo{
+  width: 30%;
+  height: 70px;
+  float: left;
+  margin-top: 9px;
+  margin-left: 40px;
+}
+
+
+.menu_movil{display: none;}
+
+#mosaicoDER{
+float: right;
+width: 125px;
+height: 125px;
+}
+
+ul{
+margin-right: 60px;
+}
+
+li{
+margin-top: 15px;
+margin-right: 60px; 
+}
+
+button{
+background-color: transparent;
+border-color: white;
+border-radius: 5px;
+height: 40px;
+margin-top: 15px;
+width: 15%;
+}
+
+/*Lo que no se agrego, es porque queda bien en el tamaño xd*/
+
+#mosaicoIZQ{
+float: left;
+position: relative;
+bottom: 78px;
+width: 125px;
+height: 125px;
+
+}
+
+}
+
+/*************************************************************************************MOVIL*/
+@media screen and (max-width: 480px) {
+
+/* Importante Ocultar Menu General*/
+.justify-content-end{
+  display:none;
+}
+
+/*INICIA MENU MOVIL*/
+
+.main-header {
+  
+  display: flex;
+  float:right;
+  margin-top: -2px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 0 0.4rem;
+}
+
+.main-logo {
+  color: black;
+  font-size: 32px;
+  text-decoration: none;
+}
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin-left: -100%;
+  transition: all 0.2s linear;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-nav.show {
+  margin-left: 0;
+}
+.nav-links {
+  background-color: #102461b0;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link-item {
+  margin-top: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+.button-menu {
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background: none;
+  flex-direction: column; /* Pondrá un span debajo del otro*/
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* 
+  Dibujamos una línea recta por cada span creando el tipico menu hamburguesa
+*/
+
+.button-menu span {
+  width: 37px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+  transition: all 0.2s linear;
+}
+
+/* 
+  con los span dibujamos un icono de cerrar 
+  para mostrar cuándo la navegación este abierta 
+*/
+
+.button-menu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  background: #ffffff;
+}
+
+.button-menu.close span:nth-child(2) {
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.button-menu.close span:nth-child(3) {
+  display: none;
+}
+
+/*BOTON LOGIN/ PERFIL USUARIO ESPECIAL PARA MENU MOVIL*/
+.btn-login{
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 80%;
+}
+
+/*TERMINA MENU MOVIL*/
+
+#mosaicoDER{
+  float: right;
+  width: 90px;
+  height: 90px;
+  margin-top: 0px;
+}
+.cuadro_fondo2{
+  background-color: #b7c8e8;    
+  width: 85%;
+  height: 335px; 
+  margin-left: 10%;
+  margin-top: 15%;
+  border-radius: 10px;
+  padding: 10px;    
+}
+
+.cuadro{
+  background-color: #86a2da;
+  color: black;
+  width: 95%;
+  height: 300px;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 17px;    
+  display: flex;
+  margin: 2%;
+}
+
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  text-align: justify;
+}
+#mosaicoIZQ{
+float: left;
+position: relative;
+bottom: 65px;
+width: 90px;
+height: 90px;
+
+}
+
+/*INICIA FOOTER*/
+footer {
+background-color: #102461;
+color: rgb(255, 255, 255);
+line-height: 1.5;
+flex-direction: column;
+}
+
+
+.ft-main-item_2 {
+padding: 1.25rem;
+min-width: 12.5rem /*200px*/;
+list-style:none;  
+margin-top: -40px; 
+}
+/*TERMINA FOOTER*/
+
+}
+
