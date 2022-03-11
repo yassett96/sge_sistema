@@ -1,3 +1,4 @@
+/*=== INICIO HEADER ===*/
 header{
     width: 100%;
     height: 70px;    
@@ -12,12 +13,6 @@ header{
     margin-left: 40px;
 }
 
-#fondo{
-    width: 100%;
-    margin-bottom: 20px;
-    
-}
-
 body{
     background-image: url('../Imagenes/Fondo.jpeg');
     background-repeat: no-repeat;
@@ -27,7 +22,7 @@ body{
 }
 
 ul{
-    margin-right: 60px;
+    margin-right: 15%;
 }
 
 li{
@@ -35,143 +30,178 @@ li{
     margin-right: 60px; 
 }
 
+#imgLogUsuario{
+    height: 2.1%;
+    width: 2.1%;
+    float: right;
+    position: relative;    
+    bottom: 50PX;
+    left: 3.8%;
+}
+
+#aTipoUsuario{
+    color: white;
+    float: right;
+    position: relative;
+    bottom: 60px;
+    right: 6%;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+#aTipoUsuario:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+#aCerrarSesion{
+    color: white;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    left: 8.5%;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+#aCerrarSesion:hover{
+    color: blue;
+    text-decoration: underline;    
+}
+
 #texto{
     color: white;
 }
 
-button{
-    background-color: transparent;
-    border-color: white;
-    border-radius: 5px;
-    height: 40px;
-    margin-top: 15px;
+.nav-link{
+  font-weight:bold;    
+  font-family:'Montserrat';  
+}
+/*=== FIN HEADER ===*/
+
+/*=== INICIO ENCABEZADOS ===*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+#butInscribirAEvento{
+  float: right;
+  position: relative;
+  left: 12%;
+  top: 13px;
+  border-radius: 5px;  
+  background-color: #C28306;
+  -webkit-text-fill-color: white;    
+  -webkit-text-stroke: 0.35px black;
+  box-shadow: 0px 0px 20px black;
+  font-size: 17px;
+  transition: all ease-in-out 0.5s;
+  font-weight:bold;    
+  font-family:'Montserrat';  
 }
 
-#h1_tituloinicio{
+#butInscribirAEvento:hover{
+  -webkit-text-fill-color: #C28306;
+  background-color: white;  
+}
+
+#divTituloInicial>p{
+  -webkit-text-fill-color: white;  
+  text-align: center;  
+  position: relative;
+  font-size: 40px;
+  -webkit-text-fill-color: white;    
+  -webkit-text-stroke: 1.5px #8e8e37;
+  margin: 0;
+  
+}
+
+#divTituloInicial>p:nth-child(1){
+  position: relative;
+  right: 5%;  
+  top: 17px;
+}
+
+  /*=== INICIO TEMPORIZADOR ===*/
+  #divTemporizador{
+    align-items: center;    
+    width: 30%;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    right: 3%;
+    bottom: 25px;
+  }
+
+  .h2Encabezado{
+    color: yellow;
+    font-style:italic;
+    font-weight:bold;    
+    font-family:'Calibri';
+  }
+
+  .h2Digito{
+    position: relative;
+    left: 20%;
+    color: aqua;
+    font-weight:bold;    
+    font-family:'Calibri';
+  }
+
+  #h2DigitoHoras{
+    position: relative;
+    left: 30%;
+  }
+
+  #h2DigitoMinutos{
+    position: relative;
+    left: 32%;    
+  }
+
+  #h2DigitoSegundos{
+    position: relative;
+    left: 37%;
+  }
+
+  .divDato{
+    display: inline-block;
+    margin-right: 5%;
+  }
+
+  .aDosPuntos{
+    position: relative;
+    right: 15%;
+    top: 85px;
+    font-size: 20px;
+    color: aqua;        
+  }
+
+  /*=== FIN TEMPORIZADOR ===*/
+
+/*=== FIN ENCABEZADOS ===*/
+
+#divTituloInicial{
+    width: 100%;
+    margin-bottom: 20px;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+.pTituloInicial{
     color: #FFFFFF;
     font-size: 50px;
     position: relative;
-    right: 10%;    
+    right: 5%;
+    align-items: center;
+    font-weight:bold;    
+    font-family:'Corbel';
+    font-style: italic;    
 }
-
-/*=======INICIO CARRUSEL=======*/
-* {
-    box-sizing: border-box
-  }
-  
-  body {
-    font-family: Verdana, sans-serif;
-  }
-  
-  .mySlides {
-    display: none
-  }
-  
-  .mySlides:nth-child(1) {
-    display: block
-  }
-  
-   /* Contenedor de diapositivas */
-  .slideshow-container {
-    max-width: 900px;
-    position: relative;
-    margin: auto;
-  }
-  
-   /* Botones siguiente y anterior */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-  
-   /* Coloque el botón "Siguiente" a la derecha */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-   /* Texto del título */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-   /* Símbolo de marca */
-  .dot {
-    cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-  
-   /* Desvanecer animación */
-  .fade1 {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0
-    }
-  
-    to {
-      opacity: 1
-    }
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: .4
-    }
-  
-    to {
-      opacity: 1
-    }
-  }
-
-/*=======FIN CARRUSEL=======*/
 
 /*=======INICIO NOTICIAS=======*/
 #div_Contenedor_Noticias{
-  width: 57%;
+  width: 45%;
   height: 250px;
   margin-bottom: 40px;
   background-color: #b6bacf;
   position: relative;
-  left: 22%;
+  left: 24%;  
 }
 
 #div_Contenedor_Noticia_Principal{
@@ -244,10 +274,11 @@ button{
       
       #div_Noticia_Secundario{
         cursor: pointer;
-        width: 50%;
+        width: 45%;
         height: 43%;
         Position: relative;
         bottom: 225px;
+        right: 4.3%;
         float: right;
         display: block;
         margin: 10px 10px 0px 10px;
@@ -284,10 +315,11 @@ button{
 
       #div_Noticia_Terciario{
         cursor: pointer;
-        width: 50%;
+        width: 45%;
         height: 43%;
         Position: relative;
-        bottom: 225px;
+        bottom: 109px;
+        left: 43%;
         float: right;
         display: block;
         margin: 10px 10px 0px 10px;
@@ -325,28 +357,76 @@ button{
       .h3_Titulo_Noticia{
         visibility: hidden;
         transition: all 1s ease-in-out;
+        font-weight:bold;    
+        font-family:'Corbel';        
       }
-
       /*FIN ANIMACION NOTICIAS*/
 
-    /*=======FIN NOTICIAS=======*/
+/*=======FIN NOTICIAS=======*/
+
+
+/*=== INICIO LINEA DE TIEMPO DEL EVENTO ===*/
+#divLineaTiempoEvento{  
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;    
+}
+
+.secLineaDeTiempoEvento{
+  width: 20%;
+  height: 290px;
+  background-color: #ffffff;   
+  position: relative;
+  left: 24.7%;
+  bottom: 180px;
+  opacity: 0.68;  
+  float: left;
+  display: inline;
+  margin-right: 1.7%;
+}
+
+.secLineaDeTiempoEvento > h3{
+  color: blue;  
+  text-align: center;
+}
+
+#ulMenuLineaTiempo > li{
+  list-style: none;
+}
+
+.liMenuLineaTiempo{      
+  color: white;
+  position: relative;
+  left: 30%;
+  top: 30px;
+  font-weight:lighter;    
+  font-family:'Corbel';
+  font-size: 20px;
+}
+
+/*=== FIN LINEA DE TIEMPO DEL EVENTO ===*/
+
+/*=======INICIO FOOTER=======*/
 
 footer{
     background-color:#102461;
-    height: 33%;
+    height: 36%;
     width: 100%;
     position: relative;
-    /*top:?;*/  
+    top:10px;  
 }
 
 #h4_contactenos{
     color: #FFFFFF;
     position: relative;
     left: 5%; 
-    top: 5%; 
+    bottom: 100px; 
     margin-top: 5px;
     width: 10px;
-    height: 50px;    
+    height: 50px;
+    font-weight:bold;    
+    font-family:'Montserrat';
+    font-style: italic;  
 }
 
 .h5_detalles_footer{
@@ -354,7 +434,7 @@ footer{
     position: absolute;             
     width: 100px;
     margin-left: 10%; 
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .footer_h5{ 
@@ -377,3 +457,22 @@ footer{
     color: white;
     text-align: center;
 }
+    .p_footer > p{
+      font-weight:bolder;    
+      font-family:'Montserrat';
+      font-style: italic; 
+    }
+
+.nav_link{
+  font-weight:bold;    
+  font-family:'Montserrat';
+  font-style: italic; 
+}
+
+.h5Detalles{
+  font-weight:bold;    
+  font-family:'Montserrat';
+  font-style: italic; 
+}
+
+/*=======FIN FOOTER=======*/
