@@ -95,9 +95,8 @@ p{
   float: left;
   position: relative;
   width: 125px;
-height: 125px;
-  bottom: 100px;
-  
+  height: 125px;
+  bottom: 30px;  
 }
 /* INICIA FOOTER*/
 
@@ -106,7 +105,7 @@ footer {
   color: rgb(255, 255, 255);
   line-height: 1.5;
   flex-direction: column;
-  
+  margin-top: 5%;
 }
 footer a {
   text-decoration: none;

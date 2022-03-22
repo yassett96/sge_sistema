@@ -1,6 +1,6 @@
-
 <?php
-  $mysqli = new mysqli('localhost', 'root', '', 'sge_bd');
+  $mysqli = new mysqli('localhost', 'root', '1234', 'sge_bd');
+  
 ?>
 
 <!DOCTYPE html>
@@ -67,19 +67,19 @@
                         <input type="tel" name="tel" id="tel" required>
                         <label>Teléfono </label>
                     </div>
+                    
                     <div class="form-group col-md-6">
                         <img class="icono4" src="../../Assets/Imagenes/sede.png">
                         <select class="form-select" name="sede"  id="sede" aria-label="Default select example">
                             <option selected>Sede</option>
-                            <!--<option value ="1">  Recinto Universitario Simón Bolívar </option>-->
-                         
-                        <?php
-                         $query = $mysqli -> query ("SELECT * FROM sede");
-                         while ($valores = mysqli_fetch_array($query)) {
-                           echo '<option value="'.$valores[ID_Sede].'">'.$valores[Sede].'</option>';
-                         }
+                            <!--<option value ="1">  Recinto Universitario Simón Bolívar </option>-->                         
+                        <?php                        
+                        $query = $mysqli -> query ("SELECT * FROM Sede");                        
+                        while ($valores = mysqli_fetch_array($query)) {
+                         echo '<option value="'.$valores["ID_Sede"].'">'.$valores["Sede"].'</option>';
+                        }
                            ?>             
-                          </select> 
+                        </select> 
                     </div>
                 </div>
                 <div  class="row">

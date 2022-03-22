@@ -5,7 +5,7 @@ class Conexionbasedatos{
     public static function  ConexionSecurity()
     {
         try{
-            $mysqli = new mysqli( 'localhost', 'root', '', 'sge_bd' ) or die();
+            $mysqli = new mysqli( 'localhost', 'root', '1234', 'sge_bd') or die();
             $mysqli -> set_charset( 'utf8');
             return $mysqli;
         }catch (exception $e){
