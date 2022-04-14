@@ -1,0 +1,50 @@
+#imgAvatarSeleccionado{
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border-radius: 100%;
+}
+
+
+#divImagenSeleccion{
+    width: 200px;
+    height: 65px;
+    /*background-color: black;*/
+    visibility: hidden;
+    position: relative;
+    right: 35%;
+    top: 15px;
+    border-radius: 100px;
+    background-color: skyblue;
+    transition: all ease-in-out 0.5s;
+}
+
+.divContenedorAvatar{
+    width: 350px;
+    height: 165px;
+    border-radius: 100px;
+    display: inline;               
+}
+
+.imgAvatar{
+    width: 30px;
+    height: 30px;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    border-radius: 100%;
+      
+}
+
+#divImagenSeleccionada{
+    width: 120px;
+    height: 120px;    
+    position: relative;
+    left: 45%;
+    border-radius: 100%;    
+    background-color: silver;          
+}
