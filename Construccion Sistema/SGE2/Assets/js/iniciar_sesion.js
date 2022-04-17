@@ -14,3 +14,19 @@ $(document).ready(function(){
     })
 });    
     
+function ValidarPestaña(valPes) {
+      
+    if(valPes == 1){
+      document.getElementById("accionD").value="login";
+      document.getElementById("accionE").value="";
+      document.getElementById("accionG").value="";
+    }else if(valPes == 2){
+      document.getElementById("accionD").value="";
+      document.getElementById("accionE").value="loginE";
+      document.getElementById("accionG").value="";
+    }else if(valPes == 3){
+      document.getElementById("accionD").value="";
+      document.getElementById("accionE").value="";
+      document.getElementById("accionG").value="loginG";
+    }
+  }

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Assets/css/Participante/indexParticipante.css">
+    <link rel="stylesheet" href="../../Assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Inicio SGE-FCYS</title>
+</head>
+<body>
+    <header>
+        <div>
+    <!--/<nav id="nav_menubar">-->
+            <div class="logo">
+            <img src="../../Assets/Imagenes/FCyS balnco.png" height="60px">
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link " id="texto" href="../Participante/InicioParticipante.html" >Inicio</a></li>
+                <li class="nav-item"><a class="nav-link " id="texto" href="../Participante/EventosParticipante.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link " id="texto" href="../VQueessge/QueEs_InfoSis.html">¿Qué es SGE-FCYS?</a></li>
+                <li class="nav-item"><a class="nav-link " id="texto" href="#">Mi Cuenta</a></li>
+            </ul>             
+            <div class="icono5">
+                <img src="../../Assets/Imagenes/icono5.png" alt="" height="60px">  
+            </div>
+           <!-- <div class="cerrarsesion">    
+            <a class="nav-link" id="texto"  href="">Cerrar Sesión</a>
+            </div>-->
+        </div>
+
+        <div class="main-header">
+          <nav id="nav" class="main-nav">
+            <div class="nav-links">
+              <a class="link-item"  href="../../index.php" >Inicio</a>
+              <a class="link-item"  href="../../Vista/VEvento/Eventos.html">Eventos</a>
+              <a class="link-item"  href="../../Vista/VQueessge/QueEs_InfoSis.html">¿Qué es SGE-FCYS?</a>
+            </div>
+          </nav>
+          <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+    </header>
+        
+    <div id="fondo" style="text-align:center">
+      <p id="h1_tituloinicio"> Sistema de Gestión de Eventos </p>
+      <p id="h1_tituloFCYS">FCYS</p>
+    </div>
+<!--========== INICIO CARRUSEL ==========-->    
+<div class="slideshow-container">
+  <div class="mySlides fade1">
+      <div class="numbertext"></div>
+      <img src="../../Assets/Imagenes/jornada_uni.jpg" style="width:100%;height: 450px">
+      <div class = "text">  </div>
+  </div>
+
+  <div class="mySlides fade1">
+      <div class="numbertext"></div>
+      <img src="../../Assets/Imagenes/navidad_uni.jpg" style="width:100%;height: 450px">
+      <div class = "text">  </div>
+  </div>
+
+  <div class="mySlides fade1">
+      <div class="numbertext"></div>
+      <img src="../../Assets/Imagenes/uni_tv.jpg" style="width:100%;height: 450px">
+      <div class = "text">  </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+<br>  
+<!--========== FIN CARRUSEL ========== -->
+
+
+<!--========== INICIO NOTICIAS ======= -->
+<div id="div_Contenedor_Noticias">
+    <div id="div_Contenedor_Noticia_Principal">
+        <img src="../../Assets/Imagenes/Noti1.png">
+        <br><br><br><br>
+        <h3></h3>
+        <h5></h5>
+        <div class="div_Animacion"><h3 style="color:white;" class="h3_Titulo_Noticia">Se consolida la conciencia de prevención</h3></div>
+    </div>
+    <div Class="div_Contenedor_Noticia_Secundario" id="div_Noticia_Secundario">
+        <img src="../../Assets/Imagenes/Noti2.png">
+        <br><br><br><br>
+        <h3></h3>
+        <h5></h5>
+        <div class="div_Animacion"><h3 style="color:white;" class="h3_Titulo_Noticia">Las pastorelas de la UNI son de Nicaragua</h3></div>
+    </div>
+     <div Class="div_Contenedor_Noticia_Secundario" id="div_Noticia_Terciario">
+        <img src="../../Assets/Imagenes/Noti3.png">
+        <br><br><br><br>
+        <h3></h3>
+        <h5></h5>
+        <div class="div_Animacion"><h3 style="color:white;" class="h3_Titulo_Noticia">Rescatando la cultura ancestral Nic.</h3></div>
+    </div> 
+</div>
+
+<!--========== FIN NOTICIAS ======= -->
+   <script src="../../Assets/js/index.js"></script> 
+   
+   <div class="container"></div> 
+   <footer>
+       <!-- Footer main -->
+       <section class="ft-main">
+         <div class="ft-main-item">
+           <h2 class="ft-title">Contáctenos</h2>
+           <ul class="fa-ul">
+             <li><i class="fa-li fa fa-phone fa-1x" aria-hidden="true"></i>+505 2249 6429</li>
+             <li><i class="fa-li fa fa-envelope-o  fa-1x" aria-hidden="true"></i></i>decanatura@fcys.uni.edu.ni</li>
+             <li><i class="fa-li fa fa-map-marker  fa-1x" aria-hidden="true"></i></i>Semáforos Villa Progreso 2 1/2 cuadras arriba</li>
+           </ul>
+         </div>
+         <div class="ft-main-item_2">
+           <h2 class="ft-title"></h2>
+           <ul>
+             <li><a href="../../index.php">Inicio</a></li>
+             <li><a href="../../Vista/VEvento/Eventos.html">Eventos</a></li>
+             <li><a href="../../Vista/VQueessge/QueEs_InfoSis.html">¿Qué es SGE-FCYS?</a></li>
+           </ul>
+           
+         </div>
+         <!--
+         <div class="ft-main-item_2">
+           <h2 class="ft-title"></h2>
+           <ul>
+             <li><a href="#">Inicio</a></li>
+             <li><a href="#">Eventos</a></li>
+             <li><a href="#">¿Qué es SGE-FCYS?</a></li>
+           </ul>
+           -->
+         </div>
+         <div class="ft-main-item_3">
+           <h2 class="ft-title"></h2>
+           <ul class="ft-social-list">
+             <a href="#"><i id="espacio" class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+             <a href="#"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+           </ul>
+         </div>
+         
+       </section>
+       <section class="ft-legal">
+         <ul class="ft-legal-list">
+           <li>&copy; Universidad Nacional De Ingenieria 2022</li>
+         </ul>
+       </section>
+       </footer> 
+      
+
+</body>
+</html>
