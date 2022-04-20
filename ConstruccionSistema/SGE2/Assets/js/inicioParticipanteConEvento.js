@@ -2,6 +2,7 @@
 
 const toggleButton = document.getElementById("button-menu");
 const navWrapper = document.getElementById("nav");
+const menuDes = document.getElementById("imgLogUsuario");
 
 /* 
   cada ves que se haga click en el botón 
@@ -24,3 +25,19 @@ navWrapper.addEventListener("click", e => {
     toggleButton.classList.remove("close");
   }
 });
+
+menuDes.addEventListener("click", e => {
+  let tag = document.getElementById("divMenuDespliegue"); 
+  let tagElement = window.getComputedStyle(tag, 'target')
+  let tagVisibility = tagElement.getPropertyValue('visibility');
+  
+  if ( tagVisibility == "hidden") {
+    tag.style.top = '15px';
+    tag.style.visibility = 'visible'; 
+  }else{
+    tag.style.top = '0px';
+    tag.style.visibility = 'hidden'; 
+  }
+});
+
+
