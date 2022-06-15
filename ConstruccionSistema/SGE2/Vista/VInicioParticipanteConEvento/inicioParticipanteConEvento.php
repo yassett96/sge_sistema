@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="../Vista/Recursos/css/inicioParticipanteConEvento.css"> -->
 
     <link rel="stylesheet" href="http://localhost/sge_sistema/ConstruccionSistema/SGE2/Assets/css/inicioParticipanteConEvento.css">
-    <link rel="stylesheet" href="http://localhost/sge_sistema/ConstruccionSistema/SGE2/Assets/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="http://localhost/sge_sistema/ConstruccionSistema/SGE2/Assets/css/bootstrap.min.css">    
     
     <title>Inicio SGE-FCYS</title>
 </head>
 <body>
     <header>
+
+        <?php 
+        require_once ("../../Controlador/CUsuario/CUsuario.php"); 
+        require_once ("../../Controlador/CEvento/CEvento.php"); 
+        ?>
+
         <div>    
             <div class="logo">
             <img src="http://localhost/sge_sistema/ConstruccionSistema/SGE2/Assets/Imagenes/FCyS balnco.png" height="50px">
@@ -24,25 +29,31 @@
                 <li class="nav-item"><a class="nav-link " id="texto" href="index.php" >Inicio</a></li>
                 <li class="nav-item"><a class="nav-link " id="texto" href="Eventos.html">Eventos</a></li>
                 <li class="nav-item"><a class="nav-link " id="texto" href="QueEs_InfoSis.html">¿Qué es SGE-FCYS?</a></li>
-                <li class="nav-item"><a class="nav-link " id="texto" href="#">Mi Cuenta</a></li>                                
+                
             </ul>
-            <a class="nav-link " id="aTipoUsuario" href="#">Participante</a>
-            <img id="imgLogUsuario" src="http://localhost/sge_sistema/ConstruccionSistema/SGE2/Assets/Imagenes/icono5.png">
-            <a class="nav-link " id="aCerrarSesion" href="#">Cerrar Sesión</a>
-        </div>
+            <a id="aNombreUsuario">Nombre</a>
+            <img id="imgLogUsuario" class="imgLogUsuarioClass" src="http://localhost/sge_sistema/ConstruccionSistema/SGE2/Assets/Imagenes/icono5.png">  
 
+            <div id="divMenuDespliegue">                                
+                <a class="nav-link " href="#">Mi Cuenta</a>
+                <a class="nav-link " id="aCerrarSesion" href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+        
         <!--Inicio Menu Móvil-->
         <div class="main-header">
-            
+        <img id="imgLogUsuario" src="http://localhost/sge_sistema/ConstruccionSistema/SGE2/Assets/Imagenes/icono5.png"> 
             <nav id="nav" class="main-nav">
+            
               <div class="nav-links">
+                
+                <a class="link-item-session" id="link-item-session2" href="#">Cerrar Sesión</a>
                 <a class="link-item"  href="../../index.php" >Inicio</a>
                 <a class="link-item"  href="../../Vista/VEvento/Eventos.html">Eventos</a>
-                <a class="link-item"  href="../../Vista/VQueessge/QueEs_InfoSis.html">¿Qué es SGE-FCYS?</a>
-                <a class="nav-link " id="aTipoUsuario" href="#">Participante</a>
-                <a class="nav-link " id="aCerrarSesion" href="#">Cerrar Sesión</a>
+                <a class="link-item"  href="../../Vista/VQueessge/QueEs_InfoSis.html">¿Qué es SGE-FCYS?</a>                
               </div>
             </nav>
+            
             <button id="button-menu" class="button-menu">
               <span></span>
               <span></span>
@@ -60,24 +71,23 @@
         <section id="divTemporizador">
             <div class="divDato" id="divDatoDias">
                 <h2 class="h2Encabezado">Dias</h2>
-                <h2 class="h2Digito" id="h2DigitoDias"></h2>
-            </div>
-
+                <h2 class="h2Digito" id="h2DigitoDias"><?php echo func_get_days_for_event(); ?></h2>
+            </div>            
             <div class="divDato" id="divDatoHoras">
                 <h2 class="h2Encabezado">Horas</h2>
-                <h2 class="h2Digito" id="h2DigitoHoras"></h2>
+                <h2 class="h2Digito" id="h2DigitoHoras"><?php echo func_get_hours_for_event(); ?></h2>
             </div>
             
             <div class="divDato">
                 <h1 class="aDosPuntos">:</h1>
                 <h2 class="h2Encabezado">Minutos</h2>
-                <h2 class="h2Digito"id="h2DigitoMinutos"></h2>
+                <h2 class="h2Digito"id="h2DigitoMinutos"><?php echo func_get_minutes_for_event(); ?></h2>
             </div>
             
             <div class="divDato">
                 <h1 class="aDosPuntos">:<h1></h1>
                 <h2 class="h2Encabezado">Segundos</h2>
-                <h2 class="h2Digito"id="h2DigitoSegundos"></h2>
+                <h2 class="h2Digito"id="h2DigitoSegundos"><?php echo func_get_seconds_for_event(); ?></h2>
             </div>
             
         </section>

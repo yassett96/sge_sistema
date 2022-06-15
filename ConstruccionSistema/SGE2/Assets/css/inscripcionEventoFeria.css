@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  ::placeholder{
+    color: white;
+  }
+  
+  header{
+    background-color: #102461;
+    height: 70px
+  }
+  .logo{
+    width: 30%;
+    height: 70px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 40px;
+  }
+  /* Importante Ocultar Menu Movil*/
+  .main-header{
+  display: none;  
+  }
+  
+  #mosaicoDER{
+  float: right;
+  width: 125px;
+  height: 125px;
+  
+  }
+  ul{
+    margin-right: 60px;
+  }
+  
+  li{
+    margin-top: 15px;
+    margin-right: 60px; 
+  }
+  #texto{
+    color: white;
+  }
+  
+  body{
+    background-color: #FFFFFF;
+  }
+
+
+  /*Etiqueta para regresar la página (<<Atrás)*/
+  #h4Atras{
+    position: relative;
+    right: 600px;
+    font-family: 'Montserrat';      
+    font-weight: bolder;
+    font-size: 25px;
+    color: #000482;
+  }
+
+  /*Texto inicial de "Inscripción al evento feria"*/
+  #h4TextoInscripcionFeria{
+    position: relative;
+    width: 600px;
+    left: 250px;
+    top: 50px;
+    font-family: 'Montserrat';      
+    font-weight: bolder;
+    font-size: 40px;
+    color: #000482;    
+  }
+
+  /*Botón de cancelar inscripción*/
+  #butCancelarInscripción{
+    float: right;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    font-family: 'Montserrat';      
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 3px;
+    width: 335px;
+    background-color: #F5F5F5;
+    border-color: #FFFFFF;
+    box-shadow: 0px 0px 10px black;
+    color: #000482;
+    margin: 0;
+    padding: 0;
+    transition: all ease-in-out 0.3s;
+  }
+
+  #butCancelarInscripción:hover{
+    background-color: black;
+    color: white;
+  }
+
+  /*Inicio formularios para inscripción del evento feria*/
+  #divContenedorFormularioInscripcion{
+    width: 81%;
+    height: 1400px;
+    background-color: #181D43;
+    position: relative;
+    left: 11.5%;
+    bottom: 20px;
+    box-shadow: 0px 0px 15px black;    
+    margin: 0;
+    padding: 0;       
+  }
+
+  #ulFormularioInscripcion{
+    margin: 0px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    height: 20.1%;     
+  }
+
+  .liNavegacionInscripcionEvento{
+    color: white;    
+    position: relative;
+    left: 2px;
+    top: 1px;
+    display: inline-block;     
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    width: 381.2px;/*24.8%*/
+    height: 180px;        
+    text-align: center;  
+    transition: opacity ease-in-out 0.5s;  
+    }
+
+  #liDatosProyecto:hover{
+    cursor: pointer;
+  }
+  
+  .liNavegacionInscripcionEvento:not(:nth-child(1)){
+    opacity: 0.5; 
+    background-color: white;
+    color: #000000;    
+  }
+  
+  .liNavegacionInscripcionEvento:hover:not(:nth-child(1)){
+    cursor: pointer;
+    opacity: 1;     
+    color: #102461; 
+  }
+  
+  .liNavegacionInscripcionEvento:active:not(:nth-child(1)){
+    width: 377px;
+    height: 176px;
+    left: 1px;
+    top: 3px;
+  }
+
+  .liNavegacionInscripcionEvento > p{
+    position: relative;
+    height: 10px;
+    top: 30px;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: Bolder;
+    transition: all ease-in-out 0.5s;
+  }
+
+    /*Inicio formulario 'Datos del proyecto'*/
+    #secDatosProyecto{
+      visibility: visible;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .lblFormDatosProyecto{
+      color: white;
+      position: relative;
+      left: 8%;
+      top: 25px;
+      font-size: 40px;
+      display: block;
+      font-family: 'Calibri';
+      font-weight: Bold;
+      width: 1000px;
+    }
+
+    .inputDatosProyecto{
+      position: relative;
+      left: 17%;
+      top: 15px;
+    }
+
+      #inputNombreProyecto{
+        border-style: none;
+        background-color: #181d43;
+        border-bottom: 2px solid #ffffff;
+        width: 72%;
+        height: 50px;
+        font-size: 40px;
+        font-family: 'Montserrat';                       
+        font-style: italic;
+        color: white;
+      }
+
+      #inputDescripcionProyecto{
+        width: 72%;
+        height: 300px;
+        border-radius: 8px;
+        background-color: #181d43;
+        border-color: white;
+        color: white;
+        vertical-align: text-top;
+        font-size: 25px;
+      }
+      
+    .selectDatosProyecto{
+      position: relative;
+      left: 17%;
+      top: 15px;
+      width: 40%;
+      border-style: none;
+      border-bottom: 3px solid white ;
+      background-color: #181d43;   
+      color: white;
+      font-size: 40px;  
+      font-family: 'Montserrat';                       
+      font-style: italic; 
+    }
+
+    #inputBotonEnviar{
+      width: 370px;
+      height: 50px;
+      position: relative;
+      float: right;
+      right: 10%;
+      top: 120px;
+      font-size: 30px;
+      border-radius: 5px;
+      font-family: 'Montserrat';
+      font-weight: Bold;
+      color: #09226F;
+      box-shadow: 0px 0px 20px 5px black;
+    }
+    /*Fin formulario 'Datos del proyecto'*/
+
+    /*Inicio formulario 'Datos del Participante 1'*/
+
+    #secDatosParticipante1{
+      visibility: hidden;
+      position: absolute;
+      top: 320px;
+      left: 6%;      
+      width: 88%;                
+    }    
+
+    .inputDatosParticipante1{
+      width: 45.82%;
+      margin-bottom: 150px;
+      height: 50px;
+      font-size: 30px;
+      background-color: #181d43;
+      border-style: none;
+      border-bottom: 1px solid white; 
+      margin-left: 30px;       
+      color: white;
+      font-family: 'Calibri';
+      
+    }
+    
+    #inputCorreoParticipante{
+      width: 94.5%;
+    }
+
+    .inputBotonInscribirParticipante1{
+      float: right;
+      margin-right: 45px;
+      width: 450px;
+      font-size: 30px;
+      color: #4b5e95;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    /*Fin formulario 'Datos del Participante 1'*/
+
+    /*Inicio formulario 'Datos del Participante 2'*/
+
+    #secDatosParticipante2{
+      visibility: hidden;
+      position: absolute;
+      top: 320px;
+      left: 6%;      
+      width: 88%;                
+    }    
+
+    .inputDatosParticipante2{
+      width: 45.82%;
+      margin-bottom: 150px;
+      height: 50px;
+      font-size: 30px;
+      background-color: #181d43;
+      border-style: none;
+      border-bottom: 1px solid white; 
+      margin-left: 30px;       
+      color: white;
+      font-family: 'Calibri';
+      
+    }
+
+    #inputCorreoParticipante{
+      width: 94.5%;
+    }
+
+    .inputBotonInscribirParticipante2{
+      float: right;
+      margin-right: 45px;
+      width: 450px;
+      font-size: 30px;
+      color: #4b5e95;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    /*Fin formulario 'Datos del Participante 2'*/
+
+    /*Inicio formulario 'Datos del Participante 3'*/
+
+    #secDatosParticipante3{
+      visibility: hidden;
+      position: absolute;
+      top: 320px;
+      left: 6%;      
+      width: 88%;                
+    }    
+
+    .inputDatosParticipante3{
+      width: 45.82%;
+      margin-bottom: 150px;
+      height: 50px;
+      font-size: 30px;
+      background-color: #181d43;
+      border-style: none;
+      border-bottom: 1px solid white; 
+      margin-left: 30px;       
+      color: white;
+      font-family: 'Calibri';      
+    }
+
+    #inputCorreoParticipante{
+      width: 94.5%;
+    }
+
+    .inputBotonInscribirParticipante3{
+      float: right;
+      margin-right: 45px;
+      width: 450px;
+      font-size: 30px;
+      color: #4b5e95;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    /*Fin formulario 'Datos del Participante 3'*/
+
+
+
+  /*Fin formularios para inscripción del evento feria*/
+  
+  #mosaicoIZQ{
+    float: left;
+    position: relative;
+    width: 125px;
+    height: 125px;
+    bottom: 30px;  
+    
+  }
+  /* INICIA FOOTER*/
+  
+  footer {
+    background-color: #102461;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    flex-direction: column;
+    position: relative;
+    top: 100px;   
+    position: relative; 
+    bottom: 0;
+    margin: 0;
+    padding: 0;                    
+  }
+  footer a {
+    text-decoration: none;
+    color: #eee;
+    
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .ft-title {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif, serif;
+    font-size:  150%;
+    padding-bottom: 0.625rem;
+    list-style:none; 
+    
+  }
+  
+  .p_datos{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif, serif;
+    font-size: 95%;
+    padding-bottom: 0.625rem;
+    
+  }
+  .ft-social{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif, serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+  list-style:none; 
+  
+  }
+  
+  .container {
+  flex: 1;    /* same as flex-grow: 1; */
+  
+  }
+  
+  .ft-main {
+  padding: 1.25rem 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem /*200px*/;
+  list-style:none;  
+  position: relative;
+  right: 20%;
+  }
+  
+  .ft-social-list {
+  padding: 1.25rem;
+  min-width: 12.5rem /*200px*/;
+  list-style:none; 
+  margin-right: 60px;
+  }
+  
+  .ft-main-item_3{
+      position: relative;
+      top: 50px;
+      left: 20%;
+      height: 100px;
+  }
+  .ft-social {
+  padding: 0 1.875rem 1.25rem;
+  }
+  .ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+  }
+
+  .ft-social-list>a>i{
+    margin-right: 200px;
+  }
+  
+  .ft-legal {
+  padding: 5px;
+  font-size: 90%;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  
+  
+  }
+  .ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style:none;
+  justify-content: center;
+  }
+  .ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+  
+  }
+  
+  /*TERMINA FOOTER*/
+  
+  /*****************************************************************************************LAPTOP*/
+  
+  @media screen and (max-width: 1200px){
+  
+  
+  }
+  
+  /*************************************************************************************MOVIL*/
+  @media screen and (max-width: 480px) {
+  
+  }
+  
+  

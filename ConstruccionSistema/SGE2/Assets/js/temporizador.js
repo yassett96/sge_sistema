@@ -1,14 +1,12 @@
-let tiempoSegundos = 59
-let tiempoMinutos = 59
-let tiempoHoras = 23
-let tiempoDias = 44
-let contador = 0
+let tiempoSegundos = document.getElementById("h2DigitoSegundos").innerHTML;
+let tiempoMinutos = document.getElementById("h2DigitoMinutos").innerHTML;
+let tiempoHoras = document.getElementById("h2DigitoHoras").innerHTML;
+let tiempoDias = document.getElementById("h2DigitoDias").innerHTML;
 
 cifrasInicialesTemporizador()
 temporizar()
 
-function cifrasInicialesTemporizador(){
-    tiempoSegundos += 1
+function cifrasInicialesTemporizador(){        
     modificarContenidoPorId("h2DigitoSegundos").innerHTML = tiempoSegundos
     modificarContenidoPorId("h2DigitoMinutos").innerHTML = tiempoMinutos
     modificarContenidoPorId("h2DigitoHoras").innerHTML = tiempoHoras
@@ -19,8 +17,10 @@ function temporizar(){
     let contando = tiempoSegundos > 0        
 
     if(contando){
+         
         tiempoSegundos = tiempoSegundos - 1
-        modificarContenidoPorId("h2DigitoSegundos").innerHTML = tiempoSegundos
+             
+        modificarContenidoPorId("h2DigitoSegundos").innerHTML = tiempoSegundos + 1
         setTimeout(() => {
            temporizar() 
         }, 1000);
