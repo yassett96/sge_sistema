@@ -1,0 +1,19 @@
+.notifications {
+    position: fixed;
+}
+
+.notifications.top-right {
+    right: 10px;
+    top: 25px;
+}
+
+.notifications.bottom-right {
+    right: 10px;
+    top:  25px;
+}
+
+.notifications >  div {
+    position: relative;
+    z-index: 9999;
+    margin: 5px 0px;
+}
