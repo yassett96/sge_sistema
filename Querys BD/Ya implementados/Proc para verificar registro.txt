@@ -1,0 +1,33 @@
+CREATE PROCEDURE `BuscarRegistroC`(in id bigint(20), email varchar(100))
+
+BEGIN
+	
+    
+Declare pid bigint(20) default id;
+    
+Declare pemail varchar(100) default upper(trim(email));
+    
+    
+
+Select count(Correo_Electronico) as coincidencia from persona  where ID_Persona != pid and Correo_Electronico = pemail and Activo = 1; 
+
+
+END
+
+********************************************************************************
+
+CREATE PROCEDURE `BuscarRegistroTel`(in id bigint(20), in tel char(16))
+
+BEGIN
+
+	
+Declare pid bigint(20) default id;
+    
+Declare partel char(16) default tel;
+    
+    
+
+Select count(Telefono) as coincidencia from persona  where ID_Persona != pid and Telefono = partel and  Activo = 1; 
+
+
+END

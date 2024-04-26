@@ -1,0 +1,1319 @@
+header {
+  background-color: #102461;
+  height: 100px;
+}
+
+.Nombreusuario {
+  color: #FFFFFF;
+  margin-top: 5px;
+  margin-right: 10px;
+  float: right;
+}
+
+.logo {
+  width: 30%;
+  height: 70px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+#texto_atras {
+  margin-left: 5%;
+  margin-top: 0px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  width: 8%;
+  white-space: nowrap;
+}
+
+#texto_etapa {
+  margin-right: 1%;
+  float: right;
+  margin-top: -55px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#texto_planificacion {
+  margin-right: 0%;
+  float: right;
+  margin-top: -25px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#texto_siguiente {
+  margin-right: -20%;
+  float: right;
+  margin-top: 10px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.imgRedonda {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 160px;
+  border: 5px solid rgb(1, 151, 252);
+}
+
+/****************************************************/
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: -50px;
+  width: 300%;
+  height: 120%;
+  background-color: #102461;
+  /*opacity: 70%;*/
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+/***************************************************************************/
+.nav li a {
+
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+/*.nav li a:hover {
+      background-color:#434343;
+    }*/
+
+#FondoNav {
+  background-color: #102461;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover>ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+/******************************/
+/* Importante Ocultar Menu Movil*/
+.main-header {
+  display: none;
+}
+
+#mosaicoDER {
+  float: right;
+  width: 120px;
+  height: 120px;
+}
+
+.menu_general ul {
+  margin-right: 70px;
+}
+
+.menu_general li {
+  margin-top: 25px;
+  margin-right: 50px;
+  list-style: none;
+  display: inline-block;
+
+  margin-left: -50px;
+}
+
+#texto {
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 15px;
+  width: 13%;
+}
+
+body {
+  background-color: #FFFFFF;
+  overflow-x: hidden
+}
+
+.h4 {
+  margin-left: 10%;
+  margin-top: 60px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+
+}
+
+.h4_2do {
+  margin-left: 10%;
+  margin-top: 30px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.h4_3ro {
+  margin-left: 20%;
+  margin-top: 30px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.h4_4to {
+  margin-left: 20%;
+  margin-top: 30px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.FondoConferenciaE {
+  background-color: #181D43;
+  width: 66%;
+  height: 350px;
+  margin-left: 24%;
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px 4px #000a1d67;
+}
+
+#MarcoConf {
+  width: 96%;
+  margin-left: 2%;
+
+
+}
+
+.CE {
+  width: 100px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.my-custom-scrollbar-3 {
+  position: static;
+  margin-top: 1%;
+  height: 250px;
+  /*width: 150px;*/
+  overflow: auto;
+}
+
+.NotaCamposConfE {
+  color: #ffffff;
+  float: left;
+  margin-left: 31%;
+  margin-top: -70px;
+}
+
+.btnEditaConfE {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 17%;
+  margin-top: -80px;
+  width: 150px;
+  height: 50px;
+}
+
+
+#TConferencia tbody tr.selected {
+  background-color: rgb(93, 91, 231);
+  color: #FFFFFF
+}
+
+thead {
+  color: rgb(0, 0, 0);
+  background-color: #368dc7;
+
+}
+
+tbody {
+  color: rgb(0, 38, 255);
+  background-color: #ffffff;
+
+}
+
+#Anchio {
+  background-color: #000000;
+  display: none;
+
+
+
+}
+
+
+.h4_formulario {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.Conferencia_FeriaE4 {
+  background-color: #181D43;
+  width: 55%;
+  height: 850px;
+  margin-left: 20%;
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px 4px #000a1d67;
+}
+
+.NotaCampos {
+  color: #FFFFFF;
+  margin-left: 1%;
+
+}
+
+label {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 5%;
+  top: 10px;
+  transition: 0.3s ease all;
+  pointer-events: none;
+  padding-bottom: 20px;
+}
+
+input {
+  background: none;
+  color: white;
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 50px;
+  font-family: sans-serif;
+  margin-left: 30%;
+}
+
+select {
+  background: none;
+  color: white;
+  background-color: #181D43;
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 50px;
+  font-family: sans-serif;
+  margin-left: 30%;
+}
+
+#HoraC_I::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Invierte los colores del ícono */
+}
+
+
+
+#HoraC_F::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Invierte los colores del ícono */
+}
+
+
+
+.btnCancelar {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: left;
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 150px;
+  height: 50px;
+}
+
+.btnGuardarE4 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 10%;
+  margin-top: 10%;
+  width: 150px;
+  height: 50px;
+}
+
+#mosaicoIZQ {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+}
+
+/************************************************************************* INICIA FOOTER*/
+.site-footer {
+  background-color: #102461;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 5%;
+  font-family: 'Montserrat', sans-serif, serif;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
+}
+
+.site-footer .footer-links .fa {
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+}
+
+.site-footer h2 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif, serif;
+  font-size: 150%;
+  padding-bottom: 0.625rem;
+  list-style: none;
+}
+
+.site-footer a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif, serif;
+  font-size: 95%;
+  padding-bottom: 0.625rem;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none
+}
+
+.footer-links li {
+  display: block;
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+.footer-links a {
+  color: #ffffff
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block
+}
+
+.site-footer .social-icons {
+  text-align: right
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #ffffff;
+  color: #102461;
+}
+
+.copyright-text {
+  margin: 0
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px
+}
+
+.social-icons a {
+  background-color: #00476b;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998
+}
+
+.social-icons a.global:hover {
+  background-color: #00aced
+}
+
+@media screen and (max-width: 2000px) and (min-width: 280px) {
+  @media screen and (max-width: 1800px) and (min-width: 280px) {
+    #texto_siguiente {
+      margin-right: -25%;
+    }
+
+    #mosaicoIZQ {
+      position: relative;
+      margin-bottom: -85px;
+    }
+
+    @media screen and (max-width: 1649px) and (min-width: 280px) {
+      #texto_siguiente {
+        margin-right: -28%;
+      }
+
+      #mosaicoIZQ {
+        position: relative;
+        margin-bottom: -78px;
+      }
+
+      @media screen and (max-width: 1500px) and (min-width: 280px) {
+        #texto_siguiente {
+          margin-right: -31%;
+        }
+
+        .h4_3ro,
+        .h4_4to {
+          margin-left: 15%;
+
+        }
+
+        .FondoConferenciaE {
+          width: 72%;
+          height: 350px;
+          margin-left: 18%;
+
+        }
+        .NotaCamposConfE{
+          margin-left: 22%;
+        }
+
+        .Conferencia_FeriaE4 {
+          width: 60%;
+          height: 980px;
+          margin-left: 15%;
+        }
+
+        #mosaicoIZQ {
+          position: relative;
+          margin-bottom: -65px;
+        }
+
+        @media screen and (max-width: 1200px) and (min-width: 280px) {
+          .menu_general li {
+            margin-left: -60px;
+          }
+
+          #texto_siguiente {
+            margin-right: -38%;
+          }
+
+          .FondoConferenciaE {
+            width: 84%;
+
+          }
+          .btnEditaConfE {
+            margin-right: 2%;
+          }
+
+          .Conferencia_FeriaE4 {
+            width: 70%;
+            height: 800px;
+          }
+
+          #mosaicoIZQ {
+            position: relative;
+            margin-bottom: -55px;
+          }
+
+          @media screen and (max-width: 1043px) and (min-width: 280px) {
+            .Conferencia_FeriaE4 {
+              width: 75%;
+            }
+
+            .FondoConferenciaE {
+              width: 90%;
+            }
+
+            @media screen and (max-width: 1000px) and (min-width: 280px) {
+              .justify-content-end {
+                display: none;
+              }
+
+              header {
+                height: 70px
+              }
+
+              .logo {
+                width: 20%;
+                height: 30px;
+                float: left;
+                margin-top: 9px;
+                margin-left: 30px;
+              }
+
+              .Nombreusuario {
+                display: none;
+              }
+
+              .main-header {
+                display: flex;
+                float: right;
+                margin-top: -2px;
+                justify-content: space-between;
+                align-items: center;
+                background-color: transparent;
+                padding: 0 0.4rem;
+              }
+
+              .main-logo {
+                color: black;
+                font-size: 32px;
+                text-decoration: none;
+              }
+
+              .main-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                margin-left: -100%;
+                transition: all 0.2s linear;
+                z-index: 100;
+                background-color: rgba(0, 0, 0, 0.7);
+              }
+
+              .main-nav.show {
+                margin-left: 0;
+              }
+
+              .NombreusuarioM {
+                color: #FFFFFF;
+                margin-top: 20px;
+                margin-left: 30px;
+                text-align: left;
+              }
+
+              .nav-links {
+                background-color: #102461b0;
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                height: 100%;
+                align-items: left;
+                justify-content: flex-start;
+              }
+
+              .link-item {
+                margin-top: 1rem;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+                position: relative;
+                margin-left: 30px;
+              }
+
+              .button-menu {
+                z-index: 200;
+                width: 40px;
+                height: 40px;
+                border: none;
+                display: flex;
+                background: none;
+                flex-direction: column;
+                /* Pondrá un span debajo del otro*/
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+              }
+
+              .button-menu span {
+                width: 37px;
+                height: 4px;
+                margin-bottom: 5px;
+                position: relative;
+                background: #ffffff;
+                border-radius: 3px;
+                transform-origin: 4px 0px;
+                transition: all 0.2s linear;
+              }
+
+              .button-menu.close span {
+                opacity: 1;
+                transform: rotate(45deg) translate(0px, 0px);
+                background: #ffffff;
+              }
+
+              .button-menu.close span:nth-child(2) {
+                transform: rotate(-45deg) translate(-8px, 5px);
+              }
+
+              .button-menu.close span:nth-child(3) {
+                display: none;
+              }
+
+              #mosaicoDER {
+                float: right;
+                width: 90px;
+                height: 90px;
+                margin-top: 0px;
+              }
+
+              #texto_atras {
+                font-size: 20px;
+              }
+
+              #texto_etapa {
+                margin-top: -40px;
+                font-size: 20px;
+              }
+
+              #texto_planificacion {
+                margin-top: -25px;
+                margin-right: -1%;
+                font-size: 20px;
+              }
+
+              #texto_siguiente {
+                margin-right: -38%;
+                margin-top: 10px;
+                font-size: 20px;
+              }
+
+              .h4 {
+                margin-left: 10%;
+                margin-top: 60px;
+                font-size: 20px;
+
+              }
+
+              .h4_2do {
+                margin-left: 10%;
+                margin-top: 30px;
+                font-size: 20px;
+              }
+
+              .h4_3ro,
+              .h4_4to {
+                font-size: 20px;
+
+              }
+
+              #MarcoConf {
+                width: 89%;
+                margin-left: 5%;
+              }
+
+              .NotaCamposConfE {
+                margin-left: 25%;
+                width: 300px;
+              }
+
+              .btnEditaConfE {
+                margin-right: -2%;
+                width: 140px;
+                height: 50px;
+              }
+
+              .h4_formulario {
+                font-size: 20px;
+              }
+
+              .Conferencia_FeriaE4 {
+                height: 800px;
+              }
+
+              select {
+                margin-left: 15%;
+                width: 130%;
+              }
+
+              input {
+                margin-left: 15%;
+                width: 130%;
+              }
+
+              #mosaicoIZQ {
+                position: relative;
+                margin-bottom: -40px;
+                width: 90px;
+                height: 90px;
+              }
+
+              .site-footer {
+                padding-bottom: 0
+              }
+
+              .site-footer .copyright-text {
+                text-align: left;
+              }
+
+              .social-icons li.title {
+                display: block;
+                margin-right: 0;
+                font-weight: 600
+              }
+
+              .site-footer .social-icons {
+                text-align: right;
+              }
+
+              .copyright-text {
+                width: 350px;
+                margin-bottom: 10px;
+              }
+
+              @media screen and (max-width: 767px) and (min-width: 280px) {
+                #texto_atras {
+                  margin-left: -1%;
+                }
+
+                #texto_siguiente {
+                  margin-right: -50%;
+                  margin-top: 10px;
+                  font-size: 20px;
+                }
+
+                .nav-links {
+                  background-color: #102461b0;
+                  display: flex;
+                  flex-direction: column;
+                  width: 50%;
+                  height: 100%;
+                  align-items: left;
+                  justify-content: flex-start;
+                }
+
+                .FondoConferenciaE {
+                  width: 80%;
+                  height: 420px;
+                  margin-left: 10%;
+                }
+                .NotaCamposConfE {
+                  margin-left: 15%;
+                  margin-top: -20%;
+                  width: 300px;
+                }
+  
+                .btnEditaConfE {
+                  margin-right: 15%;
+                  width: 150px;
+                  height: 50px;
+                }
+
+                .Conferencia_FeriaE4 {
+                  width: 80%;
+                  height: 800px;
+                  margin-left: 10%;
+                }
+
+                select {
+                  margin-left: 5%;
+                  width: 90%;
+                }
+
+                input {
+                  margin-left: 5%;
+                  width: 90%;
+                }
+
+                #mosaicoIZQ {
+                  bottom: 38px;
+                  position: relative;
+                  margin-bottom: -62px;
+                  width: 90px;
+                  height: 90px;
+                }
+
+                .site-footer {
+                  padding-bottom: 0
+                }
+
+                .site-footer .footer-links {
+                  text-align: left;
+                  margin: 10px;
+                }
+
+                .site-footer hr {
+                  border-top-color: rgb(255, 255, 255);
+                  margin-top: 10px;
+                  opacity: 0.5
+                }
+
+                .site-footer .copyright-text {
+                  text-align: center;
+                  margin-left: 60px;
+                }
+
+                .site-footer .social-icons {
+                  text-align: left;
+                  margin-top: -250px;
+                  margin-left: -110px;
+                }
+
+                .copyright-text {
+                  width: 350px;
+                  margin-left: -10px;
+                  margin-bottom: 10px;
+                }
+
+                @media screen and (max-width: 521px) and (min-width: 280px) {
+                  #texto_atras {
+                    font-size: 16px;
+                  }
+
+                  #texto_etapa {
+                    font-size: 16px;
+                  }
+
+                  #texto_planificacion {
+                    font-size: 16px;
+                  }
+
+                  #texto_siguiente {
+                    margin-top: 10px;
+                    font-size: 16px;
+                  }
+                  .NotaCamposConfE {
+                    margin-left: 15%;
+                    margin-top: -25%;
+                    width: 300px;
+                  }
+    
+                 
+
+                  .Conferencia_FeriaE4 {
+                    height: 800px;
+                  }
+
+                  .btnCancelar {
+                    float: left;
+                    margin-left: 10%;
+                    width: 120px;
+                    height: 50px;
+                  }
+
+                  .btnGuardarE4 {
+                    width: 120px;
+                    height: 50px;
+                  }
+
+                  @media screen and (max-width: 480px) and (min-width: 280px) {
+                    #texto_etapa {
+                      font-size: 16px;
+                      margin-top: -30px;
+                    }
+
+                    #texto_planificacion {
+                      font-size: 16px;
+                      margin-top: -15px;
+                    }
+
+                    #texto_siguiente {
+                      margin-top: -10px;
+                      font-size: 16px;
+                      margin-right: -5px;
+                    }
+
+                    .h4 {
+                      margin-left: 5%;
+                      margin-top: 80px;
+                      font-size: 18px;
+                    }
+
+                    .h4_2do {
+                      margin-left: 5%;
+                      margin-top: 10px;
+                      font-size: 18px;
+                    }
+
+                    .Conferencia_FeriaE4 {
+                      height: 850px;
+                    }
+
+                    .FondoConferenciaE {
+                      height: 430px;
+                    }
+
+                    .NotaCamposConfE {
+                      margin-left: 15%;
+                      margin-top: -35%;
+                      width: 280px;
+                    }
+      
+
+                    .btnCancelar {
+                      margin-left: 4%;
+                    }
+
+                    .site-footer {
+                      padding-bottom: 0
+                    }
+
+                    .site-footer .footer-links {
+                      text-align: left;
+                      margin: 10px;
+                    }
+
+                    .site-footer .copyright-text {
+                      text-align: center
+                    }
+
+                    .site-footer .social-icons {
+                      text-align: left;
+                      margin-top: -280px;
+                      margin-left: -110px;
+                    }
+
+                    .copyright-text {
+                      margin-bottom: 10px;
+                      width: 250px;
+                    }
+
+                    @media screen and (max-width: 399px) and (min-width: 280px) {
+                      .nav-links {
+                        width: 80%;
+
+                      }
+
+                      #texto_planificacion {
+                        margin-top: -55px;
+                        margin-right: 20%;
+                      }
+
+                      #texto_siguiente {
+                        margin-top: -30px;
+                        font-size: 16px;
+                        margin-right: 20%;
+                      }
+                      .NotaCamposConfE {
+                        margin-left: 15%;
+                        margin-top: -45%;
+                        width: 220px;
+                      }
+
+                      .btnCancelar {
+                        margin-left: 3%;
+                        width: 110px;
+                      }
+
+                      .btnGuardarE4 {
+                        margin-right: 3%;
+                        width: 110px;
+                      }
+
+                      #mosaicoIZQ {
+                        bottom: -55px;
+                        position: relative;
+                        margin-bottom: 40px;
+                        width: 90px;
+                        height: 90px;
+                        margin-left: 5px;
+                      }
+
+                      .site-footer {
+                        padding-bottom: 0
+                      }
+
+                      .site-footer .footer-links {
+                        text-align: left;
+                        margin: 10px;
+
+                      }
+
+                      .site-footer .copyright-text {
+                        text-align: center
+                      }
+
+                      .site-footer .social-icons {
+                        text-align: left;
+
+                        margin-top: -310px;
+                        margin-left: -110px;
+                      }
+
+                      .copyright-text {
+                        width: 210px;
+                        margin-bottom: 10px;
+                      }
+
+                      @media screen and (max-width: 343px) and (min-width: 280px) {
+                        #texto_atras {
+                          font-size: 14px;
+                        }
+
+                        #texto_etapa {
+                          font-size: 14px;
+                        }
+
+                        #texto_planificacion {
+                          font-size: 14px;
+                        }
+
+                        #texto_siguiente {
+                          font-size: 14px;
+                        }
+
+                        .h4 {
+                          font-size: 16px;
+                        }
+
+                        .h4_2do {
+                          font-size: 16px;
+                        }
+
+                        .h4_3ro,
+                        .h4_4to {
+                          margin-left: 5%;
+
+                        }
+
+                        .FondoConferenciaE {
+                          width: 90%;
+                          height: 420px;
+                          margin-left: 5%;
+                        }
+                        .NotaCamposConfE {
+                          margin-left: 15%;
+                          margin-top: -50%;
+                          width: 220px;
+                        }
+
+                        .my-custom-scrollbar-3 {
+                          height: 250px;
+                        }
+
+                        .Conferencia_FeriaE4 {
+                          width: 90%;
+                          margin-left: 5%;
+                        }
+
+                        .btnCancelar {
+                          width: 110px;
+                          height: 45px;
+                        }
+
+                        .btnGuardarE4 {
+                          width: 110px;
+                          height: 45px;
+                        }
+
+                        .site-footer {
+                          padding-bottom: 0
+                        }
+
+                        .site-footer .footer-links {
+                          text-align: left;
+                          margin: 10px;
+                          font-size: 14px;
+                        }
+
+                        .site-footer .copyright-text {
+                          text-align: center;
+                        }
+
+                        .site-footer .social-icons {
+                          text-align: left;
+                          margin-top: -330px;
+                          margin-left: -110px;
+                        }
+
+                        .copyright-text {
+                          width: 210px;
+                          margin-bottom: 10px;
+                        }
+
+                        @media screen and (max-width: 310px) and (min-width: 280px) {
+                          #texto_atras {
+                            font-size: 14px;
+                          }
+
+                          #texto_etapa {
+                            font-size: 14px;
+                          }
+
+                          #texto_planificacion {
+                            font-size: 14px;
+                          }
+
+                          #texto_siguiente {
+                            font-size: 14px;
+                            margin-top: -2%;
+                          }
+
+                          .h4 {
+                            font-size: 16px;
+                          }
+
+                          .h4_2do {
+                            font-size: 16px;
+                          }
+
+                          .btnCancelar {
+                            width: 90px;
+                            height: 50px;
+                          }
+
+                          .btnGuardarE4 {
+                            width: 110px;
+                            height: 50px;
+                          }
+
+                          .site-footer {
+                            padding-bottom: 0
+                          }
+
+                          .site-footer hr {
+                            border-top-color: rgb(255, 255, 255);
+                            margin-top: 60px;
+                            opacity: 0.5
+                          }
+
+                          .site-footer .footer-links {
+                            text-align: left;
+                            margin: 10px;
+                            font-size: 14px;
+                          }
+
+                          .site-footer .copyright-text {
+                            text-align: center;
+                          }
+
+                          .site-footer .social-icons {
+                            text-align: left;
+                            margin-top: -350px;
+                            margin-left: -110px;
+                          }
+
+                          .copyright-text {
+                            width: 150px;
+                            margin-bottom: 10px;
+
+                          }
+
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

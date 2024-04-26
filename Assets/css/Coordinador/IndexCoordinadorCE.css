@@ -1,0 +1,2729 @@
+
+/*=== INICIO HEADER ===*/
+header{
+    width: 100%;
+    height: 70px;
+    box-shadow: inset 200px 200px 200px 200px rgba(0, 0, 0, 0.3);
+  }
+  
+  /*Para redirigir a la página de la UNI*/
+  #sectionLinkUni{  
+    background: linear-gradient(171deg, rgba(255,255,255,1) 0%, rgba(16,36,97,1) 35%, rgba(16,36,97,1) 100%);
+    width: 170px;   
+    height: 40px; 
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    left: 2.5%;
+    top: 10px;      
+  }
+  
+  #idPTituloInicial{
+    color: #FFFFFF;    
+    font-size: calc(1em + 1vw);    
+    width: 100%;
+    height: 20%; 
+    position: relative;
+    text-align: center;
+  }
+  
+  #idTextEslogan{
+    background-color: transparent;
+    border-width: 0px;
+    resize: none;
+    height: 200px;
+    position: relative;
+    left: -3%;
+    max-width: 34%;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+  }
+  
+  #h1_tituloinicio{
+    color: #FFFFFF;    
+    font-size: calc(1em + 1vw);    
+    width: 100%;
+    height: 20%;    
+  }
+  
+  #idDivLogoEslogan{
+    height: 200px;
+    text-align: center;
+  }
+  
+  #idImgLogo{
+    width: 13%;
+    height: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: -3%;
+  }
+  
+  #sectionLinkUni:hover{
+    cursor: pointer;
+  }
+  
+  .linkUni{
+    display: inline-block;  
+    margin-left: 10px;
+    color: white; 
+    position: relative; 
+    bottom: 5px;
+  }
+  
+  .linkUni:nth-child(1){    
+    position: relative;
+    bottom: 7px;
+  }
+  
+  .linkUni:nth-child(2){    
+    margin-left: 5px;  
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 2px;
+    padding-left: 8px;
+  }
+  /*=====================================*/
+  
+  #sectionCentralizarLogoNombre{
+    width: 250px;
+    height: 70px;  
+    float: right;
+    position: relative;
+    bottom: 145px;    
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo{
+    width: 30%;
+    height: 70px;
+    float: left;
+    margin-top: 9px;
+    position: relative;
+    right: 105px;
+    text-align: center;
+  }
+  
+  body{
+    background-image: url('../../imagenes/Recursos/Fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+  
+  ul{
+    margin-right: 15%;
+  }
+  
+  li{
+    margin-top: 15px;
+    margin-right: 60px;
+  }
+  
+  #imgLogUsuario{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    border-radius: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0197fc;
+    vertical-align: top;
+    position: relative;
+    top: 1px;
+  }
+  
+  #aNombreUsuario{
+    color: white;  
+    vertical-align: bottom;
+    position: relative;
+    bottom: 1px;
+  }
+  
+  /*=== INICIO MENU DESPLIEGUE ===*/
+    #divMenuDespliegue{  
+      background-color: #102461;    
+      width: 8%;
+      height: 80px;
+      float: right;
+      position: relative;
+      top: -85px;
+      left: 11.7%;
+      visibility: hidden;
+      z-index: 1;
+      transition: all ease 0.5s;   
+    }
+  
+    #divMenuDespliegue>a {
+      color: white;
+      text-align: center;
+      position: relative;
+      bottom: 0px;
+      text-decoration: none;
+    }
+    
+    #divMenuDespliegue>a:nth-child(1):hover{        
+      background-color: #00a4bd;
+      transition: all ease-in-out 0.2s;
+    }
+  
+    #divMenuDespliegue>a:nth-child(2):hover{    
+      background-color: #00a4bd;
+      transition: all ease-in-out 0.2s;
+    }
+  /*=== FIN MENU DESPLIEGUE ===*/
+  
+  #texto{
+    color: white;
+    
+  }
+  
+  /*=== FIN HEADER ===*/
+  
+  /*=== INICIO ENCABEZADOS ===*/
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+  #butInscribirAEvento{
+    float: right;
+    position: relative;
+    left: 17%;
+    top: 13px;
+    border-radius: 5px;
+    background-color: #C28306;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0.35px black;
+    box-shadow: 0px 0px 20px black;
+    font-size: 17px;
+    transition: all ease-in-out 0.5s;
+    font-weight:bold;
+    font-family:'Montserrat';
+  }
+  
+  #butInscribirAEvento:hover{
+    
+    background-color: white;
+  }
+  #butInscribirAEvento:hover>a{
+    -webkit-text-fill-color: #C28306;  
+  }
+  
+  #butDetallesDeProyectos{
+    float: left;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    border-radius: 5px;
+    background-color: #C28306;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0.35px black;
+    box-shadow: 0px 0px 20px black;
+    font-size: 17px;
+    transition: all ease-in-out 0.5s;
+    font-weight:bold;
+    font-family:'Montserrat';
+  }
+  
+  #butDetallesDeProyectos:hover{
+    
+    background-color: white;
+  }
+  #butDetallesDeProyectos:hover>a{
+    -webkit-text-fill-color: #C28306;  
+  }
+  
+    /*=== INICIO TEMPORIZADOR ===*/
+    #divTemporizador{
+      align-items: center;
+      width: 35%;
+      height: 150px;
+      margin: auto;
+      position: relative;
+      bottom: 25px;
+    }
+  
+    .h2Encabezado{
+      color: yellow;
+      font-style:italic;
+      font-weight:bold;
+      font-family:'Calibri';
+    }
+  
+    .h2Digito{
+      position: relative;
+      left: 20%;
+      color: aqua;
+      font-weight:bold;
+      font-family:'Calibri';
+    }
+  
+    #h2DigitoHoras{
+      position: relative;
+      left: 30%;
+    }
+  
+    #h2DigitoMinutos{
+      position: relative;
+      left: 32%;
+    }
+  
+    #h2DigitoSegundos{
+      position: relative;
+      left: 37%;
+    }
+  
+    .divDato{
+      display: inline-block;
+      margin-right: 5%;
+    }
+  
+    .aDosPuntos{
+      position: relative;
+      right: 15%;
+      top: 85px;
+      font-size: 20px;
+      color: aqua;
+    }
+  
+    /*=== FIN TEMPORIZADOR ===*/
+
+#FondoNav {
+  color: #ffffff;
+}
+#textoC{
+  position: relative; 
+  top: 8px;
+  color: #ffffff;
+}
+
+/* Estilos para el menú horizontal */
+#ulNavHeader {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  list-style-type: none;
+  width: 85%;
+  position: relative;
+  bottom: 80px;  
+}
+
+.nav-item {
+  padding: 0 10px;
+  vertical-align: middle; /* Alineación vertical */
+  position: relative;
+}
+
+.nav-item:nth-child(4) {
+  height: 50px;
+}
+
+/* Estilos para el menú desplegable */
+#ulNavHeader li ul {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 200%;
+  box-shadow: inset 200px 200px 200px 200px rgba(0, 0, 0, 0.3);
+  padding: 0;
+}
+
+#ulNavHeader li:hover ul {
+  display: block;
+}
+
+#ulNavHeader li ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  /* background-color: #102461; */
+  transition: background-color 0.3s;
+}
+
+#ulNavHeader li ul a:hover {
+  background-color: #00a4bd;
+}
+
+/* .nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover>ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  right: -140px;
+  top: 0px;
+} */
+
+  
+  /*=== FIN ENCABEZADOS ===*/
+  
+  #divTituloInicial{
+    width: 100%;
+    margin-bottom: 20px;  
+    margin-bottom: 60px;
+  }
+  
+  #divTituloInicial>p{
+    -webkit-text-fill-color: white;       
+    font-size: 40px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px #8e8e37;
+    margin: 0;
+  }
+  
+  /*=======INICIO NOTICIAS=======*/
+  #div_Contenedor_Noticias{
+    width: 43%;
+    height: 250px;
+    margin-bottom: 40px;
+    background-color: #b6bacf;
+    position: relative;
+    left: 24%;
+  }
+  
+  #div_Contenedor_Noticia_Principal{
+    width: 45%;
+    height: 90%;
+    background-color:#ffffff;
+    position: relative;
+    left: 3%;
+    top:10px;
+  }
+  
+  #div_Contenedor_Noticia_Principal>img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+  }
+  
+  #div_Contenedor_Noticia_Principal > h3{
+    color: blue;
+    position: relative;
+    bottom: 5px;
+  }
+  
+  #div_Contenedor_Noticia_Principal > h5{
+    color: white;
+    Position: relative;
+    bottom: 5px;
+  }
+  
+  .div_Contenedor_Noticia_Secundario > img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+  }
+  
+        /*INICIO ANIMACION NOTICIAS*/
+        #div_Contenedor_Noticia_Principal{
+          cursor: pointer;
+        }
+  
+        #div_Contenedor_Noticia_Principal > div{
+          height: 1px;
+          width: 100%;
+          background-color: gray;
+          opacity: 0.1;
+          position: relative;
+          Top: 120px;
+          Transition: all 1s ease-in-out;
+          overflow: hidden;
+        }
+  
+        #div_Contenedor_Noticia_Principal:hover > div{
+          height: 111px;
+          width: 100%;
+          background-color: gray;
+          opacity: 0.95;
+          position: relative;
+          Top: 10px;
+        }
+  
+        #div_Contenedor_Noticia_Principal > div > h3{
+          opacity: 0;
+          transition: all 1.5s ease-in-out;
+        }
+  
+        #div_Contenedor_Noticia_Principal:hover > div > h3{
+          visibility: visible;
+          opacity: 1;
+        }
+  
+        #div_Noticia_Secundario{
+          cursor: pointer;
+          width: 47%;
+          height: 43%;
+          Position: relative;
+          bottom: 225px;
+          right: 0.5%;
+          float: right;
+          display: block;
+          margin: 10px 10px 0px 10px;
+        }
+  
+        #div_Noticia_Secundario > div{
+          height: 0px;
+          width: 100%;
+          background-color: gray;
+          opacity: 0.1;
+          position: relative;
+          top: 5px;
+          Transition: all 1s ease-in-out;
+        }
+  
+        #div_Noticia_Secundario:hover > div{
+          height: 70px;
+          width: 100%;
+          background-color: gray;
+          opacity: 0.95;
+          position: relative;
+          top: -61%;
+        }
+  
+        #div_Noticia_Secundario > div > h3{
+          opacity: 0;
+          transition: all 1.5s ease-in-out;
+        }
+  
+        #div_Noticia_Secundario:hover > div > h3{
+          visibility: visible;
+          opacity: 1;
+        }
+  
+        #div_Noticia_Terciario{
+          cursor: pointer;
+          width: 47%;
+          height: 43%;
+          Position: relative;
+          bottom: 109px;
+          left: 49%;
+          float: right;
+          display: block;
+          margin: 10px 10px 0px 10px;
+        }
+  
+        #div_Noticia_Terciario > div{
+          height: 0px;
+          width: 100%;
+          background-color: gray;
+          opacity: 0.1;
+          position: relative;
+          top: 5px;
+          Transition: all 1s ease-in-out;
+        }
+  
+        #div_Noticia_Terciario:hover > div{
+          height: 70px;
+          width: 100%;
+          background-color: gray;
+          opacity: 0.95;
+          position: relative;
+          top: -61%;
+        }
+  
+        #div_Noticia_Terciario > div > h3{
+          opacity: 0;
+          transition: all 1.5s ease-in-out;
+        }
+  
+        #div_Noticia_Terciario:hover > div > h3{
+          visibility: visible;
+          opacity: 1;
+        }
+  
+        .h3_Titulo_Noticia{
+          visibility: hidden;
+          transition: all 1s ease-in-out;
+          font-weight:bold;
+          font-family:'Corbel';
+        }
+        /*FIN ANIMACION NOTICIAS*/
+  
+  /*=======FIN NOTICIAS=======*/
+    .container {
+      flex: 1;
+    }
+  
+    .main-header{
+      display: none;
+    }  
+  
+  /*=== INICIO LINEA DE TIEMPO DEL EVENTO ===*/
+    #divLineaTiempoEvento{
+      width: 100%;
+      height: 300px;    
+    }
+  
+    .secLineaDeTiempoEvento{
+      width: 20%;
+      height: 500px;
+      background-color: #ffffff;
+      position: relative;
+      left: 24.7%;
+      bottom: 180px;
+      opacity: 0.80;
+      float: left;
+      display: inline;
+      margin-right: 1.7%;
+    }
+  
+    .secLineaDeTiempoEvento > h3{
+      color: blue;
+      text-align: center;
+    }
+  
+    #ulMenuLineaTiempo > li{
+      list-style: none;
+    }
+  
+    #ulMenuLineaTiempo{
+      width: 20%;    
+    }
+  
+    .liMenuLineaTiempo{
+      color: black;
+      position: relative;
+      left: 30%;
+      top: 500px;
+      font-weight:lighter;
+      font-family:'Corbel';
+      font-size: 20px;
+    }
+  
+  /*=== FIN LINEA DE TIEMPO DEL EVENTO ===*/
+  
+  /* INICIA FOOTER*/    
+  
+    .site-footer
+    {
+      background-color: #102461;
+      padding:45px 0 20px;
+      font-size:15px;
+      line-height:24px;
+      color:#ffffff;
+      margin-top: 5%;
+      font-family: 'Montserrat', sans-serif, serif;
+    }
+    .site-footer hr
+    {
+      border-top-color:#bbb;
+      opacity:0.5
+    }
+    .site-footer .footer-links .fa{
+        color: #ffffff;
+        margin-right: 15px;
+    }
+  
+    .site-footer hr.small
+    {
+      margin:20px 0
+    }
+    .site-footer h2
+    {
+        color: #fff;
+        font-family: 'Montserrat', sans-serif, serif;
+        font-size:  150%;
+        padding-bottom: 0.625rem;
+        list-style:none; 
+    }
+    .site-footer a
+    {
+        color: #fff;
+        font-family: 'Montserrat', sans-serif, serif;
+        font-size: 95%;
+        padding-bottom: 0.625rem;
+    }
+    .site-footer a:hover
+    {
+      color:#3366cc;
+      text-decoration:none;
+    }
+    .footer-links
+    {
+      padding-left:0;
+      list-style:none
+    }
+    .footer-links li
+    {
+      display:block;
+      margin-top: 15px;
+      margin-right: 60px; /*Se pasa a 50px para el index*/
+      
+    }
+    .footer-links a
+    {
+      color:#ffffff
+    }
+    .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+    {
+      color:#3366cc;
+      text-decoration:none;
+    }
+    .footer-links.inline li
+    {
+      display:inline-block
+    }
+    .site-footer .social-icons
+    {
+      text-align:right
+    }
+    .site-footer .social-icons a
+    {
+      width:40px;
+      height:40px;
+      line-height:40px;
+      margin-left:6px;
+      margin-right:0;
+      border-radius:100%;
+      background-color:#ffffff;
+      color:#102461;
+    }
+    .copyright-text
+    {
+      margin:0
+    }
+  
+    .social-icons
+    {
+      padding-left:0;
+      margin-bottom:0;
+      list-style:none;
+      margin-left: 10px;    
+      width: 100%;
+    }
+    .social-icons li
+    {
+      display:inline-block;
+      margin-bottom:4px;
+      margin: 0px; /*Se agrega para junatar los iconos en el index_srse*/
+    }
+    .social-icons li.title
+    {
+      margin-right:15px;
+      text-transform:uppercase;
+      color:#96a2b2;
+      font-weight:700;
+      font-size:13px
+    }
+    .social-icons a{
+      background-color:#00476b;
+      color:#818a91;
+      font-size:16px;
+      display:inline-block;
+      line-height:44px;
+      width:44px;
+      height:44px;
+      text-align:center;
+      margin-right:8px;
+      border-radius:100%;
+      -webkit-transition:all .2s linear;
+      -o-transition:all .2s linear;
+      transition:all .2s linear
+    }
+    .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+    {
+      color:#fff;
+      background-color:#29aafe
+    }
+    .social-icons.size-sm a
+    {
+      line-height:34px;
+      height:34px;
+      width:34px;
+      font-size:14px
+    }
+    .social-icons a.facebook:hover
+    {
+      background-color:#3b5998
+    }
+    .social-icons a.global:hover
+    {
+      background-color:#00aced
+    }
+  
+  /*TERMINA FOOTER*/
+  
+  /*Inicio de Responsive en cascada*/
+  @media screen and (max-width: 2000px)
+  and (min-width: 280px){
+    /*Inicio Menu Despliegue*/
+    #divMenuDespliegue{      
+      left: 10.2%; 
+        
+    }
+    /*Fin Menu Despliegue*/
+  
+    #h1_tituloinicio{
+      font-size: 45px;
+      left: -3%;
+      width: 100%;
+      top: 0px; 
+      text-align: center;
+    } 
+  
+    /*INICIO BOTÓN INSCRIBIR A EVENTO*/
+      #butInscribirAEvento{      
+        top: -20px;
+      }
+    /*FIN BOTÓN INSCRIBIR A EVENTO*/
+  
+    #div_Contenedor_Noticias{    
+      width: 96%;
+      left: 2%;
+      height: 400px;
+    }  
+  
+    #div_Contenedor_Noticia_Principal{        
+      left: 1%;
+      top: 20px;
+    }
+  
+    #div_Contenedor_Noticia_Principal>div{    
+      top: 258px;    
+    }
+  
+    #div_Contenedor_Noticia_Principal:hover > div{    
+      top: 145px;
+    }
+  
+    #div_Noticia_Secundario{
+      cursor: pointer;
+      width: 50%;
+      height: 43%;    
+      bottom: 350px;    
+    }
+  
+    #div_Noticia_Secundario > div{
+      top: 70px;
+    }
+  
+    #div_Noticia_Secundario:hover > div{    
+      top: -2.5px;
+    }
+  
+    #div_Noticia_Terciario{
+      bottom: 343px;
+      left: -0.5%;
+      width: 50%;
+    }  
+  
+    #div_Noticia_Terciario>div{
+      top: 67px;
+    }
+  
+    #div_Noticia_Terciario:hover>div{
+      top: 0px;
+    }
+  
+    #divLineaTiempoEvento{    
+      height: 400px;        
+    }
+  
+    .secLineaDeTiempoEvento:nth-child(3){
+      width: 48.7%;
+    }
+  
+    .secLineaDeTiempoEvento{
+      width: 44%;      
+      left: 2%;
+      top: -240px;
+      margin-right: 3.1%;     
+    }
+
+    #secIdLineaDeTiempoEvento {
+      max-height: 500px; /* Establecer la altura máxima deseada para la sección */
+      overflow-y: auto; /* Activar la barra de desplazamiento vertical si es necesario */
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  
+    .secLineaDeTiempoEvento > h3{
+      color: blue;
+      text-align: center;
+    }
+  
+    #ulMenuLineaTiempo{
+      position: relative;
+      top: 100px;
+      right: 2%;            
+    }
+  
+    #ulMenuLineaTiempo>li{
+      margin-top: 15px;   
+      width: 150%;    
+    }
+  
+    .liMenuLineaTiempo{
+      color: black;
+      z-index: 1;
+      font-weight: bold;
+      position: relative;
+      left: 20%;
+      top: 70px;    
+      font-family:'Corbel';
+      font-size: 25px;
+    }
+  
+    #divTituloInicial{  
+      justify-content: center;    
+      text-align: center;        
+    }   
+  
+    #divTituloInicial>p{
+      position: relative;
+      right: 2%;
+    }
+  
+    #divTemporizador{    
+      left: 3.5%;
+    }
+  
+    @media screen and (max-width: 1800px)
+    and (min-width: 280px){
+      /*Inicio Menu Despliegue*/
+      #divMenuDespliegue{      
+        left: 11%;   
+      }
+      /*Fin Menu Despliegue*/
+  
+      #divTemporizador{    
+        left: 2%;
+      }
+
+      @media screen and (max-width: 1717px)
+      and (min-width: 280px){
+
+        @media screen and (max-width: 1649px)
+        and (min-width: 280px){
+    
+          /*Inicio Menu Despliegue*/
+          #divMenuDespliegue{      
+            left: 11.5%;   
+          }
+          /*Fin Menu Despliegue*/
+    
+          #divTemporizador{    
+            left: 1%;
+          }
+    
+          @media screen and (max-width: 1567px)
+          and (min-width: 280px){
+            /*Inicio Menu Despliegue*/
+            #divMenuDespliegue{
+              left: 12.5%;
+              width: 9%;
+            }
+            /*Fin Menu Despliegue*/
+    
+            @media screen and (max-width: 1500px)
+            and (min-width: 280px){
+    
+              /*Inicio Menu Despliegue*/
+              #divMenuDespliegue{
+                left: 13%;
+                width: 9%;
+              }
+              /*Fin Menu Despliegue*/
+    
+              #divTemporizador{    
+                left: 0%;
+              }              
+
+              @media screen and (max-width: 1471px)
+              and (min-width: 280px){
+
+                @media screen and (max-width: 1393px)
+                and (min-width: 280px){
+      
+                  /*Inicio Menu Despliegue*/
+                  #divMenuDespliegue{
+                    left: 14%;
+                    width: 10%;
+                  }
+                  /*Fin Menu Despliegue*/
+      
+                  @media screen and (max-width: 1378px)
+                  and (min-width: 280px){
+      
+                    /*Inicio Menu Despliegue*/
+                    #divMenuDespliegue{
+                      left: 14.2%;                
+                    }
+                    /*Fin Menu Despliegue*/
+      
+                    /*===INICIO TITULO INICIO===*/
+                      #h1_tituloinicio{                      
+                        left: -2%;
+                      }
+                    /*===FIN TITULO INICIO===*/
+      
+                    #divTemporizador{                
+                      left: 1.5%;
+                      width: 42%;
+                    }
+                    
+                    .logo{
+                      right: 7%;
+                    }
+
+                    @media screen and (max-width: 1357px)
+                    and (min-width: 280px){
+
+                      #ulNavHeader{
+                        width: 85%;
+                        /* background-color: white; */
+                      }
+
+                      .nav-item{
+                        /* background-color: black; */
+                        margin-right: 0;
+                      }
+
+                      @media screen and (max-width: 1254px)
+                      and (min-width: 280px){
+      
+                        .logo{
+                          right: 6%;
+                        }                    
+      
+                        /*Inicio Menu Despliegue*/
+                        #divMenuDespliegue{
+                          left: 15.5%;                
+                          width: 130px;
+                        }
+                        /*Fin Menu Despliegue*/
+      
+                        #butInscribirAEvento{
+                          left: 25%;
+                        }
+      
+                        @media screen and (max-width: 1223px)
+                        and (min-width: 280px){
+      
+                          #divTemporizador{                
+                            left: 4%;
+                            width: 52%;                  
+                          } 
+      
+                          @media screen and (max-width: 1167px)
+                          and (min-width: 280px){  
+                            
+                            #divMenuDespliegue{
+                              left: 16.5%;
+                            }
+                            
+                            #divTemporizador{                
+                              left: 8%;
+                              width: 62%;                  
+                            } 
+      
+                            @media screen and (max-width: 1156px)
+                            and (min-width: 280px){
+      
+                              #divTemporizador{                          
+                                left: 9%;
+                                width: 65%;                
+                                z-index: -2;                
+                              }
+
+                              @media screen and (max-width: 1144px)
+                              and (min-width: 280px){
+
+                                @media screen and (max-width: 1102px)
+                                and (min-width: 280px){
+        
+                                  .logo{
+                                    right: 5%;
+                                  }  
+        
+                                  #divMenuDespliegue{
+                                    left: 17.5%;
+                                  }
+        
+                                  #divTemporizador{                          
+                                    left: 11%;
+                                    width: 75%;                
+                                    z-index: -2;                                            
+                                  } 
+        
+                                  .divDato{                            
+                                    left: 10%;
+                                  }
+        
+                                  @media screen and (max-width: 1079px)
+                                  and (min-width: 280px){
+                
+                                    #ulMenuLineaTiempo{                              
+                                      width: 30%;
+                                      right: 3%;
+                                    }
+                                                                                                                          
+                                    @media screen and (max-width: 1000px) /*Empieza Tablet*/
+                                    and (min-width: 280px){
+                                      #ulNavHeader{                                        
+                                        visibility: hidden;
+                                      }
+                                      .main-header {
+                                        display: flex;
+                                        float:right;
+                                        margin-top: -2px;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        background-color: transparent;
+                                        padding: 0 0.4rem;
+                                      }
+        
+                                      #idPTituloInicial{
+                                        height: 40px;
+                                      }
+        
+                                      #h1_tituloinicio{
+                                        position: relative;
+                                        left: 0%;
+                                        height: 70px;
+                                      }
+        
+                                      /*INICIO BOTÓN UNI*/
+                                        #sectionLinkUni{
+                                          left: 4%;
+                                        }
+                                      /*FIN BOTON UNI*/
+        
+                                      /*Inicio Menú Móvil*/
+        
+                                        #imgLogUsuarioMovil{
+                                          width: 60px;
+                                          height: 60px;
+                                          position: relative;
+                                          right: 30%;
+                                          top: 40px;
+                                          border-radius: 100%;
+                                          align-self: center;
+                                          transition: all ease-in-out 0.5s;
+                                          cursor: pointer;
+                                          border-radius: 100%;
+                                          border-width: 5px;
+                                          border-style: solid;
+                                          border-color: #0197fc;
+                                          vertical-align: top;
+                                        }
+        
+                                        .Nombreusuario{
+                                          color:#FFFFFF;
+                                          margin-top: 20px;
+                                          margin-left: 30px;
+                                          text-align: left;
+                                          position: relative;
+                                          top: 50px;
+                                        }
+        
+                                        .button-menu {
+                                          z-index: 200;
+                                          width: 40px;
+                                          height: 40px;
+                                          border: none;
+                                          display: flex;
+                                          background: none;
+                                          flex-direction: column; /* Pondrá un span debajo del otro*/
+                                          align-items: center;
+                                          justify-content: center;
+                                          cursor: pointer;                                    
+                                          position: relative;
+                                          left: 800%;
+                                          bottom: 115px;                                    
+                                        }
+                                        /* Dibujamos una línea recta por cada span creando el tipico menu hamburguesa*/
+                                        .button-menu span {
+                                          width: 37px;
+                                          height: 4px;
+                                          margin-bottom: 5px;
+                                          position: relative;
+                                          background: #ffffff;
+                                          border-radius: 3px;
+                                          transform-origin: 4px 0px;
+                                          transition: all 0.2s linear;
+                                        }
+                                        /* con los span dibujamos un icono de cerrar para mostrar cuándo la navegación este abierta */
+                                        .button-menu.close span {
+                                          opacity: 1;
+                                          transform: rotate(45deg) translate(0px, 0px);
+                                          background: #ffffff;
+                                        }
+                                        .button-menu.close span:nth-child(2) {
+                                          transform: rotate(-45deg) translate(-8px, 5px);
+                                        }
+                                        .button-menu.close span:nth-child(3) {
+                                          display: none;
+                                        }
+        
+                                        .main-nav {
+                                          position: fixed;
+                                          top: 0;
+                                          left: 0;
+                                          height: 100vh;
+                                          width: 100%;
+                                          margin-left: -100%;
+                                          transition: all 0.2s linear;
+                                          z-index: 100;
+                                          background-color: rgba(0, 0, 0, 0.7);
+                                        }
+        
+                                        .main-nav.show {
+                                          margin-left: 0;
+                                        }
+        
+                                        .nav-links {
+                                          background-color: #102461b0;
+                                          display: flex;
+                                          flex-direction: column;
+                                          width: 30%;
+                                          height: 100%;
+                                          align-items: left;
+                                          justify-content: flex-start;                                                                        
+                                        }
+        
+                                        .link-item {
+                                          margin-top: 2rem;
+                                          color: #ffffff;
+                                          text-decoration: none;
+                                          font-weight: bold;
+                                          position: relative;
+                                          margin-left: 30px;
+                                          position: relative;
+                                          top: 50px;
+                                        }                             
+                                      /*Fin Menú Móvil*/
+        
+                                      .logo{
+                                        right: 4%;
+                                      }  
+        
+                                      #sectionCentralizarLogoNombre{
+                                        visibility: hidden;
+                                      }
+        
+                                      #butInscribirAEvento{
+                                        left: 38%;
+                                      }                        
+                                      
+                                      /*Inicio Footer*/
+                                        /*Estos seria los cambios que se le hicieron al footer de acuerdo a esas dimenciones*/
+                                        .site-footer
+                                        {
+                                          padding-bottom:0
+                                        }
+                                        .site-footer .copyright-text
+                                        {
+                                          text-align:left;
+                                        }
+                                        .social-icons li.title
+                                        {
+                                          display:block;
+                                          margin-right:0;
+                                          font-weight:600
+                                        }
+                                        .site-footer .social-icons
+                                        {
+                                          text-align:right;  
+                                        }
+                                        .copyright-text
+                                        {
+                                          width: 350px;
+                                          margin-bottom: 10px;
+                                        }
+        
+                                        /*Agregado para mover que se vea como se debe el footer*/
+                                        .footer-links li{
+                                          margin-right: 0px;
+                                        }
+                                      /*Fin Footer*/ 
+                                      /*Inicio Panel de Noticias*/
+                                        #div_Contenedor_Noticias{
+                                          width: 98%;
+                                          height: 650px;
+                                          left: 1%;
+                                        }
+                                    
+                                        #div_Contenedor_Noticia_Principal{
+                                          cursor: pointer;
+                                          height: 200px;
+                                          width: 95.5%;
+                                          position: relative;
+                                          left: 25px;
+                                          top: 18px;
+                                          cursor: pointer;
+                                        }
+                                    
+                                        #div_Contenedor_Noticia_Principal > div{
+                                          height: 1px;
+                                          width: 100%;
+                                          background-color: gray;
+                                          opacity: 0.1;
+                                          position: relative;
+                                          Top: 95px;
+                                          Transition: all 1s ease-in-out;
+                                          overflow: hidden;
+                                        }
+                                    
+                                        #div_Contenedor_Noticia_Principal:hover > div{
+                                          height: 80px;
+                                          width: 100%;
+                                          background-color: gray;
+                                          opacity: 0.95;
+                                          position: relative;
+                                          top: 16px;
+                                        }
+                                    
+                                        #div_Noticia_Secundario{
+                                          cursor: pointer;
+                                          height: 200px;
+                                          width: 95.5%;
+                                          Position: relative;
+                                          top: 12px;
+                                          left: -9px;
+                                          float: right;
+                                          display: block;                                  
+                                          bottom: 228px;
+                                          margin: 15px 10px 0px 10px;
+                                        }
+                                    
+                                        #div_Noticia_Secundario > div{
+                                          height: 0px;
+                                          width: 100%;
+                                          background-color: gray;
+                                          opacity: 0.1;
+                                          position: relative;
+                                          top: 47.8%;
+                                          Transition: all 1s ease-in-out;
+                                        }
+                                    
+                                        #div_Noticia_Secundario:hover > div{
+                                          height: 80px;
+                                          width: 100%;
+                                          background-color: gray;
+                                          opacity: 0.95;
+                                          position: relative;
+                                          top: 16px;
+                                        }
+                                    
+                                        #div_Noticia_Terciario{
+                                          cursor: pointer;
+                                          height: 200px;
+                                          width: 95.5%;
+                                          Position: relative;
+                                          top: 10px;
+                                          left: -8px;
+                                          float: right;
+                                          display: block;
+                                          margin: 10px 10px 0px 10px;
+                                        }
+                                    
+                                        #div_Noticia_Terciario > div{
+                                          height: 0px;
+                                          width: 100%;
+                                          background-color: gray;
+                                          opacity: 0.1;
+                                          position: relative;
+                                          top: 47.8%;
+                                          Transition: all 1s ease-in-out;
+                                        }
+                                    
+                                        #div_Noticia_Terciario:hover > div{
+                                          height: 80px;
+                                          width: 100%;
+                                          background-color: gray;
+                                          opacity: 0.95;
+                                          position: relative;
+                                          top: 16px;
+                                        }                            
+                                    
+                                        #fondo{
+                                          left: 0%;
+                                        }            
+                                    
+                                        .div_Contenedor_Noticia_Secundario{
+                                          position: relative;
+                                          right: 9px;
+                                    
+                                          background-color: black;
+                                        }                                                                                 
+                                      /*Fin sección noticias*/                                                                                                            
+        
+                                      @media screen and (max-width: 918px)
+                                      and (min-width: 280px){                                      
+        
+                                        #ulNavHeader{                                        
+                                          width: 60%;
+                                        }
+                                        
+                                        .logo{
+                                          left: -1%;
+                                        }
+        
+                                        #idImgLogo{
+                                          width: 22%;
+                                          left: 0%;
+                                        }
+        
+                                        #idTextEslogan{
+                                          max-width: 67%;
+                                          left: 0%;
+                                        }
+        
+                                        /*INICIO TÍTULO INICIAL*/
+                                          #h1_tituloinicio{
+                                            left: 3%;
+                                            width: 97%;
+                                          }
+                                        /*FIN TÍTULO INICIAL*/
+
+                                        .button-menu{
+                                          bottom: 90px;
+                                        }
+        
+                                        @media screen and (max-width: 905px)
+                                        and (min-width: 280px){
+        
+                                          /*INICIO TÍTULO INICIAL*/
+                                            #h1_tituloinicio{
+                                              left: 0%;
+                                            }
+                                          /*FIN TÍTULO INICIAL*/
+        
+                                          @media screen and (max-width: 842px)
+                                          and (min-width: 280px){
+                                            
+                                            #imgLogUsuarioMovil{
+                                              right: 25%;
+                                            }
+        
+                                            #ulNavHeader{                                          
+                                              position: relative;
+                                              right: 13%;
+                                              width: 70%;
+                                            }
+        
+                                            #butInscribirAEvento{
+                                              left: 45%;
+                                            }
+        
+                                            /*Inicio Sección Noticias*/
+                                              #div_Contenedor_Noticia_Principal{
+                                                left: 20px;
+                                              }
+                                            /*Fin Sección Noticias*/
+        
+                                            @media screen and (max-width: 834px)
+                                            and (min-width: 280px){                                       
+        
+                                              .divDato{
+                                                position: relative;
+                                                left: -7%;                                            
+                                              }
+                                              
+                                              #ulMenuLineaTiempo{                                            
+                                                left: -8%;
+                                              }
+        
+                                              #h1_tituloinicio{
+                                                font-size: 35px;
+                                                left: -2%;
+                                              } 
+        
+                                              @media screen and (max-width: 819px)
+                                              and (min-width: 280px){
+        
+                                                #idPTituloInicial{
+                                                  right: -3%;
+                                                  width: 97%;
+                                                }
+        
+                                                #h1_tituloinicio{
+                                                  left: 6%;
+                                                  width: 94%;
+                                                }
+        
+                                                @media screen and (max-width: 767px)
+                                                and (min-width: 280px){
+        
+                                                  #butInscribirAEvento{
+                                                    position: relative;
+                                                    left: 49%;
+                                                  }
+        
+                                                  .h3_Titulo_Noticia{
+                                                    font-size: 20px;
+                                                  }
+        
+                                                  /*Inicio Footer*/
+                                                    .site-footer
+                                                    {
+                                                      padding-bottom:0;                    
+                                                    }
+                                                    .site-footer .footer-links{
+                                                      text-align: left;
+                                                      margin: 10px;                    
+                                                    }
+                                                    .site-footer hr
+                                                    {
+                                                      border-top-color:rgb(255, 255, 255);
+                                                      margin-top: 10px;
+                                                      opacity:0.5;
+                                                    }
+                                                    
+                                                    .site-footer .copyright-text
+                                                    {
+                                                      text-align:center;
+                                                      margin-left: 60px;
+                                                    }
+                                                    .site-footer .social-icons
+                                                    {
+                                                      text-align:left;                      
+                                                      margin-top: -250px;
+                                                      margin-left: -110px;                                        
+                                                      width: 100px;                    
+                                                    }
+        
+                                                  /*Fin Footer*/
+        
+                                                  #ulNavHeader{                                              
+                                                    right: 12%;
+                                                  }
+        
+                                                  .nav-link{                                              
+                                                    margin-right: -20px;
+                                                  }  
+                                                  
+                                                  @media screen and (max-width: 758px)
+                                                  and (min-width: 280px){
+        
+                                                    #butInscribirAEvento{
+                                                      left: -5%;
+                                                    }
+        
+                                                    #butDetallesDeProyectos{
+                                                      left: 4%;
+                                                    }
+        
+                                                    @media screen and (max-width: 719px)
+                                                    and (min-width: 280px){
+        
+                                                      /*Inicio sección noticias*/
+                                                        #div_Contenedor_Noticia_Principal{
+                                                          left: 14px;
+                                                        }
+                                                      /*Fin sección noticias*/
+        
+                                                      #ulMenuLineaTiempo{                                                  
+                                                        width: 40%;
+                                                        left: -12%;                                                  
+                                                      }
+        
+                                                      .liMenuLineaTiempo{
+                                                        font-size: 20px;
+                                                      }
+        
+                                                      .secLineaDeTiempoEvento>h3{
+                                                        font-size: 21px;                                                  
+                                                      }
+        
+                                                      @media screen and (max-width: 712px)
+                                                      and (min-width: 280px){
+        
+                                                        .logo{
+                                                          left: 3%;
+                                                        }
+                                                        
+                                                        .divDato{
+                                                          left: -12%;
+                                                        }
+        
+                                                        .button-menu{
+                                                          float: right;
+                                                          left: 850%;
+                                                        }
+        
+                                                        @media screen and (max-width: 679px)
+                                                        and (min-width: 280px){                                                    
+        
+                                                          .nav-link{                                              
+                                                            margin-right: -50px;                                                      
+                                                          }
+        
+                                                          #ulNavHeader{                                              
+                                                            right: 15%;                                                      
+                                                          }
+        
+                                                          #imgLogUsuarioMovil{
+                                                            right: 28%;
+                                                          }
+        
+                                                          .nav-links{                                                      
+                                                            width: 40%;
+                                                          }
+        
+                                                          @media screen and (max-width: 650px)
+                                                          and (min-width: 280px){                                                      
+        
+                                                            .divDato{
+                                                              left: -16%;
+                                                            }
+        
+                                                            /*===INICIO TÍTULO INICIAL===*/                                                    
+                                                              #h1_tituloinicio{
+                                                                font-size: 30px;
+                                                              }
+                                                            /*===FIN TÍTULO INICIAL*/
+        
+                                                            @media screen and (max-width: 643px)
+                                                            and (min-width: 280px){
+        
+                                                              /*===INICIO TEMPORIZADOR===*/
+                                                              #divTemporizador{                                                          
+                                                                width: 100%;
+                                                                left: 0%;
+                                                              }
+        
+                                                              .divDato{
+                                                                left: 10%;
+                                                              }
+                                                              /*===FIN TEMPORIZADOR===*/
+        
+                                                              @media screen and (max-width: 618px)
+                                                              and (min-width: 280px){
+        
+                                                                .button-menu{
+                                                                  position: relative;
+                                                                  bottom: 90px;
+                                                                  left: 900%;
+                                                                }
+        
+                                                                #ulNavHeader{                                                           
+                                                                  left: -12%;
+                                                                }
+        
+                                                                /* #butInscribirAEvento{
+                                                                  left: 65%;
+                                                                } */
+        
+                                                                @media screen and (max-width: 588px)
+                                                                and (min-width: 280px){
+        
+                                                                  .linkUni:nth-child(2){    
+                                                                    margin-left: -1px;                                                                                                                           
+                                                                  }                                                            
+        
+                                                                  @media screen and (max-width: 582px)
+                                                                  and (min-width: 280px){ 
+                                                                    
+                                                                    #imgLogUsuarioMovil{
+                                                                      right: 29%;
+                                                                    }
+                
+                                                                    .nav-links{                                                      
+                                                                      width: 50%;
+                                                                    } 
+        
+                                                                    /*===Inicio Botón Uni===*/
+                                                                    
+                                                                    .linkUni:nth-child(2){
+                                                                      position: relative;
+                                                                      left: 30%;
+                                                                      bottom: 30px;
+                                                                    }
+                                                                    /*===Fin Botón Uni===*/
+        
+                                                                    /*===Inicio Temporizador===*/
+                                                                    .divDato{
+                                                                      left: 7%;
+                                                                    }
+                                                                    /*===Fin Temporizador===*/
+        
+                                                                    #butInscribirAEvento{
+                                                                      position: relative;
+                                                                      top: -30px;
+                                                                    }
+        
+                                                                    @media screen and (max-width: 573px)
+                                                                    and (min-width:280px){                                                            
+        
+                                                                      .nav-link{
+                                                                        margin-right: -60px;
+                                                                        font-size: 15px;
+                                                                      }
+        
+                                                                      #imgLogUsuarioMovil{
+                                                                        right: 85px;
+                                                                      }
+        
+                                                                      @media screen and (max-width: 554px)
+                                                                      and (min-width: 280px){
+        
+                                                                        #h2DigitoSegundos{                                                            
+                                                                          width: 50%;
+                                                                        }
+        
+                                                                        @media screen and (max-width: 548px)
+                                                                        and (min-width: 280px){
+        
+                                                                          #idPTituloInicial{
+                                                                            left: 6%;
+                                                                            width: 94%;
+                                                                          }
+        
+                                                                          #h1_tituloinicio{
+                                                                            font-size: 25px;
+                                                                            /* left: -2%; */
+                                                                          }
+        
+                                                                          #idTextEslogan{
+                                                                            font-size: 22px;
+                                                                          }
+        
+                                                                          @media screen and (max-width: 542px)
+                                                                          and (min-width: 280px){
+        
+                                                                            #imgLogUsuarioMovil{
+                                                                              right: 27%;
+                                                                            }
+        
+                                                                            .h3_Titulo_Noticia{
+                                                                              font-size: 18px;
+                                                                            }
+        
+                                                                            #divTituloInicial>p{
+                                                                              font-size: 35px;                                                                
+                                                                            }
+        
+                                                                            #butDetallesDeProyectos{
+                                                                              top: -20px;
+                                                                            }
+        
+                                                                            /*INICIO TEMPORIZADOR*/
+                                                                              .divDato:nth-child(1){                                                              
+                                                                                left: 12%;         
+                                                                                bottom: 0px;                                                                    
+                                                                              } 
+                    
+                                                                              .divDato:nth-child(2){                                                              
+                                                                                left: 12%;         
+                                                                                bottom: 0px;                                                                                                                          
+                                                                              } 
+                    
+                                                                              .divDato:nth-child(3){                                                                                                                                
+                                                                                left: 12%;         
+                                                                                bottom: 0px;
+                                                                              } 
+                    
+                                                                              .divDato:nth-child(4){                                                                    
+                                                                                left: 12%;         
+                                                                                bottom: 0px;                                                                                                               
+                                                                              }
+        
+                                                                              .aDosPuntos{                                                              
+                                                                                top: 70px;
+                                                                              }
+        
+                                                                              .h2Encabezado{
+                                                                                font-size: 25px;
+                                                                              }
+                    
+                                                                              .h2Digito{
+                                                                                font-size: 25px;
+                                                                              }                                                                  
+                                                                            /*FIN TEMPORIZADOR*/
+                                                                            #div_Contenedor_Noticia_Principal{
+                                                                              left: 12px;
+                                                                            }
+        
+                                                                            #div_Noticia_Secundario{                                                  
+                                                                              left: -2px;                                                            
+                                                                            }
+        
+                                                                            #div_Noticia_Terciario{                                                  
+                                                                              left: -2px;
+                                                                            }
+        
+                                                                            @media screen and (max-width: 538px)
+                                                                            and (min-width: 280px){
+        
+                                                                              /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                .linkUni:nth-child(2){
+                                                                                  bottom: 70px;
+                                                                                }
+                                                                              /*===FIN BOTÓN UNI.EDU===*/
+        
+                                                                              @media screen and (max-width: 527px)
+                                                                              and (min-width: 280px){
+        
+                                                                                #butInscribirAEvento{
+                                                                                  left: -2%;
+                                                                                  top: -70px;
+                                                                                }                                                                      
+        
+                                                                                @media screen and (max-width: 520px)
+                                                                                and (min-width: 280px){                                                                       
+        
+                                                                                  /*Inicio Footer*/
+                                                                                    .site-footer
+                                                                                    {
+                                                                                      padding-bottom:0
+                                                                                    }
+                                                                                    .site-footer .footer-links{
+                                                                                      text-align: left;
+                                                                                      margin: 10px;                        
+                                                                                    }
+                                                                                    .site-footer .copyright-text
+                                                                                    {
+                                                                                      text-align:left
+                                                                                    }
+                                                                                    .site-footer .social-icons
+                                                                                    {
+                                                                                      text-align:left;                  
+                                                                                      margin-top: -240px;
+                                                                                      margin-left: -110px;
+                                                                                    }
+                                                                                    .copyright-text
+                                                                                    {                                      
+                                                                                      margin-bottom: 10px;
+                                                                                    }
+                                                                                  /*Fin Footer*/ 
+                                                                                  
+                                                                                  @media screen and (max-width: 517px)
+                                                                                  and (min-width: 280px){
+        
+                                                                                    .liMenuLineaTiempo{
+                                                                                      font-size: 17px;
+                                                                                      top: 10px;
+                                                                                    }
+        
+                                                                                    #divLineaTiempoEvento{
+                                                                                      position: relative;
+                                                                                      top: 110px;
+                                                                                    }
+        
+                                                                                    @media screen and (max-width: 502px)
+                                                                                    and (min-width: 280px){
+        
+                                                                                      /*===INICIO BOTÓN UNI.EDU.NI===*/
+                                                                                        #sectionLinkUni{
+                                                                                          left: 8%;
+                                                                                        }
+                                                                                      /*===FIN BOTÓN UNI.EDU.NI*/
+        
+                                                                                      #idImgLogo{
+                                                                                        left: 3%;
+                                                                                        margin-bottom: 20px;
+                                                                                      }
+        
+                                                                                      #idDivLogoEslogan{
+                                                                                      height: 360px;
+                                                                                      text-align: center;
+                                                                                      }
+        
+                                                                                      #idTextEslogan{
+                                                                                      left: 1.7%;
+                                                                                      max-width: 80%;
+                                                                                      }
+        
+                                                                                      @media screen and (max-width: 485px)
+                                                                                      and (min-width: 280px){
+        
+                                                                                        /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                          .linkUni:nth-child(2){
+                                                                                            bottom: 112px;
+                                                                                          }
+        
+                                                                                        /*===FIN BOTÓN UNI.EDU===*/
+        
+                                                                                        @media screen and (max-width: 473px)
+                                                                                        and (min-width: 280px){
+        
+                                                                                          /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                          .linkUni:nth-child(1){
+                                                                                            bottom: 73px;
+                                                                                          }
+        
+                                                                                        /*===FIN BOTÓN UNI.EDU===*/
+                                                                                          
+                                                                                          @media screen and (max-width: 480px)
+                                                                                          and (min-width: 280px){
+        
+                                                                                            /*Inicio Footer*/
+                                                                                              .site-footer
+                                                                                              {
+                                                                                                padding-bottom:0
+                                                                                              }
+                                                                                              .site-footer .footer-links{
+                                                                                                text-align: left;
+                                                                                                margin: 10px;                          
+                                                                                              }                    
+                                                                                              .site-footer .social-icons
+                                                                                              {
+                                                                                                text-align:left;                    
+                                                                                                margin-top: -280px;
+                                                                                                margin-left: -110px;
+                                                                                              }
+                                                                                              .copyright-text
+                                                                                              {                                            
+                                                                                                margin-bottom: 10px;
+                                                                                                position: relative;
+                                                                                                right: 10%;                        
+                                                                                              }
+                                                                                            /*Fin Footer*/
+        
+                                                                                            @media screen and (max-width: 460px)
+                                                                                            and (min-width: 280px){
+        
+                                                                                              #divTemporizador{
+                                                                                                left: -4%;                                                                                      
+                                                                                              }
+        
+                                                                                              #divTituloInicial>p{
+                                                                                                font-size: 30px;
+                                                                                                position: relative;                                                                          
+                                                                                                top: 10px;
+                                                                                                -webkit-text-stroke: 1px #8e8e37;
+                                                                                              }
+        
+                                                                                              @media screen and (max-width: 452px)
+                                                                                              and (min-width: 280px){
+        
+        
+                                                                                                /*Inicio Sección Linea de Tiempo*/
+        
+                                                                                                  .liMenuLineaTiempo{
+                                                                                                    font-size: 16px;
+                                                                                                  }
+        
+                                                                                                  #ulMenuLineaTiempo{                                                                                    
+                                                                                                    width: 33%;
+                                                                                                  }
+        
+                                                                                                /*Inicio Sección Linea de Tiempo*/
+        
+                                                                                                @media screen and (max-width: 447px)
+                                                                                                and (min-width: 280px){
+                                                                                                  /*===INICIO TEMPORIZADOR===*/                                                                                     
+        
+                                                                                                  .h2Encabezado{
+                                                                                                    font-size: 23px;
+                                                                                                  }
+        
+                                                                                                  .h2Digito{
+                                                                                                    font-size: 23px;
+                                                                                                  }
+        
+                                                                                                  .aDosPuntos{
+                                                                                                    font-size: 23px;
+                                                                                                  }
+                                                                                                  /*===FIN TEMPORIZADOR===*/  
+                                                                                                  
+                                                                                                  @media screen and (max-width: 444px)
+                                                                                                  and (min-width: 280px){
+        
+                                                                                                    /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                                      .linkUni:nth-child(1){
+                                                                                                        bottom: 72px;
+                                                                                                      }                   
+                                                                                                      
+                                                                                                      .linkUni:nth-child(2){
+                                                                                                        bottom: 110px;
+                                                                                                      }                   
+                                                                                                    /*===FIN BOTÓN UNI.EDU===*/
+        
+                                                                                                    /*===INICIO BOTÓN INSCRIBIR A EVENTO===*/
+                                                                                                      #butInscribirAEvento{
+                                                                                                        top: -100px;
+                                                                                                      }
+                                                                                                    /*===FIN BOTÓN INSCRIBIR A EVENTO===*/
+        
+                                                                                                    /*===INICIO BOTÓN MENÚ MÓVIL===*/
+                                                                                                      .button-menu{
+                                                                                                        bottom: 87px;
+                                                                                                      } 
+                                                                                                    /*===FIN BOTÓN MENÚ MÓVIL===*/
+        
+                                                                                                    @media screen and (max-width: 443px)
+                                                                                                    and (min-width: 280px){                                                                              
+        
+                                                                                                      /*Inicio Sección Noticias*/
+                                                                                                        #div_Contenedor_Noticia_Principal{
+                                                                                                          left: 8px;
+                                                                                                        }
+                                                                                                      /*Fin Sección Noticias*/
+        
+                                                                                                      .button-menu{
+                                                                                                        bottom: 87px;
+                                                                                                      }
+        
+                                                                                                      #butInscribirAEvento{
+                                                                                                        top: -100px;
+                                                                                                      }
+                                                                            
+                                                                                                      #imgLogUsuarioMovil{
+                                                                                                        right: 23%;
+                                                                                                      }
+                                                                    
+                                                                                                      @media screen and (max-width: 432px)
+                                                                                                      and (min-width: 280px){
+        
+                                                                                                        .button-menu{
+                                                                                                          left: -20px;
+                                                                                                          bottom: 165px;
+                                                                                                        } 
+        
+                                                                                                        /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                                        .linkUni:nth-child(1){
+                                                                                                          bottom: 5px;
+                                                                                                          left: 0px;
+                                                                                                        }
+        
+                                                                                                        /*===FIN BOTÓN UNI.EDU===*/
+        
+                                                                                                        #butInscribirAEvento{
+                                                                                                          left: 10%;
+                                                                                                        }
+                                                                                                        
+                                                                                                        @media screen and (max-width: 430px)
+                                                                                                        and (min-width: 280px){
+        
+                                                                                                          /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                                          .linkUni:nth-child(1){
+                                                                                                            bottom: -3px;
+                                                                                                            left: -125px;
+                                                                                                          }
+                                                                                                          /*===FIN BOTÓN UNI.EDU===*/
+
+                                                                                                          #divLineaTiempoEvento{
+                                                                                                            position: relative;
+                                                                                                            top: 0px;
+                                                                                                          }
+        
+                                                                                                          @media screen and (max-width: 403px)
+                                                                                                          and (min-width: 280px){
+        
+                                                                                                            #idPTituloInicial{
+                                                                                                              left: 2%;
+                                                                                                            }
+        
+                                                                                                            #h1_tituloinicio{
+                                                                                                              left: 2%;
+                                                                                                            }
+        
+                                                                                                            #idDivLogoEslogan{
+                                                                                                              height: 450px;
+                                                                                                              text-align: center;
+                                                                                                            }
+        
+                                                                                                            #idImgLogo{
+                                                                                                              width: 60%;
+                                                                                                              left: 5%;
+                                                                                                            }
+        
+                                                                                                            @media screen and (max-width: 400px)
+                                                                                                            and (min-width: 280px){
+                                                                                                              /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                                              .linkUni:nth-child(1){
+                                                                                                                bottom: -3px;
+                                                                                                                left: -118px;
+                                                                                                              }
+                                                                                                              /*===FIN BOTÓN UNI.EDU===*/
+        
+                                                                                                              /*Inicio Sección Linea de Tiempo*/
+                                                                                                                /* #divLineaTiempoEvento{                                                                                          
+                                                                                                                  position: relative;
+                                                                                                                  top: 100px;
+                                                                                                                } */
+        
+                                                                                                                .liMenuLineaTiempo{
+                                                                                                                  font-size: 15px;                                                                                                                                                                
+                                                                                                                }                                                                                              
+                                                                                                              /*Fin Sección Linea de Tiempo*/
+        
+                                                                                                              #divTituloInicial>p{
+                                                                                                                font-size: 25px;
+                                                                                                              }
+                                                                                                              
+                                                                                                              #butInscribirAEvento{                                                                                                
+                                                                                                                top: -75px;
+                                                                                                              }
+        
+                                                                                                              #butDetallesDeProyectos{
+                                                                                                                top: 20px;
+                                                                                                              }
+        
+                                                                                                              /*Inicio sección lí*/
+        
+                                                                                                              /*Inicio Footer*/
+                                                                                                                .site-footer
+                                                                                                                {
+                                                                                                                  padding-bottom:0                        
+                                                                                                                }
+                                                                                                                .site-footer .footer-links{
+                                                                                                                  text-align: left;
+                                                                                                                  margin: 10px;
+                                                                                                                  font-size:14px;                          
+                                                                                                                }
+                                                                                                                .site-footer .copyright-text
+                                                                                                                {
+                                                                                                                  text-align:center;
+                                                                                                                }
+                                                                                                                .site-footer .social-icons
+                                                                                                                {
+                                                                                                                  text-align:left;                    
+                                                                                                                  margin-top: -280px;
+                                                                                                                  margin-left: -110px;
+                                                                                                                }
+                                                                                                                .copyright-text
+                                                                                                                {
+                                                                                                                  margin-bottom: 10px;
+                                                                                                                  right: 10%;
+                                                                                                                  width: 85%;
+                                                                                                                }
+                                                                                                              /*Fin Footer*/
+        
+                                                                                                              @media screen and (max-width: 379px)
+                                                                                                              and (min-width: 280px){
+        
+                                                                                                                /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                                                  .linkUni:nth-child(2){
+                                                                                                                    top: -20px;
+                                                                                                                  }
+                                                                                                                /*===FIN BOTÓN UNI.EDU===*/
+                                                                                                                                                                                                
+                                                                                                                #divMenuDespliegue{                                                                                  
+                                                                                                                  left: -20%;
+                                                                                                                }
+                                                                                                                
+                                                                                                                .button-menu{
+                                                                                                                  left: 260%;
+                                                                                                                  bottom: 160px;
+                                                                                                                }
+        
+                                                                                                                #butInscribirAEvento{
+                                                                                                                  left: 30%;
+                                                                                                                  top: -90px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                #butDetallesDeProyectos{
+                                                                                                                  top: 0px;
+                                                                                                                }
+                                                                                                                
+                                                                                                                /*Inicio Sección Noticias*/
+                                                                                                                  #div_Contenedor_Noticia_Principal{                                                                                  
+                                                                                                                    left: 5px;
+                                                                                                                  }
+                                                                                                                /*Fin Sección Noticias*/
+
+                                                                                                                #ulNavHeader{
+                                                                                                                  left: -25%;
+                                                                                                                }
+        
+                                                                                                                @media screen and (max-width: 374px)
+                                                                                                                and (min-width: 280px){
+        
+                                                                                                                  #imgLogUsuarioMovil{
+                                                                                                                    right: 17%;
+                                                                                                                  }
+        
+                                                                                                                  #dosPuntosMinutos{
+                                                                                                                    left: 0%;
+                                                                                                                  }
+        
+                                                                                                                  
+        
+                                                                                                                  #aDosPuntos:nth-child(1){                                                                                                    
+                                                                                                                    left: 0%;
+                                                                                                                  }
+        
+                                                                                                                  @media screen and (max-width: 371px)
+                                                                                                                  and (min-width: 280px){
+        
+                                                                                                                    /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                                                    .linkUni:nth-child(1){
+                                                                                                                      
+                                                                                                                      left: -65%;
+                                                                                                                    }
+        
+                                                                                                                    /*Inicio Footer*/
+                                                                                                                      .site-footer
+                                                                                                                      {
+                                                                                                                        padding-bottom:0                            
+                                                                                                                      }
+                                                                                                                      .site-footer .footer-links{
+                                                                                                                        text-align: left;
+                                                                                                                        margin: 15px;
+                                                                                                                        font-size:14px;                              
+                                                                                                                      }
+                                                                                                                      .site-footer .copyright-text
+                                                                                                                      {
+                                                                                                                        text-align:center;
+                                                                                                                      }
+        
+                                                                                                                      .site-footer .social-icons
+                                                                                                                      {
+                                                                                                                        text-align:left;                        
+                                                                                                                        margin-top: -290px;
+                                                                                                                        margin-left: -110px;
+                                                                                                                      }
+                                                                                                                      .copyright-text
+                                                                                                                      {
+                                                                                                                        position: relative;
+                                                                                                                        right: 15%;
+                                                                                                                        margin-bottom: 10px;
+                                                                                                                      }
+                                                                                                                    /*Fin Footer*/
+        
+                                                                                                                    @media screen and (max-width: 364px)
+                                                                                                                    and (min-width: 280px){
+        
+                                                                                                                      #divTemporizador{
+                                                                                                                        /* background-color: black; */
+                                                                                                                        left: -8%;
+                                                                                                                      }
+        
+                                                                                                                      @media screen and (max-width: 357px)
+                                                                                                                      and (min-width: 280px){
+
+                                                                                                                        .liMenuLineaTiempo{
+                                                                                                                          top: 100px;
+                                                                                                                        }
+                                                                                                                        
+        
+                                                                                                                        @media screen and (max-width: 355px)
+                                                                                                                        and (min-width: 280px){
+        
+                                                                                                                          /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                                                            .linkUni:nth-child(1){
+                                                                                                                              left: -60%;
+                                                                                                                            }
+                                                                                                                            .linkUni:nth-child(2){
+                                                                                                                              top: -100px;
+                                                                                                                            }
+                                                                                                                          /*===FIN BOTÓN UNI.EDU===*/
+        
+                                                                                                                          #divTemporizador{                                                                                                          
+                                                                                                                            width: 104%;
+                                                                                                                            left: -12%;
+                                                                                                                          }
+
+                                                                                                                          .social-icons{
+                                                                                                                            position: relative;
+                                                                                                                            bottom: 60px;
+                                                                                                                          }
+        
+                                                                                                                          @media screen and (max-width: 340px)
+                                                                                                                          and (min-width: 280px){
+
+                                                                                                                            .button-menu{
+                                                                                                                              bottom: 215px;
+                                                                                                                            }
+
+                                                                                                                            .linkUni:nth-child(2){
+                                                                                                                              top: -3px;
+                                                                                                                            }
+        
+                                                                                                                            /*Para redirigir a la página de la UNI*/
+                                                                                                                              #sectionLinkUni{  
+                                                                                                                                background: linear-gradient(171deg, rgba(255,255,255,1) 0%, rgba(16,36,97,1) 35%, rgba(16,36,97,1) 100%);
+                                                                                                                                width: 160px;   
+                                                                                                                                height: 40px; 
+                                                                                                                                border-top-right-radius: 15px;
+                                                                                                                                border-bottom-left-radius: 15px;
+                                                                                                                                border-color: white;
+                                                                                                                                border-width: 1px;
+                                                                                                                                border-style: solid;
+                                                                                                                                position: relative;
+                                                                                                                                left: 5%;
+                                                                                                                                top: 10px;      
+                                                                                                                              }
+        
+                                                                                                                              /* #sectionLinkUni:hover{
+                                                                                                                                cursor: pointer;
+                                                                                                                              } */
+        
+                                                                                                                              .linkUni{
+                                                                                                                                display: inline-block;  
+                                                                                                                                margin-left: 0px;
+                                                                                                                                color: white; 
+                                                                                                                                position: relative; 
+                                                                                                                                bottom: -5px;
+                                                                                                                                right: 110px;
+                                                                                                                              }
+        
+                                                                                                                              .linkUni:nth-child(1){    
+                                                                                                                                position: absolute;
+                                                                                                                                bottom: 8px;
+                                                                                                                                left: 10px;
+                                                                                                                                
+                                                                                                                              }
+        
+                                                                                                                              .linkUni:nth-child(2){    
+                                                                                                                                margin-left: 5px;  
+                                                                                                                                border-left-style: solid;
+                                                                                                                                border-left-color: white;
+                                                                                                                                border-left-width: 2px;
+                                                                                                                                padding-left: 8px;
+                                                                                                                                position: relative;
+                                                                                                                                left: 45px;
+                                                                                                                                bottom: 3px;
+                                                                                                                              }
+                                                                                                                            /*=====================================*/
+        
+                                                                                                                            .nav-links{                                                                                        
+                                                                                                                              width: 60%;
+                                                                                                                            }
+        
+                                                                                                                            .h3_Titulo_Noticia{
+                                                                                                                              font-size: 16px;
+                                                                                                                            }
+        
+                                                                                                                            /*Inicio Footer*/
+                                                                                                                              .site-footer
+                                                                                                                              {
+                                                                                                                                padding-bottom:0                            
+                                                                                                                              }
+                                                                                                                              .site-footer .footer-links{
+                                                                                                                                text-align: left;
+                                                                                                                                margin: 10px;
+                                                                                                                                font-size:14px;                              
+                                                                                                                              }
+                                                                                                                              .site-footer .copyright-text
+                                                                                                                              {
+                                                                                                                                text-align:center;
+                                                                                                                              }
+                                                                                                                              .site-footer .social-icons
+                                                                                                                              {
+                                                                                                                                text-align:left;                        
+                                                                                                                                margin-top: -290px;
+                                                                                                                                margin-left: -110px;
+                                                                                                                              }
+                                                                                                                              .copyright-text
+                                                                                                                              {                                                    
+                                                                                                                                margin-bottom: 10px;
+                                                                                                                              }
+                                                                                                                            /*Fin Footer*/
+        
+                                                                                                                            @media screen and (max-width: 338px)
+                                                                                                                            and (min-width: 280px){
+        
+                                                                                                                              #butInscribirAEvento{
+                                                                                                                                left: -2%;
+                                                                                                                                top: -140px;
+                                                                                                                              }
+        
+                                                                                                                              #butDetallesDeProyectos{
+                                                                                                                                top: -45px;
+                                                                                                                              }
+        
+                                                                                                                              .divDato:nth-child(1){
+                                                                                                                                position: relative;
+                                                                                                                                left: 30%;         
+                                                                                                                                top: -20px;                                                                                                                        
+                                                                                                                              } 
+                        
+                                                                                                                              .divDato:nth-child(2){                                                              
+                                                                                                                                left: 44%;         
+                                                                                                                                top: -20px;                                                                                                        
+                                                                                                                              } 
+                                              
+                                                                                                                              .divDato:nth-child(3){                                                              
+                                                                                                                                left: -13%;         
+                                                                                                                                top: 60px;                                                                                  
+                                                                                                                              } 
+                                              
+                                                                                                                              .divDato:nth-child(4){                                                              
+                                                                                                                                left: -10%;         
+                                                                                                                                top: 60px;                                                                                            
+                                                                                                                              }
+                                                                                                                              
+                                                                                                                              #divTituloInicial{
+                                                                                                                                position: relative;
+                                                                                                                                top: 25px;
+                                                                                                                              }
+        
+                                                                                                                              #h1_tituloinicio{
+                                                                                                                                height: 140px;
+                                                                                                                              }
+        
+                                                                                                                              #h1_tituloinicio>span{
+                                                                                                                                position: relative;
+                                                                                                                                left: 22%;
+                                                                                                                              }
+        
+                                                                                                                              @media screen and (max-width: 337px)
+                                                                                                                              and (min-width: 280px){
+        
+                                                                                                                                .divDato:nth-child(4){                                                              
+                                                                                                                                  left: 58%;         
+                                                                                                                                  top: -48px;                                                                                            
+                                                                                                                                  
+                                                                                                                                }
+        
+                                                                                                                                @media screen and (max-width: 336px)
+                                                                                                                                and (min-width: 280px){
+        
+                                                                                                                                  /*Para redirigir a la página de la UNI*/
+                                                                                                                                    #sectionLinkUni{  
+                                                                                                                                      background: linear-gradient(171deg, rgba(255,255,255,1) 0%, rgba(16,36,97,1) 35%, rgba(16,36,97,1) 100%);
+                                                                                                                                      width: 160px;   
+                                                                                                                                      height: 40px; 
+                                                                                                                                      border-top-right-radius: 15px;
+                                                                                                                                      border-bottom-left-radius: 15px;
+                                                                                                                                      border-color: white;
+                                                                                                                                      border-width: 1px;
+                                                                                                                                      border-style: solid;
+                                                                                                                                      position: relative;
+                                                                                                                                      left: 5%;
+                                                                                                                                      top: 10px;      
+                                                                                                                                    }
+        
+                                                                                                                                    /* #sectionLinkUni:hover{
+                                                                                                                                      cursor: pointer;
+                                                                                                                                    } */
+        
+                                                                                                                                    .linkUni{
+                                                                                                                                      display: inline-block;  
+                                                                                                                                      margin-left: 0px;
+                                                                                                                                      color: white; 
+                                                                                                                                      position: relative; 
+                                                                                                                                      bottom: -5px;
+                                                                                                                                      right: 110px;
+                                                                                                                                    }
+        
+                                                                                                                                    .linkUni:nth-child(1){    
+                                                                                                                                      position: absolute;
+                                                                                                                                      bottom: 8px;
+                                                                                                                                      left: 10px;
+                                                                                                                                      
+                                                                                                                                    }
+        
+                                                                                                                                    .linkUni:nth-child(2){    
+                                                                                                                                      margin-left: 5px;  
+                                                                                                                                      border-left-style: solid;
+                                                                                                                                      border-left-color: white;
+                                                                                                                                      border-left-width: 2px;
+                                                                                                                                      padding-left: 8px;
+                                                                                                                                      position: relative;
+                                                                                                                                      left: 45px;
+                                                                                                                                      bottom: 3px;
+                                                                                                                                    }
+                                                                                                                                  /*=====================================*/
+        
+                                                                                                                                  @media screen and (max-width: 335px)
+                                                                                                                                  and (min-width: 280px){
+        
+                                                                                                                                    /*Inicio Sección Line de Tiempo*/
+                                                                                                                                      
+                                                                                                                                      #ulMenuLineaTiempo{                                                                                                      
+                                                                                                                                        top: 100px;
+                                                                                                                                      }
+                                                                                                                                    /*Fin Sección Line de Tiempo*/
+                                                                                                                                      
+                                                                                                                                    #divLineaTiempoEvento{
+                                                                                                                                      top: -50px;
+                                                                                                                                    }
+        
+                                                                                                                                    @media screen and (max-width: 330px)
+                                                                                                                                    and (min-width: 280px){
+
+                                                                                                                                      .liMenuLineaTiempo{
+                                                                                                                                        top: 130px;
+                                                                                                                                      }
+        
+                                                                                                                                      @media screen and (max-width: 311px)
+                                                                                                                                      and (min-width: 280px){
+
+                                                                                                                                        .liMenuLineaTiempo{
+                                                                                                                                          top: 140px;
+                                                                                                                                        }
+
+                                                                                                                                        .social-icons{
+                                                                                                                                          bottom: 30px;
+                                                                                                                                        }
+        
+                                                                                                                                        .h3_Titulo_Noticia{
+                                                                                                                                          font-size: 14px;
+                                                                                                                                        }
+                                                                                                                                        /*Inicio Footer*/
+                                                                                                                                          .site-footer
+                                                                                                                                          {
+                                                                                                                                            padding-bottom:0                                
+                                                                                                                                          }
+                                                                                                                                          .site-footer hr
+                                                                                                                                          {
+                                                                                                                                            border-top-color:rgb(255, 255, 255);
+                                                                                                                                            margin-top: 60px;
+                                                                                                                                            opacity:0.5
+                                                                                                                                          }
+                                                                                                                                          .site-footer .footer-links{
+                                                                                                                                            text-align: left;
+                                                                                                                                            margin: 10px;
+                                                                                                                                            font-size:14px;                                  
+                                                                                                                                          }
+                                                                                                                                          .site-footer .copyright-text
+                                                                                                                                          {
+                                                                                                                                            text-align:center;
+                                                                                                                                          }
+                                                                                                                                          .site-footer .social-icons
+                                                                                                                                          {
+                                                                                                                                            text-align:left;                            
+                                                                                                                                            margin-top: -320px;
+                                                                                                                                            margin-left: -110px;
+                                                                                                                                          }
+                                                                                                                                          .copyright-text
+                                                                                                                                          {                                                            
+                                                                                                                                            margin-bottom: 10px;
+                                                                                                                                          }
+                                                                                                                                        /*Fin Footer*/
+        
+                                                                                                                                        @media screen and (max-width: 306px)
+                                                                                                                                        and (min-width: 280px){
+
+                                                                                                                                          .liMenuLineaTiempo{
+                                                                                                                                            font-size: 13px;
+                                                                                                                                            /* top: 160px; */
+                                                                                                                                          }
+                                                          
+                                                                                                                                          .divDato:nth-child(3){                                                              
+                                                                                                                                            left: -20%;
+                                                                                                                                          } 
+        
+                                                                                                                                          @media screen and (max-width: 297px)
+                                                                                                                                          and (min-width: 280px){
+                      
+                                                                                                                                            .button-menu{
+                                                                                                                                              left: 300%;
+                                                                                                                                            }
+                      
+                                                                                                                                            #divMenuDespliegue{                                                                                              
+                                                                                                                                              left: -35%;
+                                                                                                                                            }
+                      
+                                                                                                                                            .nav-links{                                                                                              
+                                                                                                                                              width: 70%;
+                                                                                                                                            }
+                      
+                                                                                                                                            .liMenuLineaTiempo{                                                                                              
+                                                                                                                                              font-size: 13px;
+                                                                                                                                            }
+                      
+                                                                                                                                            .secLineaDeTiempoEvento>h3{                                                                                              
+                                                                                                                                              font-size: 18px;
+                                                                                                                                            } 
+                      
+                                                                                                                                            /*Inicio Sección Noticias*/
+                                                                                                                                              #div_Noticia_Secundario{                                                                                                                                            
+                                                                                                                                                height: 179px;
+                                                                                                                                                left: 1.8%;
+                                                                                                                                              }
+                                                                                
+                                                                                                                                              #div_Noticia_Terciario{                                                                                                                                            
+                                                                                                                                                height: 179px;
+                                                                                                                                                bottom: 358px;
+                                                                                                                                                left: 1.8%;
+                                                                                                                                              }
+                      
+                                                                                                                                              #div_Noticia_Terciario > div{                                                                                                              
+                                                                                                                                                top: 75px;                                                                                                              
+                                                                                                                                              }
+                      
+                                                                                                                                              #div_Noticia_Terciario:hover > div{
+                                                                                                                                                height: 70px;                                                                                                              
+                                                                                                                                                top: 6px;
+                                                                                                                                              }
+                      
+                                                                                                                                              #div_Noticia_Secundario > div{                                                                                                              
+                                                                                                                                                top: 75px;                                                                                                              
+                                                                                                                                              }
+                      
+                                                                                                                                              #div_Noticia_Secundario:hover > div{
+                                                                                                                                                height: 70px;                                                                                                              
+                                                                                                                                                top: 6px;
+                                                                                                                                              }                                                                                                                                                                                                                    
+                                                                                                                                            /*Fin Sección Noticias*/
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            .pTituloInicial{                                                                                              
+                                                                                                                                              width: 99%;
+                                                                                                                                            }
+                      
+                                                                                                                                            @media screen and (max-width: 294px)
+                                                                                                                                            and (min-width: 280px){
+                      
+                                                                                                                                              /*===INICIO BOTÓN UNI.EDU===*/
+                                                                                                                                                                                                                                                                    
+                                                                                                                                              /*===FIN BOTÓN UNI.EDU===*/
+                      
+                                                                                                                                              @media screen and (max-width: 290px)
+                                                                                                                                              and (min-width: 280px){
+                                                                                                                                                #divLineaTiempoEvento{
+                                                                                                                                                  top: -100px;
+                                                                                                                                                }
+
+                                                                                                                                                #fondo{
+                                                                                                                                                  width: 98%;
+                                                                                                                                                  text-align: justify;
+                                                                                                                                                }
+
+                                                                                                                                                .button-menu{
+                                                                                                                                                  left: 300%;
+                                                                                                                                                }
+                      
+                                                                                                                                                #divMenuDespliegue{                                                                                              
+                                                                                                                                                  left: -35%;
+                                                                                                                                                }
+                      
+                                                                                                                                                .nav-links{                                                                                              
+                                                                                                                                                  width: 70%;
+                                                                                                                                                }
+                      
+                                                                                                                                                .liMenuLineaTiempo{                                                                                              
+                                                                                                                                                  font-size: 13px;
+                                                                                                                                                }
+                      
+                                                                                                                                                .secLineaDeTiempoEvento>h3{                                                                                              
+                                                                                                                                                  font-size: 18px;
+                                                                                                                                                } 
+                                                                                                                                                
+                                                                                                                                                #div_Noticia_Secundario{                                                                                                                                            
+                                                                                                                                                  height: 179px;
+                                                                                                                                                  left: 1.8%;
+                                                                                                                                                }
+                                                                                  
+                                                                                                                                                #div_Noticia_Terciario{                                                                                                                                            
+                                                                                                                                                  height: 179px;
+                                                                                                                                                  bottom: 358px;
+                                                                                                                                                  left: 1.8%;
+                                                                                                                                                }
+        
+                                                                                                                                                .pTituloInicial{
+                                                                                                                                                  left: 1%;
+                                                                                                                                                }
+        
+                                                                                                                                                #h1_tituloinicio{
+                                                                                                                                                  left: 0%;                                                                                                                                          
+                                                                                                                                                  width: 100%;
+                                                                                                                                                  display: inline-block;
+                                                                                                                                                  width: 100%;
+                                                                                                                                                  text-align: center;
+                                                                                                                                                }
+                                                                                                                                                
+                                                                                                                                                #idPTituloInicial {
+                                                                                                                                                  display: inline-block;
+                                                                                                                                                  width: 100%;
+                                                                                                                                                  text-align: center;
+                                                                                                                                                }
+        
+                                                                                                                                                #h1_tituloinicio>span{
+                                                                                                                                                  display: inline-block;
+                                                                                                                                                  left: 0%;                                                                                                                                          
+                                                                                                                                                }        
+                                                                                                                                              }
+                                                                                                                                            }                                                                                                                  
+                                                                                                                                          }
+                                                                                                                                        }                                                                                                                                                                                                            
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }                                                                                                  
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }                                                                                                                                                                                                                                                                                      
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }  
+                                                                                                                    }                                                                                                                                                                                                        
+                                                                                                                  }
+                                                                                                                }                                                                                
+                                                                                                              }                                                                              
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }                                                                                            
+                                                                                                      }                                                                          
+                                                                                                    }
+                                                                                                  }                                                                                      
+                                                                                                }
+                                                                                              }                                                                                                                                                                                                                                        
+                                                                                            }                                                                      
+                                                                                          }
+                                                                                        }
+                                                                                      }                                                                            
+                                                                                    } 
+                                                                                  }                                                                                                                                                                                                                                                                                                                                                 
+                                                                                }
+                                                                              }
+                                                                            }                                                                                                                                                                                                                                                                                                               
+                                                                          }
+                                                                        }
+                                                                      }                                                        
+                                                                    }                                                                                                                   
+                                                                  }
+                                                                }                                                                                                                 
+                                                              }
+                                                            }                                                                                                           
+                                                          }                                                    
+                                                        }                                                  
+                                                      }                                                
+                                                    }
+                                                  }                                                                                                                                                                                                                  
+                                                }
+                                              }                                    
+                                            }                                                                               
+                                          }
+                                        }                                      
+                                      }                                                                                                                                                                              
+                                    }                                                         
+                                  }                                                   
+                                }
+                              }                       
+                            }            
+                          }  
+                        }              
+                      }                      
+                    }                                                        
+                  } 
+                }
+              }                 
+            }
+          }      
+        }
+      }
+    }
+  }

@@ -1,0 +1,114 @@
+
+CREATE PROCEDURE `Mostrar_Cat_Subcategoria`()
+
+BEGIN
+	
+
+select distinct c.Nombre_Categoria, group_concat(s.Nombre_SubCategoria, '<br>' separator'') as subcategoria from categoria as c
+    
+inner join categoria_subcategoria as cs on cs.ID_Categoria = c.ID_Categoria
+    inner join subcategoria as s on cs.ID_SubCategoria = s.ID_SubCategoria
+    
+inner join categoria_evento as ce on ce.ID_Categoria_SubCategoria = cs.ID_Categoria_SubCategoria
+    
+inner join evento as e on e.ID_Evento = ce.ID_Evento where e.Id_Evento = 1 
+    
+and c.Activo = 1 and e.Activo = 1 and s.Activo = 1 
+    
+group by c.Nombre_Categoria;
+
+
+END
+
+*********************************************************************
+
+CREATE PROCEDURE `Mostrar_CatS_UE`(idf bigint(20))
+
+BEGIN    
+
+declare id_uf bigint(20) default idf;    
+
+select distinct c.Nombre_Categoria, group_concat(s.Nombre_SubCategoria, '<br>' separator'') as subcategoria from categoria as c    
+inner join categoria_subcategoria as cs on cs.ID_Categoria = c.ID_Categoria
+inner join subcategoria as s on cs.ID_SubCategoria = s.ID_SubCategoria    
+inner join categoria_evento as ce on ce.ID_Categoria_SubCategoria = cs.ID_Categoria_SubCategoria    
+inner join evento as e on e.ID_Evento = ce.ID_Evento where e.Id_Evento = id_uf 
+group by c.Nombre_Categoria;    
+
+
+END
+
+*********************************************************************
+
+CREATE PROCEDURE `Mostrar_EventoActual`()
+
+Begin
+	
+Select e.Nombre_Evento, e.Eslogan, e.hora, e.Fecha, s.Nombre_Sitio from evento e 
+inner join sitio s on s.ID_Sitio = e.ID_Sitio    
+Where Year(e.Fecha) = Year(CurDate()) and e.Activo = 1 and e.ID_Tipo_Evento = 1;
+
+End
+
+*********************************************************************
+
+CREATE PROCEDURE `Mostrar_Proyecto_Categoria`()
+
+BEGIN    
+
+select c.Nombre_Categoria, count(p.ID_Proyecto) as Proyectos from categoria as c
+	inner join categoria_subcategoria as cs on cs.ID_Categoria = c.ID_Categoria
+	inner join categoria_evento as ce on ce.ID_Categoria_SubCategoria = cs.ID_Categoria_SubCategoria	
+inner join proyecto as p on p.ID_Categoria_Evento = ce.ID_Categoria_Evento 
+inner join evento as e on e.ID_Evento = ce.ID_Evento where year(e.Fecha) = year(curdate()) and p.Activo = 1	
+and c.Activo = 1 and e.Activo = 1	
+group by c.ID_Categoria;
+
+END
+
+*********************************************************************
+
+CREATE PROCEDURE `Mostrar_Ultimo_Proyecto_Cat`(id bigint(20))
+
+BEGIN
+
+	
+
+declare id_e bigint(20) default id;
+	
+    
+
+select c.Nombre_Categoria, count(p.ID_Proyecto) as Proyectos from categoria as c
+	inner join categoria_subcategoria as cs on cs.ID_Categoria = c.ID_Categoria
+	inner join categoria_evento as ce on ce.ID_Categoria_SubCategoria = cs.ID_Categoria_SubCategoria
+	inner join proyecto as p on p.ID_Categoria_Evento = ce.ID_Categoria_Evento 
+	inner join evento as e on e.ID_Evento = ce.ID_Evento where e.ID_Evento = id_e and p.Activo = 1 
+	
+group by c.ID_Categoria;
+    
+
+
+END
+
+********************************************************************
+
+CREATE PROCEDURE `Mostrar_UltimoEvento`()
+
+
+BEGIN
+	
+
+Select e.ID_Evento, e.Nombre_Evento, e.Eslogan, e.Fecha, s.Nombre_Sitio from evento e 
+    
+inner join sitio s on s.ID_Sitio = e.ID_Sitio
+    
+where Year(e.Fecha) < Year(CurDate()) 
+    
+and e.Activo = 0 and e.ID_Tipo_Evento = 1
+    
+and e.Fecha != '000-00-00'
+    
+order by e.Fecha desc limit 1;
+
+
+END

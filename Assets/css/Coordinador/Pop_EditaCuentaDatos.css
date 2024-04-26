@@ -1,0 +1,200 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 320px;
+    height: 380px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+
+.modal-title {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+input {
+    background: none;
+    color: #ffffff;
+    display: block;
+    width: 210%;
+    margin: auto;
+    margin-left: 5px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 10px;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+.texto {
+    color: #ffffff;
+    left: 35px;
+    top: 8px;
+}
+
+input:focus {
+    outline: none;
+    color: #ffffff;
+}
+
+input:focus~label,
+input:valid~label {
+    position: absolute;
+    top: -23px;
+    font-size: 16px;
+    color: #78788c;
+    font-family: Calibri, sans-serif;
+}
+
+.NotaCampos {
+    color: #ffffff;
+    left: 35px;
+    top: 8px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 13px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 10px;
+    transition: 0.3s ease all;
+    pointer-events: none;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+.Closedes {
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+.grupo {
+    position: relative;
+    margin: 37px;
+    top: 20px;
+}
+
+#grupoc {
+    top: 30px;
+}
+
+.btncontra {
+    margin-top: 60px;
+    left: 98px;
+    box-shadow: 1px 1px 5px#000000;
+    height: 45px;
+    width: 115px;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.btncancelarc {
+    position: absolute;
+    margin-top: 180px;
+    left: 10px;
+    width: 120px;
+    height: 30px;
+    color: #ffffff;
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.btnguardarc {
+    position: absolute;
+    margin-top: 180px;
+    height: 30px;
+    width: 135px;
+    /*color: #102461; */
+    color: #ffffff;
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 2000px) and (min-width: 280px) {
+    @media screen and (max-width: 1800px) and (min-width: 280px) {
+        @media screen and (max-width: 1649px) and (min-width: 280px) {
+            @media screen and (max-width: 1500px) and (min-width: 280px) {
+                @media screen and (max-width: 1200px) and (min-width: 280px) {
+                    @media screen and (max-width: 1043px) and (min-width: 280px) {
+                        @media screen and (max-width: 1000px) and (min-width: 280px) {
+                            @media screen and (max-width: 767px) and (min-width: 280px) {
+                                input {
+                                    width: 100%;
+                                    margin-left: 0%;
+                                }
+
+                                @media screen and (max-width: 521px) and (min-width: 280px) {
+                                    @media screen and (max-width: 480px) and (min-width: 280px) {
+                                        @media screen and (max-width: 399px) and (min-width: 280px) {
+                                            .modal-content {
+                                                width: 330px;
+                                            }
+
+                                            @media screen and (max-width: 343px) and (min-width: 280px) {
+                                                .modal-content {
+                                                    width: 290px;
+                                                    height: 400px;
+                                                }
+
+                                                .btncontra {
+
+                                                    width: 100px;
+                                                    height: 50px;
+
+                                                }
+
+                                                .btncancelarc {
+
+                                                    width: 100px;
+                                                    height: 50px;
+
+                                                }
+
+                                                .btnguardarc {
+                                                    height: 50px;
+                                                    width: 100px;
+
+                                                }
+
+                                                @media screen and (max-width: 310px) and (min-width: 280px) {
+                                                    .modal-content {
+                                                        width: 250px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

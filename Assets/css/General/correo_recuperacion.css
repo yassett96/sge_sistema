@@ -1,0 +1,324 @@
+body, .modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    transition: all 500ms ease;
+}
+
+.modal-content{
+    width: 350px;
+    height: 190px;
+    margin: auto;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+
+.h1{
+    margin-top: -100px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.texto{
+    color: #ffffff;
+    margin: 20px 0px 0px 40px;
+    font-size: 18px;
+}
+
+.grupo{
+    position: relative;
+    margin: 37px;
+    top: 7px;    
+}
+
+input{
+    background: none;
+    color: #ffffff;    
+    display: block;
+    width: 100%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #ffffff;  
+    margin-top: 55px;  
+    font-family: Calibri, sans-serif;
+    font-size: 16px;           
+}
+
+input:focus{
+    outline: none;
+    color: #ffffff;            
+}
+
+input:focus~label,
+input:valid~label{
+    position: absolute;
+    top: -20px;
+    font-size: 16px;
+    color: #78788c;    
+}
+
+label{
+    color: #78788c;
+    font-size: 18px;
+    position: absolute;
+    left: 3px;
+    top: -3px;
+    transition: 0.3s ease all;    
+    pointer-events: none;
+    font-family: Calibri, sans-serif;
+}
+
+.icono-error{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 31px;
+    left: 8px;
+}
+
+.error{
+    margin-top: 33px;
+    color: red;
+    left: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.btnenviar{
+    width: 80px;
+    position: absolute;
+    margin: -7px 0px 0px 130px;
+    color: #102461; 
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 100px;
+}
+
+/******************************************************/ 
+
+@media screen and (max-width: 460px) /*Celular*/
+and (min-width: 380px){
+    
+    .h1{
+        margin-top: -100px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 379px) /*Celular*/
+and (min-width: 335px){
+    
+    .h1{
+        margin-top: -100px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .modal-content{
+        width: 320px;
+        height: 190px;
+        margin: auto;
+        background-color: #102461;
+        border-radius: 10px;
+        border-color: #ffffff;
+        box-shadow: 0px 0px 6px 6px #000e2979;
+        border: 1px solid #d0d0d0;
+    }
+
+    .btnenviar{
+        width: 80px;
+        position: absolute;
+        margin: -7px 0px 0px 118px;
+        color: #102461; 
+        box-shadow: 1px 1px 5px#000000;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 334px) /*Celular*/
+and (min-width: 300px){
+    
+    .h1{
+        margin-top: -100px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .modal-content{
+        width: 280px;
+        height: 190px;
+        margin: auto;
+        background-color: #102461;
+        border-radius: 10px;
+        border-color: #ffffff;
+        box-shadow: 0px 0px 6px 6px #000e2979;
+        border: 1px solid #d0d0d0;
+    }
+
+    .texto{
+        color: #ffffff;
+        margin: 20px 0px 0px 48px;
+        font-size: 18px;
+    }    
+
+    input{
+        background: none;
+        color: #ffffff;    
+        display: block;
+        width: 120%;
+        margin: -18px;
+        border: none;
+        border-bottom: 1px solid #ffffff;  
+        margin-top: 55px;  
+        font-family: Calibri, sans-serif;
+        font-size: 16px;           
+    }
+
+    label{
+        color: #78788c;
+        font-size: 18px;
+        position: absolute;
+        left: -15px;
+        top: -3px;
+        transition: 0.3s ease all;    
+        pointer-events: none;
+        font-family: Calibri, sans-serif;
+    }
+
+    .icono-error{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        margin-top: 31px;
+        left: -15px;
+    }
+    
+    .error{
+        margin-top: 33px;
+        color: red;
+        left: 8px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .btnenviar{
+        width: 80px;
+        position: absolute;
+        margin: 5px 0px 0px 100px;
+        color: #102461; 
+        box-shadow: 1px 1px 5px#000000;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        margin-right: 100px;
+    }
+
+}
+
+@media screen and (max-width: 299px) /*Celular*/
+and (min-width: 280px){
+    
+    .h1{
+        margin-top: -100px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .modal-content{
+        width: 270px;
+        height: 190px;
+        margin: auto;
+        background-color: #102461;
+        border-radius: 10px;
+        border-color: #ffffff;
+        box-shadow: 0px 0px 6px 6px #000e2979;
+        border: 1px solid #d0d0d0;
+    }
+
+    .texto{
+        color: #ffffff;
+        margin: 20px 0px 0px 50px;
+        font-size: 18px;
+    }    
+
+    input{
+        background: none;
+        color: #ffffff;    
+        display: block;
+        width: 130%;
+        margin: -25px;
+        border: none;
+        border-bottom: 1px solid #ffffff;  
+        margin-top: 55px;  
+        font-family: Calibri, sans-serif;
+        font-size: 16px;           
+    }
+
+    label{
+        color: #78788c;
+        font-size: 18px;
+        position: absolute;
+        left: -22px;
+        top: -3px;
+        transition: 0.3s ease all;    
+        pointer-events: none;
+        font-family: Calibri, sans-serif;
+    }
+
+    .icono-error{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        margin-top: 31px;
+        left: -18px;
+    }
+    
+    .error{
+        margin-top: 33px;
+        color: red;
+        left: 6px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .btnenviar{
+        width: 80px;
+        position: absolute;
+        margin: 10px 0px 0px 93px;
+        color: #102461; 
+        box-shadow: 1px 1px 5px#000000;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        margin-right: 100px;
+    }
+
+}
+
+
+

@@ -1,0 +1,2006 @@
+/*=== INICIO HEADER ===*/
+header{
+  width: 100%;
+  height: 70px;
+  box-shadow: inset 200px 200px 200px 200px rgba(0, 0, 0, 0.3);
+}
+  
+#sectionCentralizarLogoNombre{
+  width: 250px;
+  height: 70px;  
+  float: right;
+  position: relative;
+  bottom: 55px;    
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#idPTituloInicial{
+  color: #FFFFFF;    
+  font-size: calc(1em + 1vw);    
+  width: 50%;
+  height: 20%; 
+  position: relative;
+  left: 39%;
+  top: 50px;  
+}
+
+#idDivLogoEslogan{
+  height: 200px;
+  text-align: center;
+}
+
+#idImgLogo{
+  width: 13%;
+  height: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  left: -3%;
+}
+
+#idTextEslogan{
+  background-color: transparent;
+  border-width: 0px;
+  resize: none;
+  height: 200px;
+  position: relative;
+  left: -3%;
+  max-width: 34%;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  font-size: 25px;
+  text-align: justify;
+}
+
+#divTituloInicial{
+  width: 100%;
+  /* background-color: black; */
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;  
+  /* margin-bottom: 60px; */
+}
+
+#divTituloInicial>p{
+  -webkit-text-fill-color: white;       
+  font-size: 40px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1.5px #8e8e37;
+  margin: 0;
+}
+
+.logo{
+  width: 30%;
+  height: 70px;
+  float: left;
+  margin-top: 9px;
+  position: relative;
+  right: 105px;
+  text-align: center;
+}
+
+body{
+  background-image: url('../../imagenes/Recursos/Fondo.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+ul{
+  margin-right: 15%;
+}
+
+li{
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+#imgLogUsuario{
+  height: 50px;
+  width: 50px;
+  align-self: center;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+  border-radius: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0197fc;
+  vertical-align: top;
+  position: relative;
+  top: 1px;
+}
+
+#aNombreUsuario{
+  color: white;  
+  vertical-align: bottom;
+  position: relative;
+  bottom: 1px;
+}
+
+/*=== INICIO MENU DESPLIEGUE ===*/
+  #divMenuDespliegue{  
+    /* background-color: #102461;     */
+    background-image: linear-gradient(to bottom, #102461 50%, transparent 50%);    
+    width: 8%;
+    height: 160px;
+    float: right;
+    position: relative;
+    top: 0px;
+    left: 11.7%;
+    visibility: hidden;
+    z-index: 1;
+    transition: all ease 0.5s;    
+  }
+
+  #divMenuDespliegue>a {
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    text-decoration: none;
+  }
+  
+  #divMenuDespliegue>a:nth-child(1):hover{        
+    background-color: #00a4bd;
+    transition: all ease-in-out 0.2s;
+  }
+
+  #divMenuDespliegue>a:nth-child(2):hover{    
+    background-color: #00a4bd;
+    transition: all ease-in-out 0.2s;
+  }
+/*=== FIN MENU DESPLIEGUE ===*/
+
+#texto{
+  color: white;
+  
+}
+
+/*=== FIN HEADER ===*/
+
+/*=== INICIO ENCABEZADOS ===*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+  #h1TextoInicial{
+      color: white;
+      font-size: 35px;
+      text-align: center;
+      position: relative;
+      right: 5%;
+      top: 50px;
+      width: 80%;
+  }
+
+  /*=== INICIO TEMPORIZADOR ===*/
+  #divTemporizador{
+    align-items: center;
+    width: 35%;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    bottom: 25px;
+  }
+
+  .h2Encabezado{
+    color: yellow;
+    font-style:italic;
+    font-weight:bold;
+    font-family:'Calibri';
+  }
+
+  .h2Digito{
+    position: relative;
+    left: 20%;
+    color: aqua;
+    font-weight:bold;
+    font-family:'Calibri';
+  }
+
+  #h2DigitoHoras{
+    position: relative;
+    left: 30%;
+  }
+
+  #h2DigitoMinutos{
+    position: relative;
+    left: 32%;
+  }
+
+  #h2DigitoSegundos{
+    position: relative;
+    left: 37%;
+  }
+
+  .divDato{
+    display: inline-block;
+    margin-right: 5%;
+  }
+
+  .aDosPuntos{
+    position: relative;
+    right: 15%;
+    top: 85px;
+    font-size: 20px;
+    color: aqua;
+  }
+
+  /*=== FIN TEMPORIZADOR ===*/
+
+  /*INICIO BOTONES*/
+    #idDivBotones{
+      text-align: center;
+      position: relative;
+      top: 20px;
+      left: 0%;
+      width: 100%;
+    }
+
+    .boton-imagen{
+      margin-right: 10%;
+      width: 11%;
+      height: 220px;
+      border-radius: 10px;
+      background-color: white;
+      opacity: 0.6;
+      position: relative;
+      left: 2%;
+      bottom: 0px;
+      transition: opacity 1s ease-in-out, bottom 0.5s ease-in-out;
+      box-shadow: 12px 12px 8px rgba(0, 0, 0, 1);
+    }
+
+    .boton-imagen:hover{
+      opacity: 1;
+      bottom: 10px;
+    }
+
+    .boton-imagen>img{
+      width: 50%;
+      margin-bottom: 50px;
+    }
+
+    .boton-imagen>span{
+      color: #012175;
+      font-weight: bold;
+    }
+  /*FIN BOTONES*/
+
+/*=== FIN ENCABEZADOS ===*/ 
+
+  /*INICIO INSTRUCCIONES Y CONTACTOS*/
+    #idDivInstruccionesContactos{
+      background-color: #86a2dc;
+      width: 60%;
+      height: 400px;
+      position: relative;
+      left: 17%;
+      border-radius: 7px;
+      border-width: 20px;
+      border-color: #bbc8ee;
+      border-style: solid;
+    }    
+    
+    #ulNavegacionInstruccionesContactos{
+      background-color: #86a2dc;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border-bottom: solid 1px white;
+    }
+
+    .liNavegacionInstruccionesContactos{
+      display: inline-block;
+      width: 49.8%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .liNavegacionInstruccionesContactos:hover{
+      cursor: pointer;
+    }
+
+    #liInstruccionesGenerales{
+      background-color: #86a2dc;
+      color: white;
+      font-weight: bold;
+    }
+
+    #liContacto{
+      background-color: white;
+      color: #102461;
+      font-weight: bold;
+    }
+
+    .pNavegacionInstruccionesContactos{
+      position: relative;
+      top: 5px;
+    }
+
+    #scrollable{
+      overflow: scroll;
+      height: 300px;
+    }
+    
+    #idDivInstruccionesGenerales{
+      position: absolute;
+      left: 0%;
+      bottom: 0px;
+      overflow: scroll;
+      height: 310px;
+      width: 100%;
+    }
+
+    #idPTextoInstruccionesGenerales{
+      position: relative;
+      left: 2%;
+      width: 90%;
+      
+    }
+
+    #idDivContactoTI{
+      position: absolute;
+      overflow: scroll;
+      bottom: 0px;
+      height: 310px;
+      width: 100%;
+      visibility: hidden;
+    }
+
+    #idPTextoContacto{
+      position: relative;
+      left: 2%;
+      width: 90%;
+    }
+    
+  /*FIN INSTRUCCIONES Y CONTACTOS*/
+
+  .container {
+    flex: 1;
+  }
+
+  .main-header{
+    display: none;
+  }  
+
+  
+/* INICIA FOOTER*/    
+
+  .site-footer
+  {
+    background-color: #102461;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#ffffff;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif, serif;
+  }
+  .site-footer hr
+  {
+    border-top-color:#bbb;
+    opacity:0.5
+  }
+  .site-footer .footer-links .fa{
+      color: #ffffff;
+      margin-right: 15px;
+  }
+
+  .site-footer hr.small
+  {
+    margin:20px 0
+  }
+  .site-footer h2
+  {
+      color: #fff;
+      font-family: 'Montserrat', sans-serif, serif;
+      font-size:  150%;
+      padding-bottom: 0.625rem;
+      list-style:none; 
+  }
+  .site-footer a
+  {
+      color: #fff;
+      font-family: 'Montserrat', sans-serif, serif;
+      font-size: 95%;
+      padding-bottom: 0.625rem;
+  }
+  .site-footer a:hover
+  {
+    color:#3366cc;
+    text-decoration:none;
+  }
+  .footer-links
+  {
+    padding-left:0;
+    list-style:none
+  }
+  .footer-links li
+  {
+    display:block;
+    margin-top: 15px;
+    margin-right: 60px; /*Se pasa a 50px para el index*/
+    
+  }
+  .footer-links a
+  {
+    color:#ffffff
+  }
+  .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+  {
+    color:#3366cc;
+    text-decoration:none;
+  }
+  .footer-links.inline li
+  {
+    display:inline-block
+  }
+  .site-footer .social-icons
+  {
+    text-align:right
+  }
+  .site-footer .social-icons a
+  {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#ffffff;
+    color:#102461;
+  }
+  .copyright-text
+  {
+    margin:0
+  }
+
+  .social-icons
+  {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+    margin-left: 10px;    
+    width: 100%;
+  }
+  .social-icons li
+  {
+    display:inline-block;
+    margin-bottom:4px;
+    margin: 0px; /*Se agrega para junatar los iconos en el index_srse*/
+  }
+  .social-icons li.title
+  {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+  }
+  .social-icons a{
+    background-color:#00476b;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+    color:#fff;
+    background-color:#29aafe
+  }
+  .social-icons.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+  }
+  .social-icons a.facebook:hover
+  {
+    background-color:#3b5998
+  }
+  .social-icons a.global:hover
+  {
+    background-color:#00aced
+  }
+
+/*TERMINA FOOTER*/
+
+/*Inicio de Responsive en cascada*/
+@media screen and (max-width: 2000px)
+and (min-width: 280px){
+  /*Inicio Menu Despliegue*/
+  #divMenuDespliegue{      
+    left: 10.2%;   
+  }
+  /*Fin Menu Despliegue*/  
+    
+    
+  #divTemporizador{    
+    left: 3.5%;
+  }
+
+  #divTituloInicial{  
+    justify-content: center;    
+    text-align: center;        
+  }   
+
+  #divTituloInicial>p{
+    position: relative;
+    right: 2%;
+  }
+
+
+  @media screen and (max-width: 1885px)
+  and (min-width: 280px){
+    
+    .liNavegacionInstruccionesContactos{
+      background-color: black;
+      width: 49.7%;
+    }
+
+    @media screen and (max-width: 1800px)
+    and (min-width: 280px){
+      /*Inicio Menu Despliegue*/
+      #divMenuDespliegue{      
+        left: 11%;   
+      }
+      /*Fin Menu Despliegue*/
+
+      #divTemporizador{    
+        left: 2%;
+      }
+
+      @media screen and (max-width: 1649px)
+      and (min-width: 280px){
+
+        /*Inicio Menu Despliegue*/
+        #divMenuDespliegue{      
+          left: 11.5%;   
+        }
+        /*Fin Menu Despliegue*/
+
+        #divTemporizador{    
+          left: 1%;
+        }
+
+        @media screen and (max-width: 1567px)
+        and (min-width: 280px){
+          /*Inicio Menu Despliegue*/
+          #divMenuDespliegue{
+            left: 12.5%;
+            width: 9%;
+          }
+          /*Fin Menu Despliegue*/
+
+          @media screen and (max-width: 1520px)
+          and (min-width: 280px){
+
+            .boton-imagen:nth-child(2){
+              bottom: 10px;
+              transition: opacity 1s ease-in-out, bottom 0.5s ease-in-out;
+            }
+
+            .boton-imagen:nth-child(2):hover{
+              bottom: 20px;
+              opacity: 1;
+            }
+
+            @media screen and (max-width: 1500px)
+            and (min-width: 280px){
+
+              /*Inicio Menu Despliegue*/
+              #divMenuDespliegue{
+                left: 13%;
+                width: 9%;
+              }
+              /*Fin Menu Despliegue*/
+
+              #divTemporizador{    
+                left: 0%;
+              }
+
+              @media screen and (max-width: 1393px)
+              and (min-width: 280px){
+
+                /*Inicio Menu Despliegue*/
+                #divMenuDespliegue{
+                  left: 14%;
+                  width: 10%;
+                }
+                /*Fin Menu Despliegue*/
+
+                #h1TextoInicial{
+                  right: 2%;
+                }
+
+                @media screen and (max-width: 1378px)
+                and (min-width: 280px){
+
+                  /*Inicio Menu Despliegue*/
+                  #divMenuDespliegue{
+                    left: 14.2%;                
+                  }
+                  /*Fin Menu Despliegue*/
+
+                  #divTemporizador{                
+                    left: 1.5%;
+                    width: 42%;
+                  }
+                  
+                  .logo{
+                    right: 7%;
+                  }
+
+                  #h1TextoInicial{
+                    white-space: nowrap;
+                    /* justify-content: end; */
+                  }
+
+                  @media screen and (max-width: 1276px)
+                  and (min-width: 280px){
+
+                    .liNavegacionInstruccionesContactos{
+                      width: 49.6%;
+                    }
+
+                    .boton-imagen{
+                      width: 13%;
+                    }
+
+                    @media screen and (max-width: 1254px)
+                    and (min-width: 280px){
+
+                      .logo{
+                        right: 6%;
+                      }                    
+
+                      /*Inicio Menu Despliegue*/
+                      #divMenuDespliegue{
+                        left: 15.5%;                
+                        width: 130px;
+                      }
+                      /*Fin Menu Despliegue*/
+
+                      #ulNavHeader{
+                        width: 60%;
+                        position: relative;
+                        right: 2%;
+                      }
+
+                      #h1TextoInicial{
+                        right: 5.5%;
+                      }
+                        
+                      @media screen and (max-width: 1223px)
+                      and (min-width: 280px){
+
+                        #divTemporizador{                
+                          left: 4%;
+                          width: 52%;                  
+                        } 
+
+                        @media screen and (max-width: 1167px)
+                        and (min-width: 280px){  
+                          
+                          #divMenuDespliegue{
+                            left: 16.5%;
+                          }
+                          
+                          #divTemporizador{                
+                            left: 8%;
+                            width: 62%;                  
+                          } 
+
+                          @media screen and (max-width: 1156px)
+                          and (min-width: 280px){
+
+                            #divTemporizador{                          
+                              left: 9%;
+                              width: 65%;                
+                              z-index: -2;                
+                            }
+
+                            #ulNavHeader{                              
+                              width: 70%;
+                              right: 12%;
+                            }
+                            
+                            @media screen and (max-width: 1102px)
+                            and (min-width: 280px){
+
+                              .logo{
+                                right: 5%;
+                              }  
+
+                              #divMenuDespliegue{
+                                left: 17.5%;
+                              }
+
+                              #divTemporizador{                          
+                                left: 11%;
+                                width: 75%;                
+                                z-index: -2;                                            
+                              } 
+
+                              .divDato{                            
+                                left: 10%;
+                              }
+
+                              @media screen and (max-width: 1079px)
+                              and (min-width: 280px){
+            
+                                                                                                                  
+                                @media screen and (max-width: 1000px) /*Empieza Tablet*/
+                                and (min-width: 280px){
+                                  #ulNavHeader{                                        
+                                    visibility: hidden;
+                                  }
+                                  .main-header {
+                                    display: flex;
+                                    float:right;
+                                    margin-top: -2px;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    background-color: transparent;
+                                    padding: 0 0.4rem;
+                                  }
+
+                                  #idPTituloInicial{
+                                    height: 40px;
+                                    left: 23%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                  }
+
+                                  #divTituloInicial>p{
+                                    font-size: 35px;
+                                    position: relative;
+                                    left: 0%;
+                                  }
+
+                                  .boton-imagen{
+                                    width: 16%;
+                                  }
+
+                                  #h1TextoInicial{
+                                    right: 10%;
+                                  }
+
+                                  #idDivInstruccionesContactos{
+                                    width: 70%;
+                                    left: 12%;
+                                  }
+
+                                  /*Inicio Menú Móvil*/
+
+                                    #imgLogUsuarioMovil{
+                                      width: 60px;
+                                      height: 60px;
+                                      position: relative;
+                                      right: 30%;
+                                      top: 40px;
+                                      border-radius: 100%;
+                                      align-self: center;
+                                      transition: all ease-in-out 0.5s;
+                                      cursor: pointer;
+                                      border-radius: 100%;
+                                      border-width: 5px;
+                                      border-style: solid;
+                                      border-color: #0197fc;
+                                      vertical-align: top;
+                                    }
+
+                                    .Nombreusuario{
+                                      color:#FFFFFF;
+                                      margin-top: 20px;
+                                      margin-left: 30px;
+                                      text-align: left;
+                                    }
+
+                                    .button-menu {
+                                      z-index: 200;
+                                      width: 40px;
+                                      height: 40px;
+                                      border: none;
+                                      display: flex;
+                                      background: none;
+                                      flex-direction: column; /* Pondrá un span debajo del otro*/
+                                      align-items: center;
+                                      justify-content: center;
+                                      cursor: pointer;                                    
+                                      position: relative;
+                                      left: 800%;
+                                      bottom: 35px;                                    
+                                    }
+                                    /* Dibujamos una línea recta por cada span creando el tipico menu hamburguesa*/
+                                    .button-menu span {
+                                      width: 37px;
+                                      height: 4px;
+                                      margin-bottom: 5px;
+                                      position: relative;
+                                      background: #ffffff;
+                                      border-radius: 3px;
+                                      transform-origin: 4px 0px;
+                                      transition: all 0.2s linear;
+                                    }
+                                    /* con los span dibujamos un icono de cerrar para mostrar cuándo la navegación este abierta */
+                                    .button-menu.close span {
+                                      opacity: 1;
+                                      transform: rotate(45deg) translate(0px, 0px);
+                                      background: #ffffff;
+                                    }
+                                    .button-menu.close span:nth-child(2) {
+                                      transform: rotate(-45deg) translate(-8px, 5px);
+                                    }
+                                    .button-menu.close span:nth-child(3) {
+                                      display: none;
+                                    }
+
+                                    .main-nav {
+                                      position: fixed;
+                                      top: 0;
+                                      left: 0;
+                                      height: 100vh;
+                                      width: 100%;
+                                      margin-left: -100%;
+                                      transition: all 0.2s linear;
+                                      z-index: 100;
+                                      background-color: rgba(0, 0, 0, 0.7);
+                                    }
+
+                                    .main-nav.show {
+                                      margin-left: 0;
+                                    }
+
+                                    .nav-links {
+                                      background-color: #102461b0;
+                                      display: flex;
+                                      flex-direction: column;
+                                      width: 30%;
+                                      height: 100%;
+                                      align-items: left;
+                                      justify-content: flex-start;                                                                        
+                                    }
+
+                                    .link-item {
+                                      margin-top: 2rem;
+                                      color: #ffffff;
+                                      text-decoration: none;
+                                      font-weight: bold;
+                                      position: relative;
+                                      margin-left: 30px;
+                                      position: relative;
+                                      top: 50px;
+                                    }
+
+                                    .Nombreusuario{
+                                      position: relative;
+                                      top: 50px;
+                                    }                                
+                                  /*Fin Menú Móvil*/
+
+                                  .logo{
+                                    right: 4%;
+                                  }  
+
+                                  #sectionCentralizarLogoNombre{
+                                    visibility: hidden;
+                                  }                                                      
+                                  
+                                  /*Inicio Footer*/
+                                    /*Estos seria los cambios que se le hicieron al footer de acuerdo a esas dimenciones*/
+                                    .site-footer
+                                    {
+                                      padding-bottom:0
+                                    }
+                                    .site-footer .copyright-text
+                                    {
+                                      text-align:left;
+                                    }
+                                    .social-icons li.title
+                                    {
+                                      display:block;
+                                      margin-right:0;
+                                      font-weight:600
+                                    }
+                                    .site-footer .social-icons
+                                    {
+                                      text-align:right;  
+                                    }
+                                    .copyright-text
+                                    {
+                                      width: 350px;
+                                      margin-bottom: 10px;
+                                    }
+
+                                    /*Agregado para mover que se vea como se debe el footer*/
+                                    .footer-links li{
+                                      margin-right: 0px;
+                                    }
+                                  /*Fin Footer*/ 
+                                  /*Inicio Panel de Noticias*/                                                          
+
+                                    #fondo{
+                                      left: 0%;
+                                    }                                
+                                                                                    
+                                  /*Fin sección noticias*/
+                                  
+                                  @media screen and (max-width: 980px)
+                                  and (min-width: 280px){
+
+                                    @media screen and (max-width: 974px)
+                                    and (min-width: 280px){
+
+                                      .liNavegacionInstruccionesContactos{
+                                        width: 49.5%;
+                                      }
+
+                                      @media screen and (max-width: 918px)
+                                      and (min-width: 280px){                                      
+
+                                        #ulNavHeader{                                        
+                                          width: 60%;
+                                        }
+                                        
+                                        .logo{
+                                          left: -1%;
+                                        }
+
+                                        #idImgLogo{
+                                          width: 22%;
+                                          left: 0%;
+                                        }
+
+                                        #idTextEslogan{
+                                          max-width: 67%;
+                                          left: 0%;
+                                        }
+
+                                        @media screen and (max-width: 842px)
+                                        and (min-width: 280px){
+                                          
+                                          #imgLogUsuarioMovil{
+                                            right: 25%;
+                                          }
+
+                                          #ulNavHeader{                                          
+                                            position: relative;
+                                            right: 13%;
+                                            width: 70%;
+                                          }                                            
+                                            
+                                          @media screen and (max-width: 834px)
+                                          and (min-width: 280px){                                       
+
+                                            .divDato{
+                                              position: relative;
+                                              left: -7%;                                            
+                                            }
+                                            
+                                            #h1TextoInicial{
+                                              right: 17%;
+                                            }
+
+                                            @media screen and (max-width: 819px)
+                                            and (min-width: 280px){
+
+                                              /* #idPTituloInicial{
+                                                right: -3%;
+                                                width: 97%;
+                                              } */
+
+                                              @media screen and (max-width: 795px)
+                                              and (min-width: 280px){
+
+                                                .liNavegacionInstruccionesContactos{
+                                                  width: 49.4%;
+                                                }
+
+                                                @media screen and (max-width: 767px)
+                                                and (min-width: 280px){
+
+                                                      
+                                                  /*Inicio Footer*/
+                                                    .site-footer
+                                                    {
+                                                      padding-bottom:0;                    
+                                                    }
+                                                    .site-footer .footer-links{
+                                                      text-align: left;
+                                                      margin: 10px;                    
+                                                    }
+                                                    .site-footer hr
+                                                    {
+                                                      border-top-color:rgb(255, 255, 255);
+                                                      margin-top: 10px;
+                                                      opacity:0.5;
+                                                    }
+                                                    
+                                                    .site-footer .copyright-text
+                                                    {
+                                                      text-align:center;
+                                                      margin-left: 60px;
+                                                    }
+                                                    .site-footer .social-icons
+                                                    {
+                                                      text-align:left;                      
+                                                      margin-top: -250px;
+                                                      margin-left: -110px;                                        
+                                                      width: 100px;                    
+                                                    }
+
+                                                  /*Fin Footer*/
+
+                                                  #ulNavHeader{                                              
+                                                    right: 12%;
+                                                  }
+
+                                                  .nav-link{                                              
+                                                    margin-right: -20px;
+                                                  }  
+                                                  
+                                                  @media screen and (max-width: 758px)
+                                                  and (min-width: 280px){
+
+
+                                                    @media screen and (max-width: 719px)
+                                                    and (min-width: 280px){
+              
+                                                        
+                                                      @media screen and (max-width: 712px)
+                                                      and (min-width: 280px){
+
+                                                        #h1TextoInicial{
+                                                          right: 23%;
+                                                        }
+
+                                                        .boton-imagen{
+                                                          width: 20%;
+                                                        }
+
+                                                        .logo{
+                                                          left: 3%;
+                                                        }
+                                                        
+                                                        .divDato{
+                                                          left: -12%;
+                                                        }
+
+                                                        .button-menu{
+                                                          float: right;
+                                                          left: 850%;
+                                                        }
+
+                                                        @media screen and (max-width: 679px)
+                                                        and (min-width: 280px){                                                    
+
+                                                          .nav-link{                                              
+                                                            margin-right: -50px;                                                      
+                                                          }
+
+                                                          #ulNavHeader{                                              
+                                                            right: 15%;                                                      
+                                                          }
+
+                                                          #imgLogUsuarioMovil{
+                                                            right: 28%;
+                                                          }
+
+                                                          .nav-links{                                                      
+                                                            width: 40%;
+                                                          }
+                                                          @media screen and (max-width: 656px)
+                                                          and (min-width: 280px){
+
+                                                            #idPTituloInicial{
+                                                              
+                                                              width: 50%;
+                                                            }
+
+                                                            @media screen and (max-width: 649px)
+                                                            and (min-width: 280px){                                                      
+
+                                                              .divDato{
+                                                                left: -16%;
+                                                              }
+
+                                                              @media screen and (max-width: 643px)
+                                                              and (min-width: 280px){
+
+                                                                /*===INICIO TEMPORIZADOR===*/
+                                                                #divTemporizador{                                                          
+                                                                  width: 100%;
+                                                                  left: 0%;
+                                                                }
+
+                                                                .divDato{
+                                                                  left: 10%;
+                                                                }
+                                                                /*===FIN TEMPORIZADOR===*/
+
+                                                                @media screen and (max-width: 618px)
+                                                                and (min-width: 280px){
+
+                                                                  .button-menu{
+                                                                    position: relative;
+                                                                    bottom: 60px;
+                                                                    left: 900%;
+                                                                  }
+
+                                                                  #ulNavHeader{                                                           
+                                                                    left: -12%;
+                                                                  }
+
+                                                                  #h1TextoInicial{
+                                                                    left: 3%;
+                                                                  }
+                                                                    
+                                                                  @media screen and (max-width: 592px)
+                                                                  and (min-width: 280px){
+
+                                                                    #h1TextoInicial{
+                                                                      font-size: 34px;                                                                  
+                                                                    }
+                                                                  
+                                                                    @media screen and (max-width: 582px)
+                                                                    and (min-width: 280px){ 
+                                                                      
+                                                                      #imgLogUsuarioMovil{
+                                                                        right: 29%;
+                                                                      }
+                  
+                                                                      .nav-links{                                                      
+                                                                        width: 50%;
+                                                                      } 
+
+                                                                      #h1TextoInicial{
+                                                                        font-size: 30px;                                                                  
+                                                                        left: 5%;
+                                                                        top: 40px;
+                                                                      }
+
+                                                                      #divTemporizador{                                                                                                                                        
+                                                                        width: 100%;
+                                                                        text-align: justify;
+                                                                        white-space: nowrap;
+                                                                      }
+
+                                                                      .divDato{
+                                                                        left: 8%;
+                                                                      }
+
+                                                                      #divDatoDias{
+                                                                        position: relative;                                                                    
+                                                                      }
+                                                                        
+                                                                      @media screen and (max-width: 575px)
+                                                                      and (min-width:280px){                                                            
+
+                                                                        .nav-link{
+                                                                          margin-right: -60px;
+                                                                          font-size: 15px;
+                                                                        }
+
+                                                                        #imgLogUsuarioMovil{
+                                                                          right: 85px;
+                                                                        }
+
+                                                                        .liNavegacionInstruccionesContactos{
+                                                                          width: 49.3%;
+                                                                        }
+
+                                                                        @media screen and (max-width: 566px)
+                                                                        and (min-width: 280px){
+
+                                                                          .liNavegacionInstruccionesContactos{
+                                                                            height: 50px;
+                                                                          }
+
+                                                                          #ulNavegacionInstruccionesContactos{
+                                                                            height: 51px;
+                                                                          }
+
+                                                                          #liContacto{
+                                                                            position: relative;
+                                                                            bottom: 24px;
+                                                                          }
+
+                                                                          #pIdNavegacionInstrucciones{
+                                                                            position: relative;
+                                                                            top: 0px;
+                                                                          }
+
+                                                                          #pIdNavegacionContactos{
+                                                                            top: 10px;
+                                                                          }
+
+                                                                          .boton-imagen{
+                                                                            width: 25%;
+                                                                          }
+
+                                                                          .boton-imagen:nth-child(3){                                                                        
+                                                                            position: relative;
+                                                                            top: 40px;
+                                                                            transition: opacity 1s ease-in-out, top 0.5s ease-in-out;
+                                                                          }
+
+                                                                          .boton-imagen:nth-child(3):hover{                                                                        
+                                                                            position: relative;
+                                                                            top: 30px;
+                                                                            opacity: 1;
+                                                                          }
+
+                                                                          #h2DigitoSegundos{
+                                                                            
+                                                                            width: 40%;
+                                                                          }
+
+                                                                          @media screen and (max-width: 554px)
+                                                                          and (min-width: 280px){
+
+                                                                            #h2DigitoSegundos{                                                            
+                                                                              width: 50%;
+                                                                            }
+
+                                                                            @media screen and (max-width: 548px)
+                                                                            and (min-width: 280px){
+
+                                                                              #idPTituloInicial{
+                                                                                left: 6%;
+                                                                                width: 94%;
+                                                                              }
+
+                                                                              #idTextEslogan{
+                                                                                font-size: 22px;
+                                                                              }
+
+                                                                              @media screen and (max-width: 542px)
+                                                                              and (min-width: 280px){
+
+                                                                                #imgLogUsuarioMovil{
+                                                                                  right: 27%;
+                                                                                }
+
+                                                                                #divTituloInicial>p{
+                                                                                  font-size: 35px;                                                                
+                                                                                }
+                                                                                  
+                                                                                /*INICIO TEMPORIZADOR*/
+                                                                                  .divDato:nth-child(1){                                                              
+                                                                                    left: 12%;         
+                                                                                    bottom: 0px;                                                                    
+                                                                                  } 
+                        
+                                                                                  .divDato:nth-child(2){                                                              
+                                                                                    left: 12%;         
+                                                                                    bottom: 0px;                                                                                                                          
+                                                                                  } 
+                        
+                                                                                  .divDato:nth-child(3){                                                                                                                                
+                                                                                    left: 12%;         
+                                                                                    bottom: 0px;
+                                                                                  } 
+                        
+                                                                                  .divDato:nth-child(4){                                                                    
+                                                                                    left: 12%;         
+                                                                                    bottom: 0px;                                                                                                               
+                                                                                  }
+
+                                                                                  .aDosPuntos{                                                              
+                                                                                    top: 70px;
+                                                                                  }
+
+                                                                                  .h2Encabezado{
+                                                                                    font-size: 25px;
+                                                                                  }
+                        
+                                                                                  .h2Digito{
+                                                                                    font-size: 25px;
+                                                                                  }                                                                  
+                                                                                /*FIN TEMPORIZADOR*/
+                                                                                  
+                                                                                  
+                                                                                @media screen and (max-width: 538px)
+                                                                                and (min-width: 280px){
+
+                                                                                    
+                                                                                  @media screen and (max-width: 522px)
+                                                                                  and (min-width: 280px){
+
+                                                                                    #h1TextoInicial{
+                                                                                      left: 8%;
+                                                                                      font-size: 25px;
+                                                                                    }
+                                                                                                                                      
+
+                                                                                    @media screen and (max-width: 520px)
+                                                                                    and (min-width: 280px){                                                                       
+
+                                                                                      /*Inicio Footer*/
+                                                                                        .site-footer
+                                                                                        {
+                                                                                          padding-bottom:0
+                                                                                        }
+                                                                                        .site-footer .footer-links{
+                                                                                          text-align: left;
+                                                                                          margin: 10px;                        
+                                                                                        }
+                                                                                        .site-footer .copyright-text
+                                                                                        {
+                                                                                          text-align:left
+                                                                                        }
+                                                                                        .site-footer .social-icons
+                                                                                        {
+                                                                                          text-align:left;                  
+                                                                                          margin-top: -240px;
+                                                                                          margin-left: -110px;
+                                                                                        }
+                                                                                        .copyright-text
+                                                                                        {                                      
+                                                                                          margin-bottom: 10px;
+                                                                                        }
+                                                                                      /*Fin Footer*/ 
+                                                                                      
+                                                                                      @media screen and (max-width: 517px)
+                                                                                      and (min-width: 280px){
+
+                                                                                          
+                                                                                        @media screen and (max-width: 502px)
+                                                                                        and (min-width: 280px){
+
+                                                                                          .liNavegacionInstruccionesContactos{
+                                                                                            width: 49.2%;
+                                                                                          }
+
+                                                                                          #idDivInstruccionesContactos{
+                                                                                            width: 79%;
+                                                                                          }
+
+                                                                                          #idDivLogoEslogan{
+                                                                                            height: 360px;
+                                                                                            text-align: center;
+                                                                                          }
+
+                                                                                          #idImgLogo{
+                                                                                            left: 3%;
+                                                                                            margin-bottom: 20px;
+                                                                                          }
+
+                                                                                          #idTextEslogan{
+                                                                                            left: 1.7%;
+                                                                                            max-width: 80%;
+                                                                                          }
+
+                                                                                          @media screen and (max-width: 485px)
+                                                                                          and (min-width: 280px){                                                                                      
+                                                                                            
+                                                                                            @media screen and (max-width: 480px)
+                                                                                            and (min-width: 280px){
+
+                                                                                              /*Inicio Footer*/
+                                                                                                .site-footer
+                                                                                                {
+                                                                                                  padding-bottom:0
+                                                                                                }
+                                                                                                .site-footer .footer-links{
+                                                                                                  text-align: left;
+                                                                                                  margin: 10px;                          
+                                                                                                }                    
+                                                                                                .site-footer .social-icons
+                                                                                                {
+                                                                                                  text-align:left;                    
+                                                                                                  margin-top: -280px;
+                                                                                                  margin-left: -110px;
+                                                                                                }
+                                                                                                .copyright-text
+                                                                                                {                                            
+                                                                                                  margin-bottom: 10px;
+                                                                                                  position: relative;
+                                                                                                  right: 10%;                        
+                                                                                                }
+                                                                                              /*Fin Footer*/
+
+                                                                                              @media screen and (max-width: 467px)
+                                                                                              and (min-width: 280px){
+
+                                                                                                #divTemporizador{
+                                                                                                  left: -4%;                                                                                      
+                                                                                                }
+
+                                                                                                #h1TextoInicial{
+                                                                                                  left: 16%;
+                                                                                                  top: 60px;
+                                                                                                  font-size: 20px;
+                                                                                                }
+
+                                                                                                                                                                                            
+                                                                                                @media screen and (max-width: 460px)
+                                                                                                and (min-width: 280px){
+                                                                                                  
+                                                                                                  #divTituloInicial>p{
+                                                                                                    font-size: 30px;
+                                                                                                    position: relative;                                                                          
+                                                                                                    top: 10px;
+                                                                                                    -webkit-text-stroke: 1px #8e8e37;
+                                                                                                  }
+                  
+                                                                                                  @media screen and (max-width: 447px)
+                                                                                                  and (min-width: 280px){
+                                                                                                    /*===INICIO TEMPORIZADOR===*/                                                                                     
+
+                                                                                                    .h2Encabezado{
+                                                                                                      font-size: 23px;
+                                                                                                    }
+
+                                                                                                    .h2Digito{
+                                                                                                      font-size: 23px;
+                                                                                                    }
+
+                                                                                                    .aDosPuntos{
+                                                                                                      font-size: 23px;
+                                                                                                    }
+                                                                                                    /*===FIN TEMPORIZADOR===*/  
+                                                                                                    
+                                                                                                    @media screen and (max-width: 444px)
+                                                                                                    and (min-width: 280px){
+
+                                                                                                      @media screen and (max-width: 443px)
+                                                                                                      and (min-width: 280px){ 
+                                                                                                                                                                        
+                                                                                                        #imgLogUsuarioMovil{
+                                                                                                          right: 23%;
+                                                                                                        }                                                                                                  
+                                                                      
+                                                                                                        @media screen and (max-width: 432px)
+                                                                                                        and (min-width: 280px){
+
+                                                                                                          .button-menu{
+                                                                                                            left: -20px;
+                                                                                                            top: -140px;
+                                                                                                          }
+                                                                                                          
+                                                                                                          .boton-imagen{
+                                                                                                            width: 40%;
+                                                                                                          }
+
+                                                                                                          .boton-imagen:nth-child(2){
+                                                                                                            bottom: -20px;
+                                                                                                            transition: opacity 1s ease-in-out, bottom 0.5s ease-in-out;
+                                                                                                          }
+                                                                                              
+                                                                                                          .boton-imagen:nth-child(2):hover{
+                                                                                                            bottom: -10px;
+                                                                                                            opacity: 1;
+                                                                                                          }
+
+                                                                                                          #idDivInstruccionesContactos{
+                                                                                                            left: 11%;
+                                                                                                          }                                                                                                
+                                                                                                                                                                                                      
+                                                                                                          @media screen and (max-width: 403px)
+                                                                                                          and (min-width: 280px){
+
+                                                                                                            #idPTituloInicial{
+                                                                                                              left: 2%;
+                                                                                                            }
+
+                                                                                                            #idDivLogoEslogan{
+                                                                                                              height: 450px;
+                                                                                                              text-align: center;
+                                                                                                            }
+
+                                                                                                            #idImgLogo{
+                                                                                                              width: 60%;
+                                                                                                              left: 5%;
+                                                                                                            }  
+                                                                                                            
+                                                                                                            #divTituloInicial>p{
+                                                                                                              font-size: 27px;
+                                                                                                              text-align: center;
+                                                                                                            } 
+
+                                                                                                            #divTituloInicial{
+                                                                                                              position: relative;
+                                                                                                              bottom: 50px;
+                                                                                                            }
+                                                                                                              
+                                                                                                            @media screen and (max-width: 400px)
+                                                                                                            and (min-width: 280px){                                                                                                                                                                                                                                                                    
+                                                                                                                
+                                                                                                              /*Inicio sección lí*/
+
+                                                                                                              /*Inicio Footer*/
+                                                                                                                .site-footer
+                                                                                                                {
+                                                                                                                  padding-bottom:0                        
+                                                                                                                }
+                                                                                                                .site-footer .footer-links{
+                                                                                                                  text-align: left;
+                                                                                                                  margin: 10px;
+                                                                                                                  font-size:14px;                          
+                                                                                                                }
+                                                                                                                .site-footer .copyright-text
+                                                                                                                {
+                                                                                                                  text-align:center;
+                                                                                                                }
+                                                                                                                .site-footer .social-icons
+                                                                                                                {
+                                                                                                                  text-align:left;                    
+                                                                                                                  margin-top: -280px;
+                                                                                                                  margin-left: -110px;
+                                                                                                                }
+                                                                                                                .copyright-text
+                                                                                                                {
+                                                                                                                  margin-bottom: 10px;
+                                                                                                                  right: 10%;
+                                                                                                                  width: 85%;
+                                                                                                                }
+                                                                                                              /*Fin Footer*/
+
+                                                                                                              @media screen and (max-width: 397px)
+                                                                                                              and (min-width: 280px){
+                                                                                                                
+                                                                                                                .liNavegacionInstruccionesContactos{
+                                                                                                                  width: 49.1%;
+                                                                                                                }
+
+                                                                                                                @media screen and (max-width: 389px)
+                                                                                                                and (min-width: 280px){
+
+                                                                                                                  #h1TextoInicial{
+                                                                                                                    left: 7%;
+                                                                                                                  }
+
+                                                                                                                  #idImgLogo{
+                                                                                                                    left: 0%;
+                                                                                                                  }
+
+                                                                                                                  #idTextEslogan{
+                                                                                                                    left: 0%;
+                                                                                                                  }
+
+                                                                                                                  @media screen and (max-width: 379px)
+                                                                                                                  and (min-width: 280px){
+
+                                                                                                                    #h1TextoInicial{
+                                                                                                                      left: -24%;
+                                                                                                                      top: 80px;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    #divTituloInicial{
+                                                                                                                      bottom: 80px;
+                                                                                                                    }
+
+                                                                                                                    /*===INICIO TEMPORIZADOR===*/
+                                                                                                                      .divDato:nth-child(1){                                                                                                      
+                                                                                                                        position: relative;                                                                                                    
+                                                                                                                        top: -50px;                                                                                                      
+                                                                                                                        left: 30%;
+                                                                                                                      }
+
+                                                                                                                      .divDato:nth-child(2){                                                                                                      
+                                                                                                                        position: relative;
+                                                                                                                        top: -52px;
+                                                                                                                        left: 40%;
+                                                                                                                      }
+                                                                                                                      
+                                                                                                                      .divDato:nth-child(3){                                                                                                      
+                                                                                                                        position: relative;
+                                                                                                                        top: 30px;                                                                                                      
+                                                                                                                        left: -12%;
+                                                                                                                      }
+
+                                                                                                                      .divDato:nth-child(4){                                                                                                      
+                                                                                                                        position: relative;
+                                                                                                                        top: 30px;                                                                                                      
+                                                                                                                        left: -12%;
+                                                                                                                      }
+
+                                                                                                                      #dosPuntosMinutos{
+                                                                                                                        left: -20%;
+                                                                                                                        top: 70px;
+                                                                                                                      }
+                                                                                                                    /*===FIN TEMPORIZADOR===*/
+
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                    #divMenuDespliegue{                                                                                  
+                                                                                                                      left: -20%;
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                    .button-menu{
+                                                                                                                      left: 260%;
+                                                                                                                      top: -105px;
+                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                          
+                                                                                                                    @media screen and (max-width: 374px)
+                                                                                                                    and (min-width: 280px){
+
+                                                                                                                      #imgLogUsuarioMovil{
+                                                                                                                        right: 17%;
+                                                                                                                      }
+
+                                                                                                                      #dosPuntosMinutos{
+                                                                                                                        left: 0%;
+                                                                                                                      }
+
+                                                                                                                      #aDosPuntos:nth-child(1){                                                                                                    
+                                                                                                                        left: 0%;
+                                                                                                                      }
+
+                                                                                                                      @media screen and (max-width: 371px)
+                                                                                                                      and (min-width: 280px){
+                                                                                                                          
+                                                                                                                        /*Inicio Footer*/
+                                                                                                                          .site-footer
+                                                                                                                          {
+                                                                                                                            padding-bottom:0                            
+                                                                                                                          }
+                                                                                                                          .site-footer .footer-links{
+                                                                                                                            text-align: left;
+                                                                                                                            margin: 15px;
+                                                                                                                            font-size:14px;                              
+                                                                                                                          }
+                                                                                                                          .site-footer .copyright-text
+                                                                                                                          {
+                                                                                                                            text-align:center;
+                                                                                                                          }
+
+                                                                                                                          .site-footer .social-icons
+                                                                                                                          {
+                                                                                                                            text-align:left;                        
+                                                                                                                            margin-top: -290px;
+                                                                                                                            margin-left: -110px;
+                                                                                                                          }
+                                                                                                                          .copyright-text
+                                                                                                                          {
+                                                                                                                            position: relative;
+                                                                                                                            right: 15%;
+                                                                                                                            margin-bottom: 10px;
+                                                                                                                          }
+                                                                                                                        /*Fin Footer*/
+
+                                                                                                                        @media screen and (max-width: 359px)
+                                                                                                                        and (min-width: 280px){
+                                                                                                                          
+                                                                                                                          .boton-imagen{
+                                                                                                                            width: 50%;
+                                                                                                                            left: 4%;
+                                                                                                                          }
+
+                                                                                                                          .liNavegacionInstruccionesContactos{
+                                                                                                                            width: 49%;
+                                                                                                                          }
+
+                                                                                                                          #liContacto{
+                                                                                                                            position: relative;
+                                                                                                                            bottom: 0px;
+                                                                                                                          }
+
+                                                                                                                          #pIdNavegacionContactos{
+                                                                                                                            top: 0px;
+                                                                                                                          }
+
+                                                                                                                          @media screen and (max-width: 357px)
+                                                                                                                          and (min-width: 280px){
+
+                                                                                                                            .button-menu{
+                                                                                                                              top: -130px;
+                                                                                                                            }
+
+                                                                                                                            #h1TextoInicial{
+                                                                                                                              left: 2%;
+                                                                                                                            }
+
+                                                                                                                            @media screen and (max-width: 355px)
+                                                                                                                            and (min-width: 280px){
+                        
+                                                                                                                              #divTemporizador{                                                                                                          
+                                                                                                                                width: 104%;
+                                                                                                                              }
+
+                                                                                                                              @media screen and (max-width: 343px)
+                                                                                                                              and (min-width: 280px){
+                        
+                                                                                                                                .nav-links{                                                                                        
+                                                                                                                                  width: 60%;
+                                                                                                                                }
+
+                                                                                                                                  
+                                                                                                                                /*Inicio Footer*/
+                                                                                                                                  .site-footer
+                                                                                                                                  {
+                                                                                                                                    padding-bottom:0                            
+                                                                                                                                  }
+                                                                                                                                  .site-footer .footer-links{
+                                                                                                                                    text-align: left;
+                                                                                                                                    margin: 10px;
+                                                                                                                                    font-size:14px;                              
+                                                                                                                                  }
+                                                                                                                                  .site-footer .copyright-text
+                                                                                                                                  {
+                                                                                                                                    text-align:center;
+                                                                                                                                  }
+                                                                                                                                  .site-footer .social-icons
+                                                                                                                                  {
+                                                                                                                                    text-align:left;                        
+                                                                                                                                    margin-top: -290px;
+                                                                                                                                    margin-left: -110px;
+                                                                                                                                  }
+                                                                                                                                  .copyright-text
+                                                                                                                                  {                                                    
+                                                                                                                                    margin-bottom: 10px;
+                                                                                                                                  }
+                                                                                                                                /*Fin Footer*/
+
+                                                                                                                                @media screen and (max-width: 338px)
+                                                                                                                                and (min-width: 280px){
+
+                                                                                                                                  #h1TextoInicial{
+                                                                                                                                    width: 100%;
+                                                                                                                                    left: 0%;
+                                                                                                                                    top: 80px;
+                                                                                                                                  }
+
+                                                                                                                                  #divTemporizador{
+                                                                                                                                    left: -8%;
+                                                                                                                                  }
+                                                                                                                                  
+
+                                                                                                                                  @media screen and (max-width: 336px)
+                                                                                                                                  and (min-width: 280px){
+
+                                                                                                                                      
+                                                                                                                                    @media screen and (max-width: 335px)
+                                                                                                                                    and (min-width: 280px){
+
+                                                                                                                                        
+
+                                                                                                                                      @media screen and (max-width: 330px)
+                                                                                                                                      and (min-width: 280px){
+                                                                                                                                                              
+                                                                                                                                        #divTemporizador{                                                                                                                                          
+                                                                                                                                          left: -10%;
+                                                                                                                                        }
+
+                                                                                                                                        #divTituloInicial>p{                                                                                          
+                                                                                                                                          font-size: 23px;                                                                                          
+                                                                                                                                          left: 0.5%;                                                                                          
+                                                                                                                                        }
+
+                                                                                                                                        .pTituloInicial{                                                                                                  
+                                                                                                                                          width: 98%;
+                                                                                                                                        }
+
+                                                                                                                                        @media screen and (max-width: 325px)
+                                                                                                                                        and (min-width: 280px){
+
+                                                                                                                                          .liNavegacionInstruccionesContactos{
+                                                                                                                                            width: 48.9%;
+                                                                                                                                          }
+
+                                                                                                                                          @media screen and (max-width: 314px)
+                                                                                                                                          and (min-width: 280px){
+
+                                                                                                                                            #divTemporizador{
+                                                                                                                                              left: -15%;
+                                                                                                                                            }
+
+                                                                                                                                            @media screen and (max-width: 311px)
+                                                                                                                                            and (min-width: 280px){
+                                                                                                                                                                                                                                                                      
+                                                                                                                                              /*Inicio Footer*/
+                                                                                                                                                .site-footer
+                                                                                                                                                {
+                                                                                                                                                  padding-bottom:0                                
+                                                                                                                                                }
+                                                                                                                                                .site-footer hr
+                                                                                                                                                {
+                                                                                                                                                  border-top-color:rgb(255, 255, 255);
+                                                                                                                                                  margin-top: 60px;
+                                                                                                                                                  opacity:0.5
+                                                                                                                                                }
+                                                                                                                                                .site-footer .footer-links{
+                                                                                                                                                  text-align: left;
+                                                                                                                                                  margin: 10px;
+                                                                                                                                                  font-size:14px;                                  
+                                                                                                                                                }
+                                                                                                                                                .site-footer .copyright-text
+                                                                                                                                                {
+                                                                                                                                                  text-align:center;
+                                                                                                                                                }
+                                                                                                                                                .site-footer .social-icons
+                                                                                                                                                {
+                                                                                                                                                  text-align:left;                            
+                                                                                                                                                  margin-top: -280px;
+                                                                                                                                                  margin-left: -110px;
+                                                                                                                                                }
+                                                                                                                                                .copyright-text
+                                                                                                                                                {                                                            
+                                                                                                                                                  margin-bottom: 10px;
+                                                                                                                                                }
+                                                                                                                                              /*Fin Footer*/
+
+                                                                                                                                              @media screen and (max-width: 307px)
+                                                                                                                                              and (min-width: 280px){
+
+                                                                                                                                                #divTituloInicial{                                                                                                          
+                                                                                                                                                  position: relative;
+                                                                                                                                                  top: -40px;                                                                                                          
+                                                                                                                                                }
+
+                                                                                                                                                @media screen and (max-width: 303px)
+                                                                                                                                                and (min-width: 280px){
+
+                                                                                                                                                  #divTemporizador{
+                                                                                                                                                    left: -8%;
+                                                                                                                                                  }
+
+                                                                                                                                                  .h2Digito{
+                                                                                                                                                    font-size: 20px;
+                                                                                                                                                  }
+
+                                                                                                                                                  .h2Encabezado{
+                                                                                                                                                    font-size: 20px;
+                                                                                                                                                  }
+
+                                                                                                                                                  .liNavegacionInstruccionesContactos{
+                                                                                                                                                    width: 48.8%;
+                                                                                                                                                  }
+
+                                                                                                                                                  .pNavegacionInstruccionesContactos{
+                                                                                                                                                    font-size: 14px;
+                                                                                                                                                  }
+
+                                                                                                                                                  @media screen and (max-width: 297px)
+                                                                                                                                                  and (min-width: 280px){
+                              
+                                                                                                                                                    .button-menu{
+                                                                                                                                                      left: 300%;
+                                                                                                                                                    }
+                              
+                                                                                                                                                    #divMenuDespliegue{                                                                                              
+                                                                                                                                                      left: -35%;
+                                                                                                                                                    }
+                              
+                                                                                                                                                    .nav-links{                                                                                              
+                                                                                                                                                      width: 70%;
+                                                                                                                                                    }
+
+                                                                                                                                                    @media screen and (max-width: 294px)
+                                                                                                                                                    and (min-width: 280px){
+                              
+                                                                                                                                                          
+                                                                                                                                                      @media screen and (max-width: 290px)
+                                                                                                                                                      and (min-width: 280px){
+                                                                                                                                                        .button-menu{
+                                                                                                                                                          left: 300%;
+                                                                                                                                                        }
+                              
+                                                                                                                                                        #divMenuDespliegue{                                                                                              
+                                                                                                                                                          left: -35%;
+                                                                                                                                                        }
+                              
+                                                                                                                                                        .nav-links{                                                                                              
+                                                                                                                                                          width: 70%;
+                                                                                                                                                        }
+
+                                                                                                                                                        @media screen and (max-width: 286px)
+                                                                                                                                                        and (min-width: 280px){
+
+                                                                                                                                                          /* #divTituloInicial{
+                                                                                                                                                            position: relative;
+                                                                                                                                                            top: 60px;
+                                                                                                                                                          } */
+
+                                                                                                                                                          @media screen and (max-width: 281px)
+                                                                                                                                                          and (min-width: 280px){
+                                                                                                                                                            #divTemporizador{
+                                                                                                                                                              left: -10%;
+                                                                                                                                                            }
+
+                                                                                                                                                            #h1TextoInicial{
+                                                                                                                                                              left: -8%;
+                                                                                                                                                            }
+
+                                                                                                                                                            .divDato:nth-child(1){                                                              
+                                                                                                                                                              left: 35%;                                                                                                                             
+                                                                                                                                                            } 
+                                                                    
+                                                                                                                                                            .divDato:nth-child(2){                                                              
+                                                                                                                                                              left: 47%;        
+                                                                                                                                                            }
+                                                                                                                                                          } 
+                                                                                                                                                        }                                                                                                                                                                                                               
+                                                                                                                                                      }
+                                                                                                                                                    }                                                                                                                  
+                                                                                                                                                  }
+                                                                                                                                                } 
+                                                                                                                                              }                                                                                                                                                                                                           
+                                                                                                                                            }                                                                                                                                  
+                                                                                                                                          }
+                                                                                                                                        }                                                                                                                              
+                                                                                                                                      }
+                                                                                                                                    }                                                                                                  
+                                                                                                                                  }
+                                                                                                                                }                                                                                                                                                                                                                                                                                      
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }                                                                                                                                                                                                          
+                                                                                                                      }
+                                                                                                                    }                                                                                
+                                                                                                                  } 
+                                                                                                                }
+                                                                                                              }                                                                             
+                                                                                                            }
+                                                                                                          }                                                                                            
+                                                                                                        }                                                                          
+                                                                                                      }
+                                                                                                    }                                                                                      
+                                                                                                  }
+                                                                                                }                                                                                                                                                                                                                                        
+                                                                                              }                                                                      
+                                                                                            }                                                                                      
+                                                                                          }                                                                            
+                                                                                        } 
+                                                                                      }                                                                                                                                                                                                                                                                                                                                                 
+                                                                                    }
+                                                                                  }
+                                                                                }                                                                                                                                                                                                                                                                                                               
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }                                                      
+                                                                      }                                                                                                                   
+                                                                    }
+                                                                  }                                                                                                                 
+                                                                }
+                                                              }                                                                                                           
+                                                            }
+                                                          }                                                   
+                                                        }                                                  
+                                                      }                                                
+                                                    }
+                                                  }                                                                                                                                                                                                                  
+                                                }
+                                              }
+                                            }
+                                          }                                                                               
+                                        }                                      
+                                      }                                      
+                                    }
+                                  }
+                                }                                                         
+                              }                                                   
+                            }                        
+                          }            
+                        }  
+                      }              
+                    } 
+                  }                                                                            
+                } 
+              }                  
+            }
+          }
+        }      
+      }
+    }
+  }  
+}

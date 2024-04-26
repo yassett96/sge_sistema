@@ -1,0 +1,1078 @@
+header{
+    background-color: #102461;
+    width: 100%;
+    height: 70px;
+    box-shadow: inset 200px 200px 200px 200px rgba(0, 0, 0, 0.233)   ;
+    line-height:0;
+}
+#mosaicoDER{
+  float: right;
+  width: 120px;
+  height: 120px;
+}  
+.logo{
+  width: 30%;
+  height: 70px;
+  float: left;
+  margin-top: 9px;
+  margin-left: 40px;
+}
+#texto_atras{
+  margin-left: 5%;
+  margin-top: 20px;
+  color: #102461; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.h4{
+  margin-left: 20%;
+  margin-top: 20px;
+  color: #102461;  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+/*************************************************************************inicia formulario*/
+.formulario_estudiantes{
+  background-color: #181D43;    
+  width: 60%;
+  height: 970px; 
+  margin-left: 20%;
+  margin-top: 40px;
+  padding: 10px;   
+  /*box-shadow: 0px 3px 50px #2000FF;    */
+  box-shadow: 0px 0px 4px 4px #000a1d67; 
+}
+.NotaCampos{
+  color:#FFFFFF;
+  margin-left: 1%;
+
+}
+.h4_formulario{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF ;
+  padding: 10px;
+}
+input{
+  background: none;
+  color: #78788c;    
+  display: block;
+  width: 75%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: 5px;  
+  font-family: sans-serif;
+}
+select{
+  background: none;
+  color: #78788c;    
+  display: block;
+  width: 75%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: 5px;  
+  margin-bottom: 9px;
+  font-family: sans-serif; 
+}
+select option{
+  color: rgb(255, 255, 255);
+}
+input:focus, select:focus{
+  outline: none;
+  font-family: sans-serif;
+  color: #ffffff;    
+}
+input:focus~label,
+input:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+}
+label{
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  left: 80px;
+  top: 10px;
+  transition: 0.3s ease all;    
+  pointer-events: none;
+}
+.icono1{  
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+.icono2{  
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+.icono3{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+.icono4{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+.icono5{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+.icono6{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+#pname,#sname,#papellido,#sapellido,#tel,#correo,#carnet,#cedula{
+  color: #FFFFFF;
+}
+#pInputUsuario{
+  background: none;
+  color: #FFFFFF;    
+  display: block;
+  width: 75%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: 5px;
+}
+#pInputUsuario:focus{
+  outline: none;
+  color: #ffffff;    
+}
+#pInputUsuario:focus~label,
+#pInputUsuario:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 15px;
+  color: #78788c;
+}
+#pCedula{
+  background: none;
+  color: #FFFFFF;    
+  display: block;
+  width: 75%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: 5px;
+}
+#pCedula:focus{
+  outline: none;
+  color: #ffffff;    
+}
+#pCedula:focus~label,
+#pCedula:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 15px;
+  color: #78788c;
+}
+.icono7{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+#pInputContraseña{
+  background: none;
+  color: #FFFFFF;    
+  display: block;
+  width: 75%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: 5px;
+}
+#pInputContraseña:focus{
+  outline: none;
+  color: #ffffff;    
+}
+#pInputContraseña:focus~label,
+#pInputContraseña:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 15px;
+  color: #78788c;
+}
+#C2{
+  background: none;
+  color: #FFFFFF;    
+  display: block;
+  width: 320%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px;
+  margin-left: 250%;
+}
+#Opcion{
+  width: 300%;
+  margin: auto;
+  border: none;
+  margin-top: -15px;
+  margin-left: 330%;
+}
+.M1 {
+  position: absolute;
+  top: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 2px 1px;
+  width: 30px;
+  height: 30px;
+  left: 80%; 
+}
+.M2 {
+  position: absolute;
+  top: -30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 2px 1px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 80%;
+}
+.icono8{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+#pInputRepContraseña{
+  background: none;
+  color: #FFFFFF;    
+  display: block;
+  width: 75%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: 5px;
+}
+#pInputRepContraseña:focus{
+  outline: none;
+  color: #ffffff;    
+}
+#pInputRepContraseña:focus~label,
+#pInputRepContraseña:valid~label{
+  position: absolute;
+  top: -5px;
+  font-size: 15px;
+  color: #78788c;
+}
+.BotonFormulariolimpiar{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 30%;
+  padding:px 12px;
+  margin:30px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF ;
+  border:2px solid #78788c;
+  background:0;
+  color: #9B9B9B;
+  box-shadow: 1px 1px 5px #000000 ;
+  cursor:pointer;
+  transition:all .3s
+}
+.BotonFormularioRegistrarse{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 60%;
+  padding:8px 12px;
+  margin:30px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF ;
+  border:2px solid #78788c;
+  background:0;
+  color: #9B9B9B;
+  box-shadow: 1px 1px 5px #000000 ;
+  cursor:pointer;
+  transition:all .3s
+}
+button:hover{
+  background:#78788c;
+  color:#fff
+}
+#h4_formulario_Abajo2{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120%;
+  color: #FFFFFF ;
+  position: absolute;
+  margin-left: 850px;
+  margin-top: 120px;
+}
+/***********************************************************************termina formulario */
+#mosaicoIZQ{
+width: 120px;
+height: 120px;
+position: absolute;
+}
+/*********************************************************************** inicio footer */
+.site-footer
+{
+  background-color: #102461;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+  margin-top: 5%;
+  font-family: 'Montserrat', sans-serif, serif;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer .footer-links .fa{
+  color: #ffffff;
+    margin-right: 15px;
+}
+
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h2
+{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif, serif;
+    font-size:  150%;
+    padding-bottom: 0.625rem;
+    list-style:none; 
+}
+.site-footer a
+{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif, serif;
+    font-size: 95%;
+    padding-bottom: 0.625rem;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block;
+  margin-top: 15px;
+  margin-right: 60px; 
+}
+.footer-links a
+{
+  color:#ffffff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#ffffff;
+  color:#102461;
+}
+.copyright-text
+{
+  margin:0
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+  margin-left: 10px;
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#00476b;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.global:hover
+{
+  background-color:#00aced
+}
+
+/****************************************************************************************PC 1*/
+@media screen and (max-width: 2000px) and (min-width: 1801px) /*PC*/
+{
+
+
+}
+/*****************************************************************************************PC 2*/
+@media screen and  (max-width: 1800px)/*PC*/
+and (min-width: 1650px)
+{
+#mosaicoIZQ{
+position:relative;
+margin-bottom: -85px;
+
+
+}
+}
+/******************************************************************************************PC 3*/
+@media screen and  (max-width: 1649px)/*PC*/
+and (min-width: 1501px)
+{
+#C2{
+  width: 275%;
+  margin-left: 380px;
+}
+#Opcion{
+  margin-left: 520px;
+}
+#mosaicoIZQ{
+  position:relative;
+  margin-bottom: -78px;
+  
+  
+  }
+#h4_formulario_Abajo2{
+  font-size: 120%;
+  margin-left: 750px;
+  margin-top: 120px;
+  left: 20%;
+  padding:8px 12px;
+}
+}
+/*****************************************************************************************LAPTOP*/
+@media screen and (max-width: 1500px) and (min-width: 1201px)
+{
+.formulario_estudiantes{
+  width: 70%;
+  height: 970px;   
+}  
+input{
+  margin-left: 70px; 
+}  
+label{
+  top: 5px;
+}  
+#pInput_tel{
+  background: none;
+  color: #FFFFFF;    
+  display:block;
+  margin-left: 70px;
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px; 
+}  
+#pInputEmail{
+  background: none;
+  color: #FFFFFF;    
+  display: block;
+  margin-left: 70px;
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px; 
+}
+#pCedula{
+  margin-left: 70px;
+}
+select{
+  margin-left: 70px;
+}
+#sede,#grupo{  
+  color: #78788c;    
+}
+#C2{
+  width: 275%;
+  margin-left: 400px;
+}
+#Opcion{
+  margin-left: 550px;
+}
+#pInputUsuario{
+  margin-left: 70px;
+}
+#pInputContraseña{
+  margin-left: 70px;
+}
+#pInputRepContraseña{
+  margin-left: 70px;
+}
+#h4_formulario_Abajo2{
+  margin-left: 730px;
+  margin-top: 120px;
+  left: 10%;
+  padding:8px 12px;
+}
+#mosaicoIZQ{
+  position:relative;
+  margin-bottom: -65px;
+}
+}
+/************************************************************************************ TABLET */
+@media screen and  (max-width: 1200px) and (min-width: 1001px) /*Tablet*/
+{
+.formulario_estudiantes{
+  width: 68%;
+} 
+input{
+  width: 70%;
+  margin-left: 70px;
+}
+label{
+  top: 5px;
+}
+#pCedula{
+  margin-left: 70px;
+  width: 70%;
+}
+select{
+  width: 70%;
+  margin-left: 70px;
+}
+#sede,#grupo{
+ color: #78788c;    
+}
+#C2{
+  width: 275%;
+  margin-left: 340px;
+}
+#Opcion{
+  margin-left: 435px;
+}
+#pInputUsuario{
+  margin-left: 70px;
+  width: 70%;
+}
+#pInputContraseña{
+  margin-left: 70px;
+  width: 70%;
+}
+#pInputRepContraseña{
+  margin-left: 70px;
+  width: 70%;
+}
+#h4_formulario_Abajo2{
+  margin-left: 730px;
+  left: 3%;
+  padding:8px 12px;
+}
+#mosaicoIZQ{
+  position:relative;
+  margin-bottom: -55px;
+}
+}    
+/************************************************************************************* MOVIL  1  */
+@media screen and (max-width: 1000px)and (min-width: 768px)
+{
+#mosaicoDER{
+  float: right;
+  width: 12%;
+  height: 12%;
+}
+#texto_atras{
+  font-size: 125%;
+}
+.h4{
+  margin-left: 15%;
+  font-size: 120%;
+}
+.formulario_estudiantes{
+  width: 81%;
+  height: 800px; 
+  margin-left: 12%;  
+}
+input{
+  width: 70%;
+  margin-left: 70px; 
+  margin-top: -12px; 
+}
+input:focus~label,
+input:valid~label{
+  font-size: 13px;
+}
+label{
+  font-size: 15px;
+  top: 6px;
+}
+#pInput_tel{
+  background: none;
+  color: #FFFFFF;    
+  display:block;
+  margin-left: 70px;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px; 
+}
+#pInputEmail{
+  background: none;
+  color: #FFFFFF;    
+  display: block;
+  margin-left: 70px;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #ffffff;  
+  margin-top: -18px; 
+}
+#pCedula{
+  margin-left: 70px;
+  width: 70%;
+  margin-top: -18px;
+}
+select{
+  width: 70%;
+  margin-left: 70px;
+  margin-top: -15px;  
+}
+#sede,#grupo{
+  color: #78788c;    
+}
+#C2{
+  width: 150px;
+  margin-left: 400%;
+}
+#Opcion{
+  width: 200px;
+  margin-top: -17px;
+}    
+.M1 {
+  top: 15px;
+}
+.M2 { 
+  left: 82%;
+}
+#pInputUsuario{
+  margin-left: 70px;
+  width: 70%;
+  margin-top: -18px;
+}
+#pInputContraseña{
+  margin-left: 70px;
+  width:70%;
+  margin-top: -18px;
+}
+#pInputRepContraseña{
+  margin-left: 70px;
+  width: 70%;
+  margin-top: -18px;
+}
+.BotonFormulariolimpiar{
+  width: 175px;
+  left: 25%;
+  padding:4px 6px;
+  margin: 10px 0 0;
+  font-size: 90%;
+}
+.BotonFormularioRegistrarse{
+  width: 175px;
+  padding:4px 6px;
+  margin:10px 0 0;
+  font-size: 90%;
+}
+#h4_formulario_Abajo2{
+  font-size: 110%;
+  margin-left: 275px;
+  margin-top: 80px;
+  left: 30%;
+  padding:8px 12px;
+}
+#mosaicoIZQ{
+  position:relative;
+  margin-bottom: -40px;
+  width: 12%;
+  height: 12%;
+}
+}
+/************************************************************************************Movil 2 */
+@media screen and (max-width: 767px) and (min-width: 481px)
+{
+.formulario_estudiantes{
+  width: 75%;
+  height: 1820px; 
+  margin-left: 12%;   
+}
+label{
+  font-size: 23px;
+  top: 5px;
+}
+input{
+  font-size: 25px;
+  margin-left: 70px;
+  margin-top: 15px;  
+}
+select{
+  font-size: 25px;
+  margin-top: 15px;  
+  margin-left: 65px;
+}
+input:focus~label,
+input:valid~label{
+  font-size: 20px;
+}
+input::placeholder{
+  font-size: 25px;
+}
+#C2{
+  width: 150px;
+  margin-left: 3%;
+}
+#Opcion{
+  width: 200px;
+  margin-top: -17px;
+  margin-left: 8%;
+}
+.M1 {
+  top: 55px;
+  left: 82%;
+}
+.M2 { 
+  left: 84%;
+}
+#pCedula{
+  margin-left: 70px;
+  width: 75%;
+  margin-top: 15px;
+}
+#pInputUsuario{
+  margin-left: 70px;
+  width: 75%;
+  margin-top: 15px;
+}
+#pInputContraseña{
+  margin-left: 70px;
+  width:75%;  
+  margin-top: 15px;
+}
+#pInputRepContraseña{
+  margin-left: 70px;
+  margin-top: 15px;
+}
+.BotonFormulariolimpiar{
+  width: 220px;
+  padding:4px 6px;
+  margin: 10px 0 0;
+  font-size: 90%;
+}
+.BotonFormularioRegistrarse{
+  width: 220px;
+  left: 30%;
+  padding:4px 6px;
+  margin:80px 0 0;
+  font-size: 90%;
+}
+#h4_formulario_Abajo2{
+  font-size: 110%;
+  margin-left: 275px;
+  margin-top: 150px;
+  left: 1%;
+  padding:8px 12px;
+}
+#mosaicoIZQ{
+  bottom:38px;
+  position:relative;
+  margin-bottom: -62px;
+}
+.site-footer
+    {
+      padding-bottom:0
+    }
+    .site-footer .footer-links{
+      text-align: left;
+      margin: 10px;
+      
+    }
+    .site-footer hr
+    {
+      border-top-color:rgb(255, 255, 255);
+      margin-top: 10px;
+      opacity:0.5
+    }
+    
+    .site-footer .copyright-text
+    {
+      text-align:center;
+      margin-left: 60px;
+    }
+    .site-footer .social-icons
+    {
+      text-align:left;  
+      
+      margin-top: -200px;
+      margin-left: -110px;
+    }
+    .copyright-text
+    {
+      width: 350px;
+      margin-left: -10px;
+      margin-bottom: 10px;
+    }
+}
+/**************************************************************************MOVIL 3*/
+@media screen and (max-width: 480px) and (min-width: 280px)
+{ 
+.logo{
+  height: 50px;
+  margin-left: 20px;
+}
+#mosaicoDER{
+  width: 18%;
+  height: 18%; 
+}
+#texto_atras{
+  font-size: 20px;
+}
+.h4{
+  margin-left: 10%;
+  font-size: 20px;
+}
+.formulario_estudiantes{
+  width: 90%;
+  height: 1500px; 
+  margin-left: 7%;
+  box-shadow: 0px 0px 20px #2000FF;     
+}
+.h4_formulario{
+  font-size: 20px;
+}
+label{
+  top: 5px;
+  margin-left: -10px;
+}
+input{
+  font-size: 18px;
+  margin-left: 50px;
+  margin-top: 8px; 
+}
+select{
+  width: 75%;
+  font-size: 18px; 
+  margin-top: 15px;  
+  margin-left: 50px;
+  margin-bottom: 9px;
+}
+input:focus~label,
+input:valid~label{
+  font-size: 18px;
+}
+input::placeholder{
+  font-size: 18px;
+}
+.icono1{  
+  width: 30px;
+  height: 30px;
+  left: 8px;
+}
+.icono2{  
+  width: 30px;
+  height: 30px;
+  left: 8px;
+}
+.icono3{
+  width: 30px;
+  height: 30px;
+  left: 8px;
+}
+.icono4{
+  width: 30px;
+  height: 30px;
+  left: 8px;
+}
+.icono5{
+  width: 30px;
+  height: 30px;
+  left: 8px;
+}
+#pCedula{
+  margin-left: 50px;
+  width: 75%;
+  margin-top: 8px;
+}
+#C2{
+  width: 150px;
+  margin-left: -5%;
+}
+#Opcion{
+  width: 200px;
+  margin-top: -17px;
+  margin-left: 3%;
+}
+.icono6{
+  width: 30px;
+  height: 30px;
+  left: 8px;
+}
+#pInputUsuario{
+  margin-left: 50px;
+  width: 75%;
+  margin-top: 8px;
+}
+#pInputUsuario:focus~label,
+#pInputUsuario:valid~label{
+  font-size: 18px;
+}
+.icono7{
+  width: 30px;
+  height: 30px;
+  left: 8px;
+}
+#pInputContraseña{
+  margin-left: 50px;
+  width:75%;
+  margin-top: 8px;
+}
+.M1 {
+  left: 78%;
+}
+.icono8{
+  width: 30px;
+  height: 30px;
+  left: 8px;
+}
+#pInputRepContraseña{
+  margin-left: 50px;
+  margin-top: 8px;
+}
+.BotonFormulariolimpiar{
+  width: 210px;
+  left: 18%;
+  padding:4px 6px;
+  margin: 10px 0 0;
+  font-size: 90%;
+}
+.BotonFormularioRegistrarse{
+  width: 210px;
+  left: 18%;
+  padding:4px 6px;
+  margin:80px 0 0;
+  font-size: 90%;
+}
+#h4_formulario_Abajo2{
+  font-size: 110%;
+  margin-left: 275px;
+  margin-top: 150px;
+  left: -38%;
+  padding:8px 12px;
+}
+#mosaicoIZQ{
+  
+  width: 18%;
+  height: 18%; 
+  position:relative;
+  margin-bottom: -12px;
+}
+.site-footer
+    {
+      padding-bottom:0
+    }
+    .site-footer .footer-links{
+        text-align: left;
+        margin: 10px;
+        
+    }
+    .site-footer .copyright-text
+    {
+      text-align:left
+    }
+    .site-footer .social-icons
+    {
+      text-align:left;  
+ 
+      margin-top: -240px;
+      margin-left: -110px;
+    }
+    .copyright-text
+    {
+     
+    
+      margin-bottom: 10px;
+    }
+}     

@@ -1,0 +1,1892 @@
+/*=== INICIO HEADER ===*/
+header{
+  width: 100%;
+  height: 70px;
+  box-shadow: inset 200px 200px 200px 200px #102461;
+}
+  
+#sectionCentralizarLogoNombre{
+  width: 250px;
+  height: 70px;  
+  float: right;
+  position: relative;
+  bottom: 55px;    
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#aAtras:hover{
+  cursor: pointer;
+}
+
+.logo{
+  width: 30%;
+  height: 70px;
+  float: left;
+  margin-top: 9px;
+  position: relative;
+  right: 105px;
+  text-align: center;
+}
+
+#h4Atras{
+  position: relative;
+  left: 20px;
+  top: 15px;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  font-size: 25px;
+  color: #000482;    
+  width: 10%;
+}
+
+.popUpEditarCampos{
+  width: 90%;
+  position: relative;
+  left: 5%;
+}
+
+.popUpAgregarCampos{
+  width: 90%;
+  position: relative;
+  left: 5%;
+  /* margin-top: 20px; */
+}
+
+.botonesPopUpEditar{
+  float: right;
+  position: relative;
+  right: 2%;
+  top: 0px;
+  border-radius: 7px;
+  width: 25%;
+  height: 40px;
+  background-color: white;
+  color: #000482;
+  font-weight: bold;
+  font-size: 18px;
+  border-style: solid;
+  border-width: 2px;
+  margin-right: 30px;
+}
+
+.botonesPopUpAgregar{
+  float: right;
+  position: relative;
+  right: 2%;
+  top: 20px;
+  border-radius: 7px;
+  width: 25%;
+  height: 40px;
+  background-color: white;
+  color: #000482;
+  font-weight: bold;
+  font-size: 18px;
+  border-style: solid;
+  border-width: 2px;
+  margin-right: 30px;
+}
+
+.h5TextosPopUpEditar{
+  color: white;
+  font-weight: normal;
+}
+
+.h5TextosPopUpAgregar{
+  color: white;
+  font-weight: normal;
+}
+
+.camposPopUpEditar{
+  width: 100%;
+  height: 40px;
+}
+
+.camposPopUpAgregar{
+  width: 100%;
+  height: 40px;
+}
+
+body{
+  background-color: white;
+  position: relative;
+}
+
+#divFondoPopUpEditar{
+  background-color: gray;
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+
+#divFondoPopUpAgregar{
+  background-color: gray;
+  width: 1000px;
+  height: 1000px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+
+#divPopUpEditar {
+  position: relative;
+  top: 350px;
+  left: 25%;
+  background-color: #102461;
+  width: 50%;
+  height: 700px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0px 0px 5px 5px black;
+  z-index: 2;
+}
+
+#divPopUpAgregar {
+  position: relative;
+  top: 2%;
+  left: 25%;
+  background-color: #102461;
+  width: 50%;
+  height: 360px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0px 0px 5px 5px black;
+  z-index: 2;
+}
+
+.ocultaPar{
+  display: none;
+}
+
+.ocultaPer{
+  display: none;
+}
+
+#textoEncabezadoPopUpEditar{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-weight: normal;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+
+#textoEncabezadoPopUpAgregar{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-weight: normal;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+
+ul{
+  margin-right: 15%;
+}
+
+li{
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+#imgLogUsuario{
+  height: 50px;
+  width: 50px;
+  align-self: center;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+  border-radius: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0197fc;
+  vertical-align: top;
+  position: relative;
+  top: 1px;
+}
+
+#mosaicoDER{
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 125px;
+  height: 125px;
+}
+
+#mosaicoIZQ{
+  position: absolute;
+  bottom: 330px;
+  left: 0;
+  width: 125px;
+  height: 125px;
+}
+
+/*Inicio Tabla*/
+#idDivTabla{
+  background-color: #102461;
+  width: 95%;
+  height: 600px;
+  position: relative;
+  left: 2.5%;
+  border-radius: 15px;
+}
+
+#idTextoTabla{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  left: 2%;
+  top: 10px;
+
+}
+.table-container {
+  height: 500px;
+  overflow: auto;
+  width: 96%;
+  position: relative;
+  left: 2%;
+  margin: 0;
+  padding: 0;
+}
+
+#idTable {
+  border-collapse: collapse;
+  width: 100%;
+  width: 98%;
+  position: relative;
+  left: 0%;
+  bottom: 25px;
+  height: 100px;
+}
+
+#idTable th {
+  position: sticky;
+  top: 0;
+}
+
+#divCamposEditarParticipante{
+  visibility: hidden;
+  display: none;
+}
+
+#divCamposEditarPersonalAcademico{
+  visibility: hidden;
+  display: none;
+}
+
+#divCamposEditarGenerico{
+  visibility: hidden;
+  display: none;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th{
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+tr:hover{
+  cursor: pointer;
+}
+
+.fila-seleccionada {
+  background-color: rgb(139, 139, 133);
+}
+/*Inicio Tabla*/
+
+/*Inicio Botones Acciones*/
+#idDivBotonesAcciones{
+  text-align: right;
+}
+
+.classBotonAccion{
+  position: relative;
+  right: 3%;
+  width: 15%;
+  height: 40px;
+  background-color: white;
+  color: #102461;
+  font-weight: bolder;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.5);
+  margin-right: 15px;    
+}
+/*Fin Botones Acciones*/
+
+#aNombreUsuario{
+  color: white;  
+  vertical-align: bottom;
+  position: relative;
+  bottom: 1px;
+}
+
+#idSelectBusquedaPA{
+  position: relative;
+  left: 26%;
+  width: 30%;
+  background-color: #b7c8e8;
+}
+
+/*=== INICIO MENU DESPLIEGUE ===*/
+  #divMenuDespliegue{  
+    /* background-color: #102461;     */
+    background-image: linear-gradient(to bottom, #102461 50%, transparent 50%);    
+    width: 8%;
+    height: 160px;
+    float: right;
+    position: relative;
+    top: 0px;
+    left: 11.7%;
+    visibility: hidden;
+    z-index: 1;
+    transition: all ease 0.5s;    
+  }
+
+  #divMenuDespliegue>a {
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    text-decoration: none;
+  }
+  
+  #divMenuDespliegue>a:nth-child(1):hover{        
+    background-color: #00a4bd;
+    transition: all ease-in-out 0.2s;
+  }
+
+  #divMenuDespliegue>a:nth-child(2):hover{    
+    background-color: #00a4bd;
+    transition: all ease-in-out 0.2s;
+  }
+/*=== FIN MENU DESPLIEGUE ===*/
+
+#texto{
+  color: white;
+  
+}
+
+/*=== FIN HEADER ===*/
+
+/*=== INICIO ENCABEZADOS ===*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+  #h1TextoInicial{
+    color: #102461;
+    font-size: 35px;
+    text-align: left;
+    position: relative;      
+    top: 50px;
+    width: 80%;
+    font-weight: bolder;
+  }
+
+  /*=== INICIO TEMPORIZADOR ===*/  
+
+  .aDosPuntos{
+    position: relative;
+    right: 15%;
+    top: 85px;
+    font-size: 20px;
+    color: aqua;
+  }
+
+  /*=== FIN TEMPORIZADOR ===*/
+
+/*=== FIN ENCABEZADOS ===*/ 
+  
+  .container {
+    flex: 1;
+  }
+
+  .main-header{
+    display: none;
+  }  
+
+  
+/* INICIA FOOTER*/    
+
+  .site-footer
+  {
+    background-color: #102461;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#ffffff;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif, serif;
+  }
+  .site-footer hr
+  {
+    border-top-color:#bbb;
+    opacity:0.5
+  }
+  .site-footer .footer-links .fa{
+      color: #ffffff;
+      margin-right: 15px;
+  }
+
+  .site-footer hr.small
+  {
+    margin:20px 0
+  }
+  .site-footer h2
+  {
+      color: #fff;
+      font-family: 'Montserrat', sans-serif, serif;
+      font-size:  150%;
+      padding-bottom: 0.625rem;
+      list-style:none; 
+  }
+  .site-footer a
+  {
+      color: #fff;
+      font-family: 'Montserrat', sans-serif, serif;
+      font-size: 95%;
+      padding-bottom: 0.625rem;
+  }
+  .site-footer a:hover
+  {
+    color:#3366cc;
+    text-decoration:none;
+  }
+  .footer-links
+  {
+    padding-left:0;
+    list-style:none
+  }
+  .footer-links li
+  {
+    display:block;
+    margin-top: 15px;
+    margin-right: 60px; /*Se pasa a 50px para el index*/
+    
+  }
+  .footer-links a
+  {
+    color:#ffffff
+  }
+  .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+  {
+    color:#3366cc;
+    text-decoration:none;
+  }
+  .footer-links.inline li
+  {
+    display:inline-block
+  }
+  .site-footer .social-icons
+  {
+    text-align:right
+  }
+  .site-footer .social-icons a
+  {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#ffffff;
+    color:#102461;
+  }
+  .copyright-text
+  {
+    margin:0
+  }
+
+  .social-icons
+  {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+    margin-left: 10px;    
+    width: 100%;
+  }
+  .social-icons li
+  {
+    display:inline-block;
+    margin-bottom:4px;
+    margin: 0px; /*Se agrega para junatar los iconos en el index_srse*/
+  }
+  .social-icons li.title
+  {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+  }
+  .social-icons a{
+    background-color:#00476b;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+    color:#fff;
+    background-color:#29aafe
+  }
+  .social-icons.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+  }
+  .social-icons a.facebook:hover
+  {
+    background-color:#3b5998
+  }
+  .social-icons a.global:hover
+  {
+    background-color:#00aced
+  }
+
+/*TERMINA FOOTER*/
+
+/*Inicio de Responsive en cascada*/
+@media screen and (max-width: 2000px)
+and (min-width: 280px){
+  /*Inicio Menu Despliegue*/
+  #divMenuDespliegue{      
+    left: 10.2%;   
+  }
+  /*Fin Menu Despliegue*/  
+    
+  /* #mosaicoIZQ{    
+    bottom: 0px; 
+  } */
+
+  #mosaicoDER{
+    /* left: 20.5%; */
+  }
+
+  #h1TextoInicial{
+    left: 0%;
+    width: 100%;
+    text-align: left;
+    padding-left: 2%;
+  }
+  
+  @media screen and (max-width: 1920px)
+  and (min-width: 280px){
+
+    /* #mosaicoIZQ{    
+      bottom: 0px; 
+    } */
+
+    @media screen and (max-width: 1885px)
+    and (min-width: 280px){
+  
+      @media screen and (max-width: 1800px)
+      and (min-width: 280px){
+        /*Inicio Menu Despliegue*/
+        #divMenuDespliegue{      
+          left: 11%;   
+        }
+        /*Fin Menu Despliegue*/
+    
+        @media screen and (max-width: 1649px)
+        and (min-width: 280px){
+  
+          /*Inicio Menu Despliegue*/
+          #divMenuDespliegue{      
+            left: 11.5%;   
+          }
+          /*Fin Menu Despliegue*/
+
+          #mosaicoDER{
+            /* left: 23%; */
+          }
+    
+          @media screen and (max-width: 1567px)
+          and (min-width: 280px){
+            /*Inicio Menu Despliegue*/
+            #divMenuDespliegue{
+              left: 12.5%;
+              width: 9%;
+            }
+            /*Fin Menu Despliegue*/
+
+            /* #mosaicoIZQ{       
+              top: 0px;      
+            }  */
+
+  
+            @media screen and (max-width: 1520px)
+            and (min-width: 280px){
+
+              #h1TextoInicial{
+                left: 16%;
+                width: 60%;
+              }
+
+              #mosaicoDER{
+                /* left: 25%; */
+              }
+  
+              @media screen and (max-width: 1500px)
+              and (min-width: 280px){
+  
+                /*Inicio Menu Despliegue*/
+                #divMenuDespliegue{
+                  left: 13%;
+                  width: 9%;
+                }
+                /*Fin Menu Despliegue*/
+  
+                /* #mosaicoIZQ{       
+                  bottom: 55px;      
+                }  */
+  
+                @media screen and (max-width: 1393px)
+                and (min-width: 280px){
+  
+                  /*Inicio Menu Despliegue*/
+                  #divMenuDespliegue{
+                    left: 14%;
+                    width: 10%;
+                  }
+                  /*Fin Menu Despliegue*/
+  
+                  #h1TextoInicial{
+                    right: 2%;
+                  }
+  
+                  @media screen and (max-width: 1378px)
+                  and (min-width: 280px){
+  
+                    /*Inicio Menu Despliegue*/
+                    #divMenuDespliegue{
+                      left: 14.2%;                
+                    }
+                    /*Fin Menu Despliegue*/    
+                    
+                    .logo{
+                      right: 7%;
+                    }
+  
+                    #h1TextoInicial{
+                      white-space: nowrap;
+                      /* justify-content: end; */
+                    }
+  
+                    @media screen and (max-width: 1328px)
+                    and (min-width: 280px){
+  
+                      .botonesPopUpEditar{
+                        height: 60px;
+                        top: 0px;
+                      }
+
+                      .botonesPopUpAgregar{
+                        height: 60px;
+                        top: 0px;
+                      }
+  
+                      @media screen and (max-width: 1254px)
+                      and (min-width: 280px){
+
+                        /* #mosaicoIZQ{
+                          position: relative;
+                          top: 0px;
+                        } */
+
+                        #h1TextoInicial{
+                          width: 60%;
+                        }
+  
+                        .logo{
+                          right: 6%;
+                        }                    
+  
+                        /*Inicio Menu Despliegue*/
+                        #divMenuDespliegue{
+                          left: 15.5%;                
+                          width: 130px;
+                        }
+                        /*Fin Menu Despliegue*/
+  
+                        #ulNavHeader{
+                          width: 60%;
+                          position: relative;
+                          right: 2%;
+                        }
+  
+                        #h1TextoInicial{
+                          right: 5.5%;
+                        }
+
+                        /* #mosaicoDER{
+                          left: 30%;
+                        } */
+
+                        #h1TextoInicial{
+                          left: 22%;
+                        }
+                          
+                        @media screen and (max-width: 1199px)
+                        and (min-width: 280px){
+  
+                          #mosaicoIZQ{
+                            bottom: 360px;
+                          }  
+  
+                          @media screen and (max-width: 1167px)
+                          and (min-width: 280px){  
+                            
+                            #divMenuDespliegue{
+                              left: 16.5%;
+                            }
+  
+                            @media screen and (max-width: 1156px)
+                            and (min-width: 280px){
+  
+                              #ulNavHeader{                              
+                                width: 70%;
+                                right: 12%;
+                              }
+
+                              /* #mosaicoDER{
+                                left: 32%;
+                              } */
+                              
+                              @media screen and (max-width: 1102px)
+                              and (min-width: 280px){
+  
+                                .logo{
+                                  right: 5%;
+                                }  
+  
+                                #divMenuDespliegue{
+                                  left: 17.5%;
+                                }
+
+                                /* #mosaicoDER{
+                                  left: 34%;
+                                } */
+
+                                @media screen and (max-width: 1070px)
+                                and (min-width: 280px){
+
+                                  #h4Atras{                                                            
+                                    width: 20%;
+                                  }
+
+                                  @media screen and (max-width: 1040px)
+                                  and (min-width: 280px){
+
+                                    /* #mosaicoDER{
+                                      left: 36%;
+                                    }   */
+                                    
+                                    /* #mosaicoIZQ{
+                                      top: -20px;
+                                    }  */
+                                                                                                                      
+                                    @media screen and (max-width: 1000px) /*Empieza Tablet*/
+                                    and (min-width: 280px){
+                                      
+                                      #textoEncabezadoPopUpEditar{
+                                        font-size: 20px;
+                                      }
+
+                                      #textoEncabezadoPopUpAgregar{
+                                        font-size: 20px;
+                                      }
+
+                                      #divPopUpEditar{
+                                        width: 70%;
+                                        left: 15%;
+                                      }
+
+                                      #divPopUpAgregar{
+                                        width: 70%;
+                                        left: 15%;
+                                      }
+                                      
+                                      #ulNavHeader{                                        
+                                        visibility: hidden;
+                                      }
+                                      .main-header {
+                                        display: flex;
+                                        float:right;
+                                        margin-top: -2px;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        background-color: transparent;
+                                        padding: 0 0.4rem;
+                                      }
+    
+                                      #idSelectBusquedaPA{
+                                        width: 50%;
+                                      }
+    
+                                      #h1TextoInicial{
+                                        position: relative;
+                                        left: 12%;
+                                      }
+
+                                      /* #mosaicoDER{
+                                        left: 43%;
+                                      } */
+    
+                                      /*Inicio Menú Móvil*/
+    
+                                        #imgLogUsuarioMovil{
+                                          width: 60px;
+                                          height: 60px;
+                                          position: relative;
+                                          right: 30%;
+                                          top: 40px;
+                                          border-radius: 100%;
+                                          align-self: center;
+                                          transition: all ease-in-out 0.5s;
+                                          cursor: pointer;
+                                          border-radius: 100%;
+                                          border-width: 5px;
+                                          border-style: solid;
+                                          border-color: #0197fc;
+                                          vertical-align: top;
+                                        }
+    
+                                        .Nombreusuario{
+                                          color:#FFFFFF;
+                                          margin-top: 20px;
+                                          margin-left: 30px;
+                                          text-align: left;
+                                        }
+    
+                                        .button-menu {
+                                          z-index: 200;
+                                          width: 40px;
+                                          height: 40px;
+                                          border: none;
+                                          display: flex;
+                                          background: none;
+                                          flex-direction: column; /* Pondrá un span debajo del otro*/
+                                          align-items: center;
+                                          justify-content: center;
+                                          cursor: pointer;                                    
+                                          position: relative;
+                                          left: 800%;
+                                          bottom: 35px;                                    
+                                        }
+                                        /* Dibujamos una línea recta por cada span creando el tipico menu hamburguesa*/
+                                        .button-menu span {
+                                          width: 37px;
+                                          height: 4px;
+                                          margin-bottom: 5px;
+                                          position: relative;
+                                          background: #ffffff;
+                                          border-radius: 3px;
+                                          transform-origin: 4px 0px;
+                                          transition: all 0.2s linear;
+                                        }
+                                        /* con los span dibujamos un icono de cerrar para mostrar cuándo la navegación este abierta */
+                                        .button-menu.close span {
+                                          opacity: 1;
+                                          transform: rotate(45deg) translate(0px, 0px);
+                                          background: #ffffff;
+                                        }
+                                        .button-menu.close span:nth-child(2) {
+                                          transform: rotate(-45deg) translate(-8px, 5px);
+                                        }
+                                        .button-menu.close span:nth-child(3) {
+                                          display: none;
+                                        }
+    
+                                        .main-nav {
+                                          position: fixed;
+                                          top: 0;
+                                          left: 0;
+                                          height: 100vh;
+                                          width: 100%;
+                                          margin-left: -100%;
+                                          transition: all 0.2s linear;
+                                          z-index: 100;
+                                          background-color: rgba(0, 0, 0, 0.7);
+                                        }
+    
+                                        .main-nav.show {
+                                          margin-left: 0;
+                                        }
+    
+                                        .nav-links {
+                                          background-color: #102461b0;
+                                          display: flex;
+                                          flex-direction: column;
+                                          width: 30%;
+                                          height: 100%;
+                                          align-items: left;
+                                          justify-content: flex-start;                                                                        
+                                        }
+    
+                                        .link-item {
+                                          margin-top: 2rem;
+                                          color: #ffffff;
+                                          text-decoration: none;
+                                          font-weight: bold;
+                                          position: relative;
+                                          margin-left: 30px;
+                                          position: relative;
+                                          top: 50px;
+                                        }
+    
+                                        .Nombreusuario{
+                                          position: relative;
+                                          top: 50px;
+                                        }                                
+                                      /*Fin Menú Móvil*/
+    
+                                      .logo{
+                                        right: 4%;
+                                      }  
+    
+                                      #sectionCentralizarLogoNombre{
+                                        visibility: hidden;
+                                      }                                                      
+                                      
+                                      /*Inicio Footer*/
+                                        /*Estos seria los cambios que se le hicieron al footer de acuerdo a esas dimenciones*/
+                                        .site-footer
+                                        {
+                                          padding-bottom:0
+                                        }
+                                        .site-footer .copyright-text
+                                        {
+                                          text-align:left;
+                                        }
+                                        .social-icons li.title
+                                        {
+                                          display:block;
+                                          margin-right:0;
+                                          font-weight:600
+                                        }
+                                        .site-footer .social-icons
+                                        {
+                                          text-align:right;  
+                                        }
+                                        .copyright-text
+                                        {
+                                          width: 350px;
+                                          margin-bottom: 10px;
+                                        }
+    
+                                        /*Agregado para mover que se vea como se debe el footer*/
+                                        .footer-links li{
+                                          margin-right: 0px;
+                                        }
+                                      /*Fin Footer*/ 
+                                      /*Inicio Panel de Noticias*/                                                          
+    
+                                        #fondo{
+                                          left: 0%;
+                                        }                                
+                                                                                        
+                                      /*Fin sección noticias*/
+                                      
+                                      @media screen and (max-width: 980px)
+                                      and (min-width: 280px){
+    
+                                        @media screen and (max-width: 920px)
+                                        and (min-width: 280px){
+
+                                          /* #mosaicoDER{
+                                            left: 47%;
+                                          } */
+    
+                                          @media screen and (max-width: 918px)
+                                          and (min-width: 280px){                                      
+    
+                                            #ulNavHeader{                                        
+                                              width: 60%;
+                                            }
+                                            
+                                            .logo{
+                                              left: -1%;
+                                            }
+
+                                            @media screen and (max-width: 916px)
+                                            and (min-width: 280px){ 
+
+                                              .classBotonAccion{
+                                                width: 40%;
+                                                margin-bottom: 30px;
+                                                position: relative;
+                                                left: 0%;
+                                              }
+
+                                              #idDivBotonesAcciones{
+                                                text-align: center;
+                                              }
+
+                                              @media screen and (max-width: 880px)
+                                              and (min-width: 280px){
+  
+                                                #h4Atras{
+                                                  top: 50px;
+                                                }
+  
+                                                @media screen and (max-width: 842px)
+                                                and (min-width: 280px){
+                                                  
+                                                  #imgLogUsuarioMovil{
+                                                    right: 25%;
+                                                  }
+        
+                                                  #ulNavHeader{                                          
+                                                    position: relative;
+                                                    right: 13%;
+                                                    width: 70%;
+                                                  }    
+                                                  /*.classBotonAccion{
+                                                    width: 20%;
+                                                  } */
+                                                    
+                                                  @media screen and (max-width: 834px)
+                                                  and (min-width: 280px){
+                                                    
+                                                    #h1TextoInicial{
+                                                      right: 17%;
+                                                    }
+  
+                                                    /* #mosaicoDER{
+                                                      left: 51.5%;
+                                                    } */
+        
+                                                    @media screen and (max-width: 779px)
+                                                    and (min-width: 280px){
+  
+                                                      /* #mosaicoDER{
+                                                        left: 55%;
+                                                      } */
+  
+                                                      #h1TextoInicial{
+                                                        top: 70px;
+                                                      }
+  
+                                                      #idSelectBusquedaPA{
+                                                        top: 10px;
+                                                      }
+        
+                                                      @media screen and (max-width: 767px)
+                                                      and (min-width: 280px){
+        
+                                                            
+                                                        /*Inicio Footer*/
+                                                          .site-footer
+                                                          {
+                                                            padding-bottom:0;                    
+                                                          }
+                                                          .site-footer .footer-links{
+                                                            text-align: left;
+                                                            margin: 10px;                    
+                                                          }
+                                                          .site-footer hr
+                                                          {
+                                                            border-top-color:rgb(255, 255, 255);
+                                                            margin-top: 10px;
+                                                            opacity:0.5;
+                                                          }
+                                                          
+                                                          .site-footer .copyright-text
+                                                          {
+                                                            text-align:center;
+                                                            margin-left: 60px;
+                                                          }
+                                                          .site-footer .social-icons
+                                                          {
+                                                            text-align:left;                      
+                                                            margin-top: -250px;
+                                                            margin-left: -110px;                                        
+                                                            width: 100px;                    
+                                                          }
+        
+                                                        /*Fin Footer*/
+        
+                                                        #ulNavHeader{                                              
+                                                          right: 12%;
+                                                        }
+        
+                                                        .nav-link{                                              
+                                                          margin-right: -20px;
+                                                        }
+                                                        
+                                                        #mosaicoIZQ{
+                                                          bottom: 410px;
+                                                        }
+                                                        
+                                                        @media screen and (max-width: 758px)
+                                                        and (min-width: 280px){
+        
+        
+                                                          @media screen and (max-width: 730px)
+                                                          and (min-width: 280px){
+  
+                                                            /* #mosaicoDER{
+                                                              left: 59%;
+                                                            }                   */
+                                                              
+                                                            @media screen and (max-width: 712px)
+                                                            and (min-width: 280px){
+        
+                                                              #h1TextoInicial{
+                                                                right: 23%;
+                                                              }
+        
+                                                              .logo{
+                                                                left: 3%;
+                                                              }
+        
+                                                              .button-menu{
+                                                                float: right;
+                                                                left: 850%;
+                                                              }
+  
+                                                              #h1TextoInicial{
+                                                                font-size: 25px;
+                                                              }
+        
+                                                              @media screen and (max-width: 679px)
+                                                              and (min-width: 280px){                                                    
+        
+                                                                .nav-link{                                              
+                                                                  margin-right: -50px;                                                      
+                                                                }
+        
+                                                                #ulNavHeader{                                              
+                                                                  right: 15%;                                                      
+                                                                }
+        
+                                                                #imgLogUsuarioMovil{
+                                                                  right: 28%;
+                                                                }
+        
+                                                                .nav-links{                                                      
+                                                                  width: 40%;
+                                                                }
+        
+                                                                @media screen and (max-width: 668px)
+                                                                and (min-width: 280px){
+                                                                  /* #mosaicoDER{
+                                                                    left: 64%;
+                                                                  } */
+  
+                                                                  /* #mosaicoIZQ{
+                                                                    top: -30px;
+                                                                  } */
+  
+                                                                  #h4Atras{
+                                                                    height: 30px;
+                                                                  }
+  
+                                                                  #aAtras{
+                                                                    white-space: nowrap;
+                                                                    position: relative;
+                                                                    bottom: 40px;
+                                                                  }
+        
+                                                                  @media screen and (max-width: 625px)
+                                                                  and (min-width: 280px){
+                                                                    /* #mosaicoDER{
+                                                                      left: 69%;
+                                                                    } */
+  
+                                                                    #h1TextoInicial{
+                                                                      left: 4%;
+                                                                    }
+  
+                                                                    #idSelectBusquedaPA{
+                                                                      width: 70%;
+                                                                      left: 10%;
+                                                                    }
+        
+                                                                    @media screen and (max-width: 618px)
+                                                                    and (min-width: 280px){
+        
+                                                                      .button-menu{
+                                                                        position: relative;
+                                                                        bottom: 60px;
+                                                                        left: 900%;
+                                                                      }
+        
+                                                                      #ulNavHeader{                                                           
+                                                                        left: -12%;
+                                                                      }
+                                                                        
+                                                                      @media screen and (max-width: 592px)
+                                                                      and (min-width: 280px){
+  
+                                                                        @media screen and (max-width: 582px)
+                                                                        and (min-width: 280px){ 
+                                                                          
+                                                                          #imgLogUsuarioMovil{
+                                                                            right: 29%;
+                                                                          }
+                      
+                                                                          .nav-links{                                                      
+                                                                            width: 50%;
+                                                                          }
+  
+                                                                          /* #mosaicoDER{
+                                                                            left: 74%;
+                                                                          } */
+                                                                            
+                                                                          @media screen and (max-width: 575px)
+                                                                          and (min-width:280px){                                                            
+        
+                                                                            .nav-link{
+                                                                              margin-right: -60px;
+                                                                              font-size: 15px;
+                                                                            }
+        
+                                                                            #imgLogUsuarioMovil{
+                                                                              right: 85px;
+                                                                            }
+        
+                                                                            @media screen and (max-width: 557px)
+                                                                            and (min-width: 280px){
+  
+                                                                              /* #mosaicoDER{
+                                                                                left: 68%;
+                                                                                bottom: 40px;
+                                                                              } */
+        
+                                                                              @media screen and (max-width: 554px)
+                                                                              and (min-width: 280px){
+        
+                                                                                @media screen and (max-width: 542px)
+                                                                                and (min-width: 280px){
+        
+                                                                                  #imgLogUsuarioMovil{
+                                                                                    right: 27%;
+                                                                                  }                                                                              
+                                                                                    
+                                                                                  @media screen and (max-width: 534px)
+                                                                                  and (min-width: 280px){
+                                                                                    
+                                                                                    #h4Atras{                                                                                                                                
+                                                                                      width: 40%;
+                                                                                    }
+                                                                                      
+                                                                                    @media screen and (max-width: 522px)
+                                                                                    and (min-width: 280px){
+  
+                                                                                      /* #mosaicoDER{
+                                                                                        left: 72%;
+                                                                                      } */
+  
+                                                                                      #h1TextoInicial{
+                                                                                        font-size: 22px;
+                                                                                      }
+                                                                                                                                        
+        
+                                                                                      @media screen and (max-width: 520px)
+                                                                                      and (min-width: 280px){                                                                       
+        
+                                                                                        /*Inicio Footer*/
+                                                                                          .site-footer
+                                                                                          {
+                                                                                            padding-bottom:0
+                                                                                          }
+                                                                                          .site-footer .footer-links{
+                                                                                            text-align: left;
+                                                                                            margin: 10px;                        
+                                                                                          }
+                                                                                          .site-footer .copyright-text
+                                                                                          {
+                                                                                            text-align:left
+                                                                                          }
+                                                                                          .site-footer .social-icons
+                                                                                          {
+                                                                                            text-align:left;                  
+                                                                                            margin-top: -240px;
+                                                                                            margin-left: -110px;
+                                                                                          }
+                                                                                          .copyright-text
+                                                                                          {                                      
+                                                                                            margin-bottom: 10px;
+                                                                                          }
+                                                                                        /*Fin Footer*/ 
+                                                                                        
+                                                                                        @media screen and (max-width: 517px)
+                                                                                        and (min-width: 280px){    
+                                                                                            
+                                                                                          @media screen and (max-width: 504px)
+                                                                                          and (min-width: 280px){
+  
+                                                                                            /* #mosaicoDER{
+                                                                                              left: 0%;
+                                                                                              bottom: 85px;
+                                                                                            } */
+  
+                                                                                            .classBotonAccion{
+                                                                                              height: 50px;
+                                                                                            }
+  
+                                                                                            #divPopUpEditar{
+                                                                                              width: 90%;
+                                                                                              left: 5%;
+                                                                                              z-index: 1001;
+                                                                                            }
+
+                                                                                            #divPopUpAgregar{
+                                                                                              width: 90%;
+                                                                                              left: 5%;
+                                                                                              z-index: 1001;
+                                                                                            }
+  
+                                                                                            #aAtras{
+                                                                                              bottom: 60px;
+                                                                                            }
+  
+                                                                                            .button-menu{
+                                                                                              z-index: 0;
+                                                                                            }
+        
+                                                                                            @media screen and (max-width: 486px)
+                                                                                            and (min-width: 280px){                                                                                      
+                                                                                              #h4Atras{
+                                                                                                top: -60px;
+                                                                                              }
+                                                                                              /* .classBotonAccion:nth-child(1){
+                                                                                                bottom: 10.5px;
+                                                                                              } */
+  
+                                                                                              @media screen and (max-width: 480px)
+                                                                                              and (min-width: 280px){
+        
+                                                                                                /*Inicio Footer*/
+                                                                                                  .site-footer
+                                                                                                  {
+                                                                                                    padding-bottom:0
+                                                                                                  }
+                                                                                                  .site-footer .footer-links{
+                                                                                                    text-align: left;
+                                                                                                    margin: 10px;                          
+                                                                                                  }                    
+                                                                                                  .site-footer .social-icons
+                                                                                                  {
+                                                                                                    text-align:left;                    
+                                                                                                    margin-top: -280px;
+                                                                                                    margin-left: -110px;
+                                                                                                  }
+                                                                                                  .copyright-text
+                                                                                                  {                                            
+                                                                                                    margin-bottom: 10px;
+                                                                                                    position: relative;
+                                                                                                    right: 10%;                        
+                                                                                                  }
+                                                                                                /*Fin Footer*/
+  
+                                                                                                #h4Atras{                                                                                                                                            
+                                                                                                  width: 70%;                                                                                                                                                
+                                                                                                  text-align: left;
+                                                                                                  top: 60px;
+                                                                                                }
+  
+                                                                                                #aAtras{
+                                                                                                  height: 200px;
+                                                                                                  font-size: 22px;
+                                                                                                }
+        
+                                                                                                @media screen and (max-width: 473px)
+                                                                                                and (min-width: 280px){
+        
+                                                                                                  #h1TextoInicial{
+                                                                                                    left: 0%;
+                                                                                                  }  
+                                                                                                  
+                                                                                                  #aAtras{
+                                                                                                    top: -180px;
+                                                                                                  }
+                                                                                                                                                                                              
+                                                                                                  @media screen and (max-width: 452px)
+                                                                                                  and (min-width: 280px){
+                                                                                                    
+                    
+                                                                                                    @media screen and (max-width: 447px)
+                                                                                                    and (min-width: 280px){
+                                                                                                      
+                                                                                                      @media screen and (max-width: 444px)
+                                                                                                      and (min-width: 280px){
+        
+                                                                                                        @media screen and (max-width: 443px)
+                                                                                                        and (min-width: 280px){ 
+                                                                                                                                                                          
+                                                                                                          #imgLogUsuarioMovil{
+                                                                                                            right: 23%;
+                                                                                                          }                                                                                                  
+                                                                        
+                                                                                                          @media screen and (max-width: 432px)
+                                                                                                          and (min-width: 280px){
+        
+                                                                                                            .button-menu{
+                                                                                                              left: -20px;
+                                                                                                              top: -140px;
+                                                                                                            }                                                                                                          
+  
+                                                                                                            /* #mosaicoDER{
+                                                                                                              left: 12%;
+                                                                                                            } */
+                                                                                                                                                                                                        
+                                                                                                            @media screen and (max-width: 413px)
+                                                                                                            and (min-width: 280px){
+        
+                                                                                                              /* #mosaicoIZQ{
+                                                                                                                top: -40px;
+                                                                                                              } */
+  
+                                                                                                              /* .classBotonAccion:nth-child(2){
+                                                                                                                bottom: 10.5px;
+                                                                                                              } */
+  
+                                                                                                              @media screen and (max-width: 406px)
+                                                                                                              and (min-width: 280px){
+  
+                                                                                                                #mosaicoIZQ{
+                                                                                                                  bottom: 430px;
+                                                                                                                }
+  
+                                                                                                                @media screen and (max-width: 400px)
+                                                                                                                and (min-width: 280px){                                                                                                                                                                                                                                                                    
+                                                                                                                    
+                                                                                                                  /*Inicio sección lí*/
+          
+                                                                                                                  /*Inicio Footer*/
+                                                                                                                    .site-footer
+                                                                                                                    {
+                                                                                                                      padding-bottom:0                        
+                                                                                                                    }
+                                                                                                                    .site-footer .footer-links{
+                                                                                                                      text-align: left;
+                                                                                                                      margin: 10px;
+                                                                                                                      font-size:14px;                          
+                                                                                                                    }
+                                                                                                                    .site-footer .copyright-text
+                                                                                                                    {
+                                                                                                                      text-align:center;
+                                                                                                                    }
+                                                                                                                    .site-footer .social-icons
+                                                                                                                    {
+                                                                                                                      text-align:left;                    
+                                                                                                                      margin-top: -280px;
+                                                                                                                      margin-left: -110px;
+                                                                                                                    }
+                                                                                                                    .copyright-text
+                                                                                                                    {
+                                                                                                                      margin-bottom: 10px;
+                                                                                                                      right: 10%;
+                                                                                                                      width: 85%;
+                                                                                                                    }
+                                                                                                                  /*Fin Footer*/
+          
+                                                                                                                  @media screen and (max-width: 392px)
+                                                                                                                  and (min-width: 280px){
+  
+                                                                                                                    /* .classBotonAccion:nth-child(3){
+                                                                                                                      bottom: 10.5px;
+                                                                                                                    } */
+          
+                                                                                                                    @media screen and (max-width: 383px)
+                                                                                                                    and (min-width: 280px){
+  
+                                                                                                                      #mosaicoIZQ{
+                                                                                                                        bottom: 460px;
+                                                                                                                      }
+          
+                                                                                                                      @media screen and (max-width: 379px)
+                                                                                                                      and (min-width: 280px){
+          
+                                                                                                                        #h1TextoInicial{
+                                                                                                                          font-size: 18px;
+                                                                                                                          top: 80px;
+                                                                                                                        }  
+                                                                                                                                                                                                                                                                                                          
+                                                                                                                        #divMenuDespliegue{                                                                                  
+                                                                                                                          left: -20%;
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                        .button-menu{
+                                                                                                                          left: 260%;
+                                                                                                                          top: -105px;
+                                                                                                                        }
+  
+                                                                                                                        /* #mosaicoDER{
+                                                                                                                          left: 48%;
+                                                                                                                          bottom: 50px;
+                                                                                                                        } */
+  
+                                                                                                                        .botonesPopUpEditar{
+                                                                                                                          width: 35%;
+                                                                                                                        }
+
+                                                                                                                        .botonesPopUpAgregar{
+                                                                                                                          width: 35%;
+                                                                                                                        }
+  
+                                                                                                                        #aAtras{
+                                                                                                                          top: -20px;
+                                                                                                                        }
+          
+                                                                                                                                                                                                                                                                                                                              
+                                                                                                                        @media screen and (max-width: 374px)
+                                                                                                                        and (min-width: 280px){
+          
+                                                                                                                          #imgLogUsuarioMovil{
+                                                                                                                            right: 17%;
+                                                                                                                          }  
+                                                                                                                          
+                                                                                                                          @media screen and (max-width: 371px)
+                                                                                                                          and (min-width: 280px){
+                                                                                                                              
+                                                                                                                            /*Inicio Footer*/
+                                                                                                                              .site-footer
+                                                                                                                              {
+                                                                                                                                padding-bottom:0                            
+                                                                                                                              }
+                                                                                                                              .site-footer .footer-links{
+                                                                                                                                text-align: left;
+                                                                                                                                margin: 15px;
+                                                                                                                                font-size:14px;                              
+                                                                                                                              }
+                                                                                                                              .site-footer .copyright-text
+                                                                                                                              {
+                                                                                                                                text-align:center;
+                                                                                                                              }
+          
+                                                                                                                              .site-footer .social-icons
+                                                                                                                              {
+                                                                                                                                text-align:left;                        
+                                                                                                                                margin-top: -290px;
+                                                                                                                                margin-left: -110px;
+                                                                                                                              }
+                                                                                                                              .copyright-text
+                                                                                                                              {
+                                                                                                                                position: relative;
+                                                                                                                                right: 15%;
+                                                                                                                                margin-bottom: 10px;
+                                                                                                                              }
+                                                                                                                            /*Fin Footer*/
+  
+                                                                                                                            #mosaicoIZQ{
+                                                                                                                              bottom: 470px;
+                                                                                                                            }
+          
+                                                                                                                            @media screen and (max-width: 359px)
+                                                                                                                            and (min-width: 280px){
+          
+                                                                                                                              @media screen and (max-width: 357px)
+                                                                                                                              and (min-width: 280px){
+          
+                                                                                                                                .button-menu{
+                                                                                                                                  top: -130px;
+                                                                                                                                }
+          
+                                                                                                                                /* #h1TextoInicial{
+                                                                                                                                  top: 110px;
+                                                                                                                                } */
+  
+                                                                                                                                /* #mosaicoDER{
+                                                                                                                                  left: 50%;
+                                                                                                                                  bottom: 70px;
+                                                                                                                                } */
+          
+                                                                                                                                @media screen and (max-width: 355px)
+                                                                                                                                and (min-width: 280px){
+  
+                                                                                                                                  .classBotonAccion{
+                                                                                                                                    width: 100%;
+                                                                                                                                    display: inline;
+                                                                                                                                    margin-bottom: 20px;
+                                                                                                                                  }
+  
+                                                                                                                                  #idDivBotonesAcciones{
+                                                                                                                                    display: flex;
+                                                                                                                                    flex-direction: column;  
+                                                                                                                                    position: relative;
+                                                                                                                                    left: 28%;
+                                                                                                                                    width: 40%;
+                                                                                                                                  }
+  
+                                                                                                                                  #idTextoTabla{
+                                                                                                                                    font-size: 15px;
+                                                                                                                                  }
+          
+                                                                                                                                  @media screen and (max-width: 343px)
+                                                                                                                                  and (min-width: 280px){
+                            
+                                                                                                                                    .nav-links{                                                                                        
+                                                                                                                                      width: 60%;
+                                                                                                                                    }
+  
+                                                                                                                                    #aAtras{
+                                                                                                                                      top: -80px;
+                                                                                                                                    }                                                                                                                                      
+                                                                                                                                      
+                                                                                                                                    /*Inicio Footer*/
+                                                                                                                                      .site-footer
+                                                                                                                                      {
+                                                                                                                                        padding-bottom:0                            
+                                                                                                                                      }
+                                                                                                                                      .site-footer .footer-links{
+                                                                                                                                        text-align: left;
+                                                                                                                                        margin: 10px;
+                                                                                                                                        font-size:14px;                              
+                                                                                                                                      }
+                                                                                                                                      .site-footer .copyright-text
+                                                                                                                                      {
+                                                                                                                                        text-align:center;
+                                                                                                                                      }
+                                                                                                                                      .site-footer .social-icons
+                                                                                                                                      {
+                                                                                                                                        text-align:left;                        
+                                                                                                                                        margin-top: -290px;
+                                                                                                                                        margin-left: -110px;
+                                                                                                                                      }
+                                                                                                                                      .copyright-text
+                                                                                                                                      {                                                    
+                                                                                                                                        margin-bottom: 10px;
+                                                                                                                                      }
+                                                                                                                                    /*Fin Footer*/
+          
+                                                                                                                                    @media screen and (max-width: 338px)
+                                                                                                                                    and (min-width: 280px){
+          
+                                                                                                                                      #h1TextoInicial{
+                                                                                                                                        left: 0%;
+                                                                                                                                        font-size: 15px;
+                                                                                                                                      }
+                                                                                                                                      
+          
+                                                                                                                                      @media screen and (max-width: 336px)
+                                                                                                                                      and (min-width: 280px){
+          
+                                                                                                                                          
+                                                                                                                                        @media screen and (max-width: 335px)
+                                                                                                                                        and (min-width: 280px){
+          
+                                                                                                                                            
+          
+                                                                                                                                          @media screen and (max-width: 330px)
+                                                                                                                                          and (min-width: 280px){
+          
+                                                                                                                                            @media screen and (max-width: 325px)
+                                                                                                                                            and (min-width: 280px){
+          
+                                                                                                                                              @media screen and (max-width: 314px)
+                                                                                                                                              and (min-width: 280px){
+  
+                                                                                                                                                /* #mosaicoDER{
+                                                                                                                                                  left: 58%;
+                                                                                                                                                } */
+          
+                                                                                                                                                @media screen and (max-width: 311px)
+                                                                                                                                                and (min-width: 280px){
+          
+                                                                                                                                                  @media screen and (max-width: 307px)
+                                                                                                                                                  and (min-width: 280px){
+                                                                                                                                                    /* #mosaicoDER{
+                                                                                                                                                      left: 42%;
+                                                                                                                                                      bottom: 110px;
+                                                                                                                                                    } */
+  
+                                                                                                                                                    #aAtras{
+                                                                                                                                                      bottom: 110px;
+                                                                                                                                                    }
+  
+                                                                                                                                                    #idSelectBusquedaPA{
+                                                                                                                                                      top: 10px;
+                                                                                                                                                    }
+          
+                                                                                                                                                    @media screen and (max-width: 297px)
+                                                                                                                                                    and (min-width: 280px){
+                                
+                                                                                                                                                      .button-menu{
+                                                                                                                                                        left: 300%;
+                                                                                                                                                      }
+                                
+                                                                                                                                                      #divMenuDespliegue{                                                                                              
+                                                                                                                                                        left: -35%;
+                                                                                                                                                      }
+                                
+                                                                                                                                                      .nav-links{                                                                                              
+                                                                                                                                                        width: 70%;
+                                                                                                                                                      }
+  
+          
+                                                                                                                                                      @media screen and (max-width: 291px)
+                                                                                                                                                      and (min-width: 280px){
+                                                                                                                                                            
+                                                                                                                                                        @media screen and (max-width: 290px)
+                                                                                                                                                        and (min-width: 280px){
+                                                                                                                                                          .button-menu{
+                                                                                                                                                            left: 300%;
+                                                                                                                                                          }
+                                
+                                                                                                                                                          #divMenuDespliegue{                                                                                              
+                                                                                                                                                            left: -35%;
+                                                                                                                                                          }
+                                
+                                                                                                                                                          .nav-links{                                                                                              
+                                                                                                                                                            width: 70%;
+                                                                                                                                                          }
+          
+                                                                                                                                                          @media screen and (max-width: 281px)
+                                                                                                                                                          and (min-width: 280px){
+                                                                                                                                                            /* #mosaicoDER{
+                                                                                                                                                              left: 45%;
+                                                                                                                                                            } */
+  
+                                                                                                                                                            #h1TextoInicial{
+                                                                                                                                                              left: 3%;
+                                                                                                                                                            }
+  
+                                                                                                                                                            #idSelectBusquedaPA{
+                                                                                                                                                              left: 14%;
+                                                                                                                                                            }
+  
+                                                                                                                                                            #idTextoTabla{
+                                                                                                                                                              width: 95%;
+                                                                                                                                                            }
+  
+                                                                                                                                                            .botonesPopUpEditar{
+                                                                                                                                                              width: 40%;
+                                                                                                                                                              margin-right: 15px;
+                                                                                                                                                            }
+
+                                                                                                                                                            .botonesPopUpAgregar{
+                                                                                                                                                              width: 40%;
+                                                                                                                                                              margin-right: 15px;
+                                                                                                                                                            }
+                                                                                                                                                          }                                                                                                                                                                                                                
+                                                                                                                                                        }
+                                                                                                                                                      }                                                                                                                  
+                                                                                                                                                    }
+                                                                                                                                                  }                                                                                                                                                                                                            
+                                                                                                                                                }                                                                                                                                  
+                                                                                                                                              }
+                                                                                                                                            }                                                                                                                              
+                                                                                                                                          }
+                                                                                                                                        }                                                                                                  
+                                                                                                                                      }
+                                                                                                                                    }                                                                                                                                                                                                                                                                                      
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }                                                                                                                                                                                                          
+                                                                                                                          }
+                                                                                                                        }                                                                                
+                                                                                                                      } 
+                                                                                                                    }
+                                                                                                                  }                                                                             
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }                                                                                            
+                                                                                                          }                                                                          
+                                                                                                        }
+                                                                                                      }                                                                                      
+                                                                                                    }
+                                                                                                  }                                                                                                                                                                                                                                        
+                                                                                                }                                                                      
+                                                                                              }                                                                                      
+                                                                                            }                                                                            
+                                                                                          } 
+                                                                                        }                                                                                                                                                                                                                                                                                                                                                 
+                                                                                      }
+                                                                                    }
+                                                                                  }                                                                                                                                                                                                                                                                                                               
+                                                                                }
+                                                                              }
+                                                                            }                                                      
+                                                                          }                                                                                                                   
+                                                                        }
+                                                                      }                                                                                                                 
+                                                                    }
+                                                                  }                                                                                                           
+                                                                }                                                    
+                                                              }                                                  
+                                                            }                                                
+                                                          }
+                                                        }                                                                                                                                                                                                                  
+                                                      }
+                                                    }
+                                                  }                                                                               
+                                                } 
+                                              }
+                                            }                                    
+                                          }                                      
+                                        }
+                                      }
+                                    }                                                         
+                                  }
+                                }                                                    
+                              }                        
+                            }            
+                          }  
+                        }              
+                      } 
+                    }                                                                            
+                  } 
+                }                  
+              }
+            }
+          }      
+        }
+      }
+    }
+  } 
+}

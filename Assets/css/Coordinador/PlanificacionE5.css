@@ -1,0 +1,1590 @@
+header {
+  background-color: #102461;
+  height: 100px;
+}
+
+.Nombreusuario {
+  color: #FFFFFF;
+  margin-top: 5px;
+  margin-right: 10px;
+  float: right;
+}
+
+.logo {
+  width: 30%;
+  height: 70px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+#texto_atras {
+  margin-left: 5%;
+  margin-top: 0px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  width: 8%;
+  white-space: nowrap;
+}
+
+#texto_etapa {
+  margin-right: 1%;
+  float: right;
+  margin-top: -55px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#texto_planificacion {
+  margin-right: 0%;
+  float: right;
+  margin-top: -25px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.imgRedonda {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 160px;
+  border: 5px solid rgb(1, 151, 252);
+}
+
+/****************************************************/
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: -50px;
+  width: 300%;
+  height: 120%;
+  background-color: #102461;
+  /*opacity: 70%;*/
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+/***************************************************************************/
+.nav li a {
+
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+/*.nav li a:hover {
+      background-color:#434343;
+    }*/
+
+#FondoNav {
+  background-color: #102461;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover>ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+/******************************/
+/* Importante Ocultar Menu Movil*/
+.main-header {
+  display: none;
+}
+
+#mosaicoDER {
+  float: right;
+  width: 120px;
+  height: 120px;
+}
+
+.menu_general ul {
+  margin-right: 70px;
+}
+
+.menu_general li {
+  margin-top: 25px;
+  margin-right: 50px;
+  list-style: none;
+  display: inline-block;
+
+  margin-left: -50px;
+}
+
+#texto {
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 15px;
+  width: 13%;
+}
+
+body {
+  background-color: #FFFFFF;
+  overflow-x: hidden
+}
+
+.h4 {
+  margin-left: 10%;
+  margin-top: 60px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+
+}
+
+.h4_2do {
+  margin-left: 10%;
+  margin-top: 30px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.h4_3ro {
+  margin-left: 20%;
+  margin-top: 30px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.h4_4to {
+  margin-left: 20%;
+  margin-top: 30px;
+  color: #102461;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.FondoJurado {
+  background-color: #181D43;
+  width: 66%;
+  height: 350px;
+  margin-left: 24%;
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px 4px #000a1d67;
+}
+
+#MarcoJur {
+  width: 96%;
+  margin-left: 2%;
+}
+.my-custom-scrollbar-3 {
+  position: static;
+  margin-top: 1%;
+  height: 250px;
+  /*width: 150px;*/
+  overflow: auto;
+}
+
+.CE {
+  width: 150px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+#TJuradoE tbody tr.selected {
+  background-color: rgb(93, 91, 231);
+  color: #FFFFFF
+}
+
+.btnDetallesJE {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 17%;
+  margin-top: -80px;
+  width: 150px;
+  height: 50px;
+}
+
+.NotaCamposJE {
+  color: #ffffff;
+  float: left;
+  margin-left: 31%;
+  margin-top: -70px;
+}
+
+.Jurados_FeriaE5 {
+  background-color: #181D43;
+  width: 55%;
+  height: 980px;
+  margin-left: 20%;
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px 4px #000a1d67;
+}
+
+.NotaCampos {
+  color: #FFFFFF;
+  margin-left: 1%;
+
+}
+
+label {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 5%;
+  top: 10px;
+  transition: 0.3s ease all;
+  pointer-events: none;
+  padding-bottom: 20px;
+}
+
+input {
+  background: none;
+  color: #78788c;
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 50px;
+  font-family: sans-serif;
+  margin-left: 30%;
+}
+
+select {
+  background: none;
+  color: white;
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 50px;
+  font-family: sans-serif;
+  margin-left: 35%;
+}
+
+.btnQuitarSeleccionJ2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 5%;
+  width: 150px;
+  height: 50px;
+}
+
+.btnQuitarSeleccionJ3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 5%;
+  width: 150px;
+  height: 50px;
+}
+
+.btnSigE5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 10%;
+  margin-top: 10%;
+  width: 150px;
+  height: 50px;
+}
+
+.btnCancelarR {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: left;
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 150px;
+  height: 50px;
+}
+
+.labelCriterios {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  margin-left: 5%;
+  top: -25px;
+  transition: 0.3s ease all;
+  pointer-events: none;
+  padding-bottom: 20px;
+}
+
+thead,
+tbody {
+  color: rgb(0, 38, 255);
+  background-color: #ffffff;
+
+}
+
+.btnCri {
+  width: 150px;
+  height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 2%;
+  box-shadow: 0px 0px 0px 1px #000e2979;
+}
+
+.NotaCriterios {
+  color: #FFFFFF;
+  margin-left: 12%;
+  margin-top: 2%;
+
+}
+
+#MarcoCriterios {
+  width: 100%;
+  margin-left: 10%;
+
+
+}
+
+#Anchio {
+  background-color: #000000;
+  display: none;
+
+
+
+}
+
+#TCriterios tbody tr.selected {
+  background-color: rgb(56, 93, 204);
+  color: #FFFFFF
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+
+  font-size: 14px;
+  margin-top: 2%;
+}
+
+.my-custom-scrollbar {
+  position: static;
+  height: 400px;
+  /*width: 150px;*/
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+
+
+.btnCancelarRegE5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: left;
+  margin-left: 5%;
+  width: 150px;
+  height: 50px;
+}
+
+.btnGuardarJE5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 10%;
+  width: 150px;
+  height: 50px;
+}
+
+
+.btnAgregarFormato {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 10%;
+  width: 150px;
+  height: 50px;
+}
+
+.btnEditarFormato {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 2%;
+  width: 150px;
+  height: 50px;
+}
+
+.btnAgregarCriterio {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 10%;
+  width: 150px;
+  height: 50px;
+}
+
+.btnEditarCriterio {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 2%;
+  width: 150px;
+  height: 50px;
+}
+
+textarea {
+  width: 90%;
+  margin-left: 35%;
+  height: 100px;
+  background-color: transparent;
+  color: #ffffff;
+  resize: none;
+}
+
+.btnEditarCDescripcionC {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #78788c;
+  background: #ffffff;
+  color: #0b3061;
+  box-shadow: 1px 1px 5px #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 10%;
+  width: 150px;
+  height: 50px;
+  margin-top: -2%;
+}
+
+#mosaicoIZQ {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+}
+
+/************************************************************************* INICIA FOOTER*/
+.site-footer {
+  background-color: #102461;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 5%;
+  font-family: 'Montserrat', sans-serif, serif;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
+}
+
+.site-footer .footer-links .fa {
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+}
+
+.site-footer h2 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif, serif;
+  font-size: 150%;
+  padding-bottom: 0.625rem;
+  list-style: none;
+}
+
+.site-footer a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif, serif;
+  font-size: 95%;
+  padding-bottom: 0.625rem;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none
+}
+
+.footer-links li {
+  display: block;
+  margin-top: 15px;
+  margin-right: 60px;
+}
+
+.footer-links a {
+  color: #ffffff
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block
+}
+
+.site-footer .social-icons {
+  text-align: right
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #ffffff;
+  color: #102461;
+}
+
+.copyright-text {
+  margin: 0
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px
+}
+
+.social-icons a {
+  background-color: #00476b;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998
+}
+
+.social-icons a.global:hover {
+  background-color: #00aced
+}
+
+@media screen and (max-width: 2000px) and (min-width: 280px) {
+  @media screen and (max-width: 1800px) and (min-width: 280px) {
+    .btnSigE5 {
+      margin-right: 10%;
+    }
+
+    #mosaicoIZQ {
+      position: relative;
+      margin-bottom: -85px;
+    }
+
+    @media screen and (max-width: 1649px) and (min-width: 280px) {
+
+      #mosaicoIZQ {
+        position: relative;
+        margin-bottom: -78px;
+      }
+
+      @media screen and (max-width: 1500px) and (min-width: 280px) {
+
+        .h4_3ro,
+        .h4_4to {
+          margin-left: 15%;
+
+        }
+
+        #mosaicoIZQ {
+          position: relative;
+          margin-bottom: -65px;
+        }
+
+        @media screen and (max-width: 1200px) and (min-width: 280px) {
+          .menu_general li {
+            margin-left: -60px;
+          }
+          .FondoJurado {
+            width: 84%;
+
+          }
+
+          .btnDetallesJE {
+            margin-right: 6%;
+          }
+
+          .Jurados_FeriaE5 {
+            width: 70%;
+          }
+
+          #MarcoCriterios {
+            margin-left: 10%;
+          }
+
+          #mosaicoIZQ {
+            position: relative;
+            margin-bottom: -55px;
+          }
+
+          @media screen and (max-width: 1043px) and (min-width: 280px) {
+            .FondoJurado {
+              width: 78%;
+            }
+
+            .btnDetallesJE{
+              margin-right: 0%;
+            }
+            .Jurados_FeriaE5 {
+              width: 65%;
+            }
+
+            @media screen and (max-width: 1000px) and (min-width: 280px) {
+              .justify-content-end {
+                display: none;
+              }
+
+              header {
+                height: 70px
+              }
+
+              .logo {
+                width: 20%;
+                height: 30px;
+                float: left;
+                margin-top: 9px;
+                margin-left: 30px;
+              }
+
+              .Nombreusuario {
+                display: none;
+              }
+
+              .main-header {
+                display: flex;
+                float: right;
+                margin-top: -2px;
+                justify-content: space-between;
+                align-items: center;
+                background-color: transparent;
+                padding: 0 0.4rem;
+              }
+
+              .main-logo {
+                color: black;
+                font-size: 32px;
+                text-decoration: none;
+              }
+
+              .main-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 100%;
+                margin-left: -100%;
+                transition: all 0.2s linear;
+                z-index: 100;
+                background-color: rgba(0, 0, 0, 0.7);
+              }
+
+              .main-nav.show {
+                margin-left: 0;
+              }
+
+              .NombreusuarioM {
+                color: #FFFFFF;
+                margin-top: 20px;
+                margin-left: 30px;
+                text-align: left;
+              }
+
+              .nav-links {
+                background-color: #102461b0;
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                height: 100%;
+                align-items: left;
+                justify-content: flex-start;
+              }
+
+              .link-item {
+                margin-top: 1rem;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+                position: relative;
+                margin-left: 30px;
+              }
+
+              .button-menu {
+                z-index: 200;
+                width: 40px;
+                height: 40px;
+                border: none;
+                display: flex;
+                background: none;
+                flex-direction: column;
+                /* Pondrá un span debajo del otro*/
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+              }
+
+              .button-menu span {
+                width: 37px;
+                height: 4px;
+                margin-bottom: 5px;
+                position: relative;
+                background: #ffffff;
+                border-radius: 3px;
+                transform-origin: 4px 0px;
+                transition: all 0.2s linear;
+              }
+
+              .button-menu.close span {
+                opacity: 1;
+                transform: rotate(45deg) translate(0px, 0px);
+                background: #ffffff;
+              }
+
+              .button-menu.close span:nth-child(2) {
+                transform: rotate(-45deg) translate(-8px, 5px);
+              }
+
+              .button-menu.close span:nth-child(3) {
+                display: none;
+              }
+
+              #mosaicoDER {
+                float: right;
+                width: 90px;
+                height: 90px;
+                margin-top: 0px;
+              }
+
+              #texto_atras {
+                font-size: 20px;
+              }
+
+              #texto_etapa {
+                margin-top: -40px;
+                font-size: 20px;
+              }
+
+              #texto_planificacion {
+                margin-top: -25px;
+                margin-right: -1%;
+                font-size: 20px;
+              }
+
+              .h4 {
+                margin-left: 10%;
+                margin-top: 60px;
+                font-size: 20px;
+
+              }
+
+              .h4_2do {
+                margin-left: 10%;
+                margin-top: 30px;
+                font-size: 20px;
+              }
+
+              .h4_3ro,
+              .h4_4to {
+                font-size: 20px;
+
+              }
+              .FondoJurado{
+                height: 390px;
+              }
+              #MarcoJur {
+                width: 96%;
+                margin-left: 2%;
+              }
+
+              .NotaCamposJE {
+                margin-left: 25%;
+                margin-top: -17%;
+              }
+
+
+              .btnDetallesJE {
+                margin-left: 25%;
+              }
+
+              .Jurados_FeriaE5 {
+                height: 900px;
+              }
+
+
+              #MarcoCriterios {
+                margin-left: 5%;
+                width: 110%;
+              }
+
+              #mosaicoIZQ {
+                position: relative;
+                margin-bottom: -40px;
+                width: 90px;
+                height: 90px;
+              }
+
+              .site-footer {
+                padding-bottom: 0
+              }
+
+              .site-footer .copyright-text {
+                text-align: left;
+              }
+
+              .social-icons li.title {
+                display: block;
+                margin-right: 0;
+                font-weight: 600
+              }
+
+              .site-footer .social-icons {
+                text-align: right;
+              }
+
+              .copyright-text {
+                width: 350px;
+                margin-bottom: 10px;
+              }
+
+              @media screen and (max-width: 767px) and (min-width: 280px) {
+                #texto_atras {
+                  margin-left: -1%;
+                }
+
+                .nav-links {
+                  background-color: #102461b0;
+                  display: flex;
+                  flex-direction: column;
+                  width: 50%;
+                  height: 100%;
+                  align-items: left;
+                  justify-content: flex-start;
+                }
+
+                .FondoJurado {
+                  width: 80%;
+                  height: 390px;
+                  margin-left: 10%;
+                }
+
+                .NotaCamposJE {
+                  margin-left: 15%;
+                  margin-top: -120px;
+                }
+
+                #MarcoJur{
+                  width: 92%;
+                  margin-left: 4%;
+                }
+
+                .btnDetallesJE {
+                  font-size: 14px;
+                  margin-right: 16%;
+                  width: 150px;
+                  height: 45px;
+                }
+
+                .Jurados_FeriaE5 {
+                  width: 80%;
+                  height: 1020px;
+                  margin-left: 10%;
+                }
+
+                select {
+                  margin-left: 5%;
+                }
+
+                .form-select {
+                  margin-left: 5%;
+                }
+
+                #FCriterios {
+                  margin-left: 5%;
+                  margin-top: 5%;
+                }
+
+                label {
+                  margin-left: 2%;
+
+                }
+
+                .labelCriterios {
+                  margin-left: 2%;
+                  margin-top: 5%;
+                }
+
+                #MarcoCriterios {
+                  margin-left: 1%;
+                  width: 95%;
+                }
+              
+
+                .NotaCriterios {
+                  margin-left: 10%;
+                  margin-top: 8%;
+                }
+
+                .btnEditarFormato {
+                  font-size: 14px;
+                  margin-right: 2%;
+                  width: 150px;
+                  height: 45px;
+                }
+
+                .btnAgregarFormato {
+                  font-size: 14px;
+                  margin-right: 10%;
+                  width: 150px;
+                  height: 45px;
+                }
+
+                #mosaicoIZQ {
+                  bottom: 38px;
+                  position: relative;
+                  margin-bottom: -62px;
+                  width: 90px;
+                  height: 90px;
+                }
+
+                .site-footer {
+                  padding-bottom: 0
+                }
+
+                .site-footer .footer-links {
+                  text-align: left;
+                  margin: 10px;
+                }
+
+                .site-footer hr {
+                  border-top-color: rgb(255, 255, 255);
+                  margin-top: 10px;
+                  opacity: 0.5
+                }
+
+                .site-footer .copyright-text {
+                  text-align: center;
+                  margin-left: 60px;
+                }
+
+                .site-footer .social-icons {
+                  text-align: left;
+                  margin-top: -250px;
+                  margin-left: -110px;
+                }
+
+                .copyright-text {
+                  width: 350px;
+                  margin-left: -10px;
+                  margin-bottom: 10px;
+                }
+
+                @media screen and (max-width: 521px) and (min-width: 280px) {
+                  #texto_atras {
+                    font-size: 16px;
+                  }
+
+                  #texto_etapa {
+                    font-size: 16px;
+                  }
+
+                  #texto_planificacion {
+                    font-size: 16px;
+                  }
+                  .NotaCamposJE {
+                    margin-left: 11%;
+                    margin-top: -120px;
+                  }
+
+                  .Jurados_FeriaE5 {
+                    height: 950px;
+                  }
+
+                  .btnSigE5 {
+                    width: 120px;
+
+                  }
+
+                  .my-custom-scrollbar {
+                    height: 300px;
+                  }
+
+                  .btnEditarFormato {
+                    float: left;
+                    margin-left: 10%;
+                    width: 130px;
+                    height: 50px;
+                  }
+
+                  .btnAgregarFormato {
+                    width: 130px;
+                    height: 50px;
+                  }
+
+                  .btnEditarCriterio {
+                    float: left;
+                    margin-left: 5%;
+                    width: 120px;
+                    height: 50px;
+                  }
+
+                  .btnGuardarJE5 {
+                    width: 140px;
+                    height: 50px;
+                  }
+
+                  .btnCancelarRegE5 {
+                    float: left;
+                    margin-left: 5%;
+                    width: 120px;
+                    height: 50px;
+                  }
+
+
+                  @media screen and (max-width: 480px) and (min-width: 280px) {
+                    .nav-links {
+                      width: 80%;
+
+                    }
+
+                    #texto_planificacion {
+                      margin-top: -55px;
+                      margin-right: 20%;
+                    }
+
+                    .Jurados_FeriaE5 {
+                      height: 1020px;
+                    }
+
+                    .btnEditarFormato {
+                      margin-left: 3%;
+                      width: 110px;
+                      height: 70px;
+                    }
+
+                    .btnAgregarFormato {
+                      margin-right: 3%;
+                      width: 110px;
+                      height: 70px;
+                    }
+
+                    .btnEditarCriterio {
+                      margin-left: 3%;
+                      width: 110px;
+                      height: 70px;
+                    }
+
+                    .btnAgregarCriterio {
+                      margin-right: 3%;
+                      width: 110px;
+                      height: 70px;
+                    }
+
+                    .btnCancelarRegE5 {
+                      margin-left: 3%;
+                      width: 110px;
+                    }
+
+                    .btnGuardarJE5 {
+                      margin-right: 3%;
+                      width: 110px;
+                    }
+
+                    .btnCancelarR {
+                      margin-left: 3%;
+                      width: 110px;
+                    }
+
+                    .btnSigE5 {
+                      margin-right: 3%;
+                      width: 110px;
+                    }
+
+                    #mosaicoIZQ {
+                      bottom: -55px;
+                      position: relative;
+                      margin-bottom: 40px;
+                      width: 90px;
+                      height: 90px;
+                      margin-left: 5px;
+                    }
+
+                    .site-footer {
+                      padding-bottom: 0
+                    }
+
+                    .site-footer .footer-links {
+                      text-align: left;
+                      margin: 10px;
+
+                    }
+
+                    .site-footer .copyright-text {
+                      text-align: center
+                    }
+
+                    .site-footer .social-icons {
+                      text-align: left;
+
+                      margin-top: -280px;
+                      margin-left: -110px;
+                    }
+
+                    .copyright-text {
+                      width: 210px;
+                      margin-bottom: 10px;
+                    }
+
+                    @media screen and (max-width: 399px) and (min-width: 280px) {
+                      .nav-links {
+                        width: 80%;
+
+                      }
+
+                      #texto_planificacion {
+                        margin-top: -55px;
+                        margin-right: 20%;
+                      }
+                      .NotaCamposJE {
+                        margin-left: 15%;
+                        margin-top: -120px;
+                        font-size: 15px;
+                        width: 200px;
+                      }
+      
+      
+                      .btnDetallesJE {
+                        width: 150px;
+                        height: 45px;
+                        margin-top: -20%;
+                      }
+
+                      .btnEditarFormato {
+                        margin-left: 3%;
+                        width: 100px;
+                      }
+
+                      .btnAgregarFormato {
+                        margin-right: 3%;
+                        width: 110px;
+                      }
+
+                      .btnEditarCriterio {
+                        margin-left: 3%;
+                        width: 100px;
+                      }
+
+                      .btnAgregarCriterio {
+                        margin-right: 3%;
+                        width: 110px;
+                      }
+
+                      .btnCancelarRegE5 {
+                        margin-left: 3%;
+                        width: 100px;
+                      }
+
+                      .btnGuardarJE5 {
+                        margin-right: 3%;
+                        width: 110px;
+                      }
+
+                      #mosaicoIZQ {
+                        bottom: -55px;
+                        position: relative;
+                        margin-bottom: 40px;
+                        width: 90px;
+                        height: 90px;
+                        margin-left: 5px;
+                      }
+
+                      .site-footer {
+                        padding-bottom: 0
+                      }
+
+                      .site-footer .footer-links {
+                        text-align: left;
+                        margin: 10px;
+
+                      }
+
+                      .site-footer .copyright-text {
+                        text-align: center
+                      }
+
+                      .site-footer .social-icons {
+                        text-align: left;
+
+                        margin-top: -310px;
+                        margin-left: -110px;
+                      }
+
+                      .copyright-text {
+                        width: 210px;
+                        margin-bottom: 10px;
+                      }
+
+                      @media screen and (max-width: 343px) and (min-width: 280px) {
+
+                        /*#texto_atras {
+                          font-size: 14px;
+                          margin-top: 5%;
+                        }
+
+                        #texto_etapa {
+                          font-size: 14px;
+                        }
+
+                        #texto_planificacion {
+                          font-size: 14px;
+                        }
+                        .h4 {
+                          font-size: 16px;
+                        }
+
+                        .h4_2do {
+                          font-size: 16px;
+                        }*/
+                        .h4_3ro,
+                        .h4_4to {
+                          margin-left: 10%;
+
+                        }
+
+                        .FondoJurado {
+                          width: 90%;
+                          height: 390px;
+                          margin-left: 5%;
+                        }
+
+                        .NotaCamposJE {
+                          margin-left: 7%;
+                          margin-top: -140px;
+                        }
+                        .btnDetallesJE {
+                          width: 150px;
+                          height: 45px;
+                          margin-top: -25%;
+                        }
+
+                        .my-custom-scrollbar-3 {
+                          height: 250px;
+                        }
+
+                        .Jurados_FeriaE5 {
+                          width: 90%;
+                          margin-left: 5%;
+                        }
+                        .site-footer {
+                          padding-bottom: 0
+                        }
+
+                        .site-footer .footer-links {
+                          text-align: left;
+                          margin: 10px;
+                          font-size: 14px;
+                        }
+
+                        .site-footer .copyright-text {
+                          text-align: center;
+                        }
+
+                        .site-footer .social-icons {
+                          text-align: left;
+                          margin-top: -320px;
+                          margin-left: -110px;
+                        }
+
+                        .copyright-text {
+                          width: 210px;
+                          margin-bottom: 10px;
+                        }
+
+                        @media screen and (max-width: 310px) and (min-width: 280px) {
+                          #texto_atras {
+                            font-size: 14px;
+                          }
+
+                          #texto_etapa {
+                            font-size: 14px;
+                            margin-top: -10%;
+                          }
+
+                          #texto_planificacion {
+                            font-size: 14px;
+                          }
+
+                          .h4 {
+                            font-size: 16px;
+                          }
+
+                          .h4_2do {
+                            font-size: 16px;
+                          }
+
+                          .btnCancelarRegE5 {
+                            width: 90px;
+                            height: 50px;
+                          }
+
+                          .btnGuardarJE5 {
+                            width: 90px;
+                          }
+
+                          .btnSigE5 {
+                            width: 90px;
+                            height: 70px;
+                          }
+
+                          .btnCancelarR {
+                            width: 90px;
+                            height: 70px;
+                          }
+
+                          .btnEditarFormato {
+                            width: 90px;
+                            height: 70px;
+                          }
+
+                          .btnAgregarFormato {
+                            width: 90px;
+                            height: 70px;
+                          }
+
+                          .btnEditarCriterio {
+                            width: 90px;
+                            height: 70px;
+                          }
+
+                          .btnAgregarCriterio {
+                            width: 90px;
+                            height: 70px;
+                          }
+
+                          .btnCancelarRegE5 {
+                            width: 90px;
+                            height: 50px;
+                          }
+
+                          .btnGuardarJE5 {
+                            width: 90px;
+                            height: 50px;
+                          }
+                          .site-footer {
+                            padding-bottom: 0
+                          }
+
+                          .site-footer hr {
+                            border-top-color: rgb(255, 255, 255);
+                            margin-top: 60px;
+                            opacity: 0.5
+                          }
+
+                          .site-footer .footer-links {
+                            text-align: left;
+                            margin: 10px;
+                            font-size: 14px;
+                          }
+
+                          .site-footer .copyright-text {
+                            text-align: center;
+                          }
+
+                          .site-footer .social-icons {
+                            text-align: left;
+                            margin-top: -350px;
+                            margin-left: -110px;
+                          }
+
+                          .copyright-text {
+                            width: 150px;
+                            margin-bottom: 10px;
+                          }
+
+
+                        }
+                      }
+
+                    }
+
+                  }
+                }
+
+              }
+
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}

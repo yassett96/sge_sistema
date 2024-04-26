@@ -1,0 +1,676 @@
+.modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+
+.modal-title{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.modal-body{
+    background-color: transparent;    
+    width: 550px;
+    height: 140px;
+    margin: auto;
+    margin-top: 30px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 2px 2px #fefeffa6;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto; 
+}
+
+.modal-footer{
+    height: 50px;
+}
+
+.scroll-div{
+    overflow: hidden;
+    overflow-x: auto; 
+}
+
+table{
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid 1px black;
+    padding: 2px;
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+    text-align: center !important;
+}
+
+thead{
+    font-size: 15px;
+    background: #ffffff;
+}
+
+#btnatras{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    right: 100px;
+    width: 80px; 
+    height: 30px;
+    color: #102461;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px#000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/**********************************************************************/
+
+@media screen and (max-width: 767px) /*Celular*/
+and (min-width: 280px){
+
+    @media screen and (max-width: 615px) /*Celular*/
+    and (min-width: 280px){
+
+        .modal-content{
+            width: 550px;
+            height: 300px;
+            margin: auto;
+            top: 80px;
+            background-color: #102461;
+            border-radius: 10px;
+            border-color: #ffffff;
+            box-shadow: 0px 0px 6px 6px #000e2979;
+            border: 1px solid #d0d0d0;
+        }
+
+        .modal-body{
+            background-color: transparent;    
+            width: 510px;
+            height: 140px;
+            margin: auto;
+            margin-top: 30px;
+            border-color: #ffffff;
+            box-shadow: 0px 0px 2px 2px #fefeffa6;
+            border-radius: 10px;
+            padding: 10px;
+            overflow: hidden;
+            overflow-y: auto; 
+        }
+
+        #btnatras{
+            margin: 24px 0px 0px 440px;
+            margin-bottom: 15px;
+            width: 80px; 
+            height: 30px;
+            color: #102461;
+            cursor: pointer;
+            box-shadow: 1px 1px 5px#000000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        table{
+            background-color: #ffffff;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        @media screen and (max-width: 559px) /*Celular*/
+        and (min-width: 280px){
+
+            .modal-content{
+                width: 510px;
+                height: 300px;
+                margin: auto;
+                top: 80px;
+                background-color: #102461;
+                border-radius: 10px;
+                border-color: #ffffff;
+                box-shadow: 0px 0px 6px 6px #000e2979;
+                border: 1px solid #d0d0d0;
+            }
+
+            .modal-body{
+                background-color: transparent;    
+                width: 460px;
+                height: 140px;
+                margin: auto;
+                margin-top: 30px;
+                border-color: #ffffff;
+                box-shadow: 0px 0px 2px 2px #fefeffa6;
+                border-radius: 10px;
+                padding: 10px;
+                overflow: hidden;
+                overflow-y: auto; 
+            }
+
+            #btnatras{
+                margin: 24px 0px 0px 400px;
+                margin-bottom: 15px;
+                width: 80px; 
+                height: 30px;
+                color: #102461;
+                cursor: pointer;
+                box-shadow: 1px 1px 5px#000000;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            
+            @media screen and (max-width: 519px) /*Celular*/
+            and (min-width: 280px){
+
+                .modal-content{
+                    width: 480px;
+                    height: 300px;
+                    margin: auto;
+                    top: 80px;
+                    background-color: #102461;
+                    border-radius: 10px;
+                    border-color: #ffffff;
+                    box-shadow: 0px 0px 6px 6px #000e2979;
+                    border: 1px solid #d0d0d0;
+                }
+
+                .modal-body{
+                    background-color: transparent;    
+                    width: 430px;
+                    height: 140px;
+                    margin: auto;
+                    margin-top: 30px;
+                    border-color: #ffffff;
+                    box-shadow: 0px 0px 2px 2px #fefeffa6;
+                    border-radius: 10px;
+                    padding: 10px;
+                    overflow: hidden;
+                    overflow-y: auto; 
+                }
+
+                table{
+                    background-color: #ffffff;
+                    text-align: center;
+                    width: 130% !important;
+                    margin: auto;
+                    border-collapse: collapse;
+                }
+
+                .scroll-div{
+                    overflow: hidden;
+                    overflow-x: auto; 
+                }
+
+                #btnatras{
+                    margin: 24px 0px 0px 370px;
+                    margin-bottom: 15px;
+                    width: 80px; 
+                    height: 30px;
+                    color: #102461;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 5px#000000;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 13px;
+                }
+
+                @media screen and (max-width: 489px) /*Celular*/
+                and (min-width: 280px){
+
+                    .modal-content{
+                        width: 450px;
+                        height: 300px;
+                        margin: auto;
+                        top: 80px;
+                        background-color: #102461;
+                        border-radius: 10px;
+                        border-color: #ffffff;
+                        box-shadow: 0px 0px 6px 6px #000e2979;
+                        border: 1px solid #d0d0d0;
+                    }
+
+                    .modal-body{
+                        background-color: transparent;    
+                        width: 400px;
+                        height: 140px;
+                        margin: auto;
+                        margin-top: 30px;
+                        border-color: #ffffff;
+                        box-shadow: 0px 0px 2px 2px #fefeffa6;
+                        border-radius: 10px;
+                        padding: 10px;
+                        overflow: hidden;
+                        overflow-y: auto; 
+                    }
+
+                    table{
+                        background-color: #ffffff;
+                        text-align: center;
+                        width: 130% !important;
+                        margin: auto;
+                        border-collapse: collapse;
+                    }
+
+                    .scroll-div{
+                        overflow: hidden;
+                        overflow-x: auto; 
+                    }
+
+                    #btnatras{
+                        margin: 24px 0px 0px 340px;
+                        margin-bottom: 15px;
+                        width: 80px; 
+                        height: 30px;
+                        color: #102461;
+                        cursor: pointer;
+                        box-shadow: 1px 1px 5px#000000;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: bold;
+                        font-size: 13px;
+                    }
+
+                    @media screen and (max-width: 459px) /*Celular*/
+                    and (min-width: 280px){
+
+                        .modal-content{
+                            width: 420px;
+                            height: 300px;
+                            margin: auto;
+                            top: 80px;
+                            background-color: #102461;
+                            border-radius: 10px;
+                            border-color: #ffffff;
+                            box-shadow: 0px 0px 6px 6px #000e2979;
+                            border: 1px solid #d0d0d0;
+                        }
+
+                        .modal-body{
+                            background-color: transparent;    
+                            width: 380px;
+                            height: 140px;
+                            margin: auto;
+                            margin-top: 30px;
+                            border-color: #ffffff;
+                            box-shadow: 0px 0px 2px 2px #fefeffa6;
+                            border-radius: 10px;
+                            padding: 10px;
+                            overflow: hidden;
+                            overflow-y: auto; 
+                        }
+
+                        table{
+                            background-color: #ffffff;
+                            text-align: center;
+                            width: 130% !important;
+                            margin: auto;
+                            border-collapse: collapse;
+                        }
+
+                        .scroll-div{
+                            overflow: hidden;
+                            overflow-x: auto; 
+                        }
+
+                        #btnatras{
+                            margin: 24px 0px 0px 310px;
+                            margin-bottom: 15px;
+                            width: 80px; 
+                            height: 30px;
+                            color: #102461;
+                            cursor: pointer;
+                            box-shadow: 1px 1px 5px#000000;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: bold;
+                            font-size: 13px;
+                        }
+
+                        @media screen and (max-width: 429px) /*Celular*/
+                        and (min-width: 280px){
+
+                            .modal-content{
+                                width: 400px;
+                                height: 300px;
+                                margin: auto;
+                                top: 80px;
+                                background-color: #102461;
+                                border-radius: 10px;
+                                border-color: #ffffff;
+                                box-shadow: 0px 0px 6px 6px #000e2979;
+                                border: 1px solid #d0d0d0;
+                            }
+
+                            .modal-body{
+                                background-color: transparent;    
+                                width: 360px;
+                                height: 140px;
+                                margin: auto;
+                                margin-top: 30px;
+                                border-color: #ffffff;
+                                box-shadow: 0px 0px 2px 2px #fefeffa6;
+                                border-radius: 10px;
+                                padding: 10px;
+                                overflow: hidden;
+                                overflow-y: auto; 
+                            }
+
+                            table{
+                                background-color: #ffffff;
+                                text-align: center;
+                                width: 130% !important;
+                                margin: auto;
+                                border-collapse: collapse;
+                            }
+
+                            .scroll-div{
+                                overflow: hidden;
+                                overflow-x: auto; 
+                            }
+
+                            #btnatras{
+                                margin: 24px 0px 0px 300px;
+                                margin-bottom: 15px;
+                                width: 80px; 
+                                height: 30px;
+                                color: #102461;
+                                cursor: pointer;
+                                box-shadow: 1px 1px 5px#000000;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: bold;
+                                font-size: 13px;
+                            }
+
+                            @media screen and (max-width: 409px) /*Celular*/
+                            and (min-width: 280px){
+
+                                .modal-content{
+                                    width: 380px;
+                                    height: 300px;
+                                    margin: auto;
+                                    top: 80px;
+                                    background-color: #102461;
+                                    border-radius: 10px;
+                                    border-color: #ffffff;
+                                    box-shadow: 0px 0px 6px 6px #000e2979;
+                                    border: 1px solid #d0d0d0;
+                                }
+
+                                .modal-body{
+                                    background-color: transparent;    
+                                    width: 340px;
+                                    height: 140px;
+                                    margin: auto;
+                                    margin-top: 30px;
+                                    border-color: #ffffff;
+                                    box-shadow: 0px 0px 2px 2px #fefeffa6;
+                                    border-radius: 10px;
+                                    padding: 10px;
+                                    overflow: hidden;
+                                    overflow-y: auto; 
+                                }
+
+                                table{
+                                    background-color: #ffffff;
+                                    text-align: center;
+                                    width: 130% !important;
+                                    margin: auto;
+                                    border-collapse: collapse;
+                                }
+                                
+                                .scroll-div{
+                                    overflow: hidden;
+                                    overflow-x: auto; 
+                                }
+
+                                #btnatras{
+                                    margin: 24px 0px 0px 280px;
+                                    margin-bottom: 15px;
+                                    width: 80px; 
+                                    height: 30px;
+                                    color: #102461;
+                                    cursor: pointer;
+                                    box-shadow: 1px 1px 5px#000000;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                }
+
+                                @media screen and (max-width: 389px) /*Celular*/
+                                and (min-width: 280px){
+
+                                    .modal-content{
+                                        width: 350px;
+                                        height: 300px;
+                                        margin: auto;
+                                        top: 80px;
+                                        background-color: #102461;
+                                        border-radius: 10px;
+                                        border-color: #ffffff;
+                                        box-shadow: 0px 0px 6px 6px #000e2979;
+                                        border: 1px solid #d0d0d0;
+                                    }
+
+                                    .modal-body{
+                                        background-color: transparent;    
+                                        width: 310px;
+                                        height: 140px;
+                                        margin: auto;
+                                        margin-top: 30px;
+                                        border-color: #ffffff;
+                                        box-shadow: 0px 0px 2px 2px #fefeffa6;
+                                        border-radius: 10px;
+                                        padding: 10px;
+                                        overflow: hidden;
+                                        overflow-y: auto; 
+                                    }
+
+                                    table{
+                                        width: 150% !important;
+                                    }
+
+                                    .scroll-div{
+                                        overflow: hidden;
+                                        overflow-x: auto; 
+                                    }
+
+                                    #btnatras{
+                                        margin: 24px 0px 0px 280px;
+                                        margin-bottom: 15px;
+                                        width: 80px; 
+                                        height: 30px;
+                                        color: #102461;
+                                        cursor: pointer;
+                                        box-shadow: 1px 1px 5px#000000;
+                                        font-family: 'Montserrat', sans-serif;
+                                        font-weight: bold;
+                                        font-size: 13px;
+                                    }
+
+                                    @media screen and (max-width: 359px) /*Celular*/
+                                    and (min-width: 280px){
+
+                                        .modal-content{
+                                            width: 320px;
+                                            height: 300px;
+                                            margin: auto;
+                                            top: 80px;
+                                            background-color: #102461;
+                                            border-radius: 10px;
+                                            border-color: #ffffff;
+                                            box-shadow: 0px 0px 6px 6px #000e2979;
+                                            border: 1px solid #d0d0d0;
+                                        }
+
+                                        .modal-body{
+                                            background-color: transparent;    
+                                            width: 280px;
+                                            height: 140px;
+                                            margin: auto;
+                                            margin-top: 30px;
+                                            border-color: #ffffff;
+                                            box-shadow: 0px 0px 2px 2px #fefeffa6;
+                                            border-radius: 10px;
+                                            padding: 10px;
+                                            overflow: hidden;
+                                            overflow-y: auto; 
+                                        }
+
+                                        table{
+                                            width: 180% !important;
+                                        }
+
+                                        .scroll-div{
+                                            overflow: hidden;
+                                            overflow-x: auto; 
+                                        }
+
+                                        #btnatras{
+                                            margin: 24px 0px 0px 220px;
+                                            margin-bottom: 15px;
+                                            width: 80px; 
+                                            height: 30px;
+                                            color: #102461;
+                                            cursor: pointer;
+                                            box-shadow: 1px 1px 5px#000000;
+                                            font-family: 'Montserrat', sans-serif;
+                                            font-weight: bold;
+                                            font-size: 13px;
+                                        }
+
+                                        @media screen and (max-width: 329px) /*Celular*/
+                                        and (min-width: 280px){
+
+                                            .modal-content{
+                                                width: 300px;
+                                                height: 300px;
+                                                margin: auto;
+                                                top: 80px;
+                                                background-color: #102461;
+                                                border-radius: 10px;
+                                                border-color: #ffffff;
+                                                box-shadow: 0px 0px 6px 6px #000e2979;
+                                                border: 1px solid #d0d0d0;
+                                            }
+
+                                            .modal-body{
+                                                background-color: transparent;    
+                                                width: 255px;
+                                                height: 140px;
+                                                margin: auto;
+                                                margin-top: 30px;
+                                                border-color: #ffffff;
+                                                box-shadow: 0px 0px 2px 2px #fefeffa6;
+                                                border-radius: 10px;
+                                                padding: 10px;
+                                                overflow: hidden;
+                                                overflow-y: auto; 
+                                            }
+
+                                            table{
+                                                width: 180% !important;
+                                            }
+
+                                            .scroll-div{
+                                                overflow: hidden;
+                                                overflow-x: auto; 
+                                            }
+
+                                            #btnatras{
+                                                margin: 24px 0px 0px 200px;
+                                                margin-bottom: 15px;
+                                                width: 80px; 
+                                                height: 30px;
+                                                color: #102461;
+                                                cursor: pointer;
+                                                box-shadow: 1px 1px 5px#000000;
+                                                font-family: 'Montserrat', sans-serif;
+                                                font-weight: bold;
+                                                font-size: 13px;
+                                            }
+
+                                            @media screen and (max-width: 309px) /*Celular*/
+                                            and (min-width: 280px){
+
+                                                .modal-content{
+                                                    width: 265px;
+                                                    height: 310px;
+                                                    margin: auto;
+                                                    top: 80px;
+                                                    background-color: #102461;
+                                                    border-radius: 10px;
+                                                    border-color: #ffffff;
+                                                    box-shadow: 0px 0px 6px 6px #000e2979;
+                                                    border: 1px solid #d0d0d0;
+                                                }
+
+                                                .modal-body{
+                                                    background-color: transparent;    
+                                                    width: 225px;
+                                                    height: 140px;
+                                                    margin: auto;
+                                                    margin-top: 30px;
+                                                    border-color: #ffffff;
+                                                    box-shadow: 0px 0px 2px 2px #fefeffa6;
+                                                    border-radius: 10px;
+                                                    padding: 10px;
+                                                    overflow: hidden;
+                                                    overflow-y: auto; 
+                                                }
+
+                                                table{
+                                                    width: 200% !important;
+                                                }
+
+                                                .scroll-div{
+                                                    overflow: hidden;
+                                                    overflow-x: auto; 
+                                                }
+
+                                                #btnatras{
+                                                    margin: 15px 0px 0px 170px;
+                                                    margin-bottom: 15px;
+                                                    width: 80px; 
+                                                    height: 30px;
+                                                    color: #102461;
+                                                    cursor: pointer;
+                                                    box-shadow: 1px 1px 5px#000000;
+                                                    font-family: 'Montserrat', sans-serif;
+                                                    font-weight: bold;
+                                                    font-size: 13px;
+                                                }
+                                                
+                                            }
+                                            
+                                        }                                    
+                                    }                                
+                                }                            
+                            }                        
+                        }                    
+                    }                
+                }            
+            }
+        }    
+    }
+}
+
+

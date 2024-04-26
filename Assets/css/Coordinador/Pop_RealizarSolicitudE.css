@@ -1,0 +1,181 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.modal-content {
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+
+.modal-title {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.modal-footer {
+    margin-top: -10%;
+    height: 100px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+    margin-left: 5%;
+    top: 10px;
+    transition: 0.3s ease all;
+    pointer-events: none;
+    padding-bottom: 20px;
+}
+
+input {
+    background: none;
+    color: #ffffff;
+    display: block;
+    width: 200%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 50px;
+    font-family: sans-serif;
+    margin-left: 10%;
+}
+
+#LabelComision {
+    margin-left: 30%;
+    background: none;
+    color: #ffffff;
+    margin-top: 10px;
+    width: 180%;
+}
+
+
+
+#ComisionPara {
+    background: none;
+    color: #ffffff;
+    background-color: #102461;
+    display: block;
+    width: 180%;
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 15px;
+    font-family: sans-serif;
+    margin-left: 30%;
+}
+
+.MsjConsulta {
+    width: 200%;
+    height: 100px;
+    margin-top: 20%;
+    margin-left: 10%;
+    resize: none;
+}
+
+.CerrarSol {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    border: 1px solid #78788c;
+    background: #ffffff;
+    color: #0b3061;
+    box-shadow: 1px 1px 5px #000000;
+    cursor: pointer;
+    float: right;
+    margin-right: 2%;
+    width: 100px;
+    height: 50px;
+}
+
+.EnviarSol {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    border: 1px solid #78788c;
+    background: #ffffff;
+    color: #0b3061;
+    box-shadow: 1px 1px 5px #000000;
+    cursor: pointer;
+    float: right;
+    margin-right: 2%;
+    width: 100px;
+    height: 50px;
+}
+
+@media screen and (max-width: 2000px) and (min-width: 280px) {
+    @media screen and (max-width: 1800px) and (min-width: 280px) {
+        @media screen and (max-width: 1649px) and (min-width: 280px) {
+            @media screen and (max-width: 1500px) and (min-width: 280px) {
+                @media screen and (max-width: 1200px) and (min-width: 280px) {
+                    @media screen and (max-width: 1043px) and (min-width: 280px) {
+                        @media screen and (max-width: 1000px) and (min-width: 280px) {
+                            @media screen and (max-width: 767px) and (min-width: 280px) {
+                                .modal-content {
+                                    width: 350px;
+                                    height: 550px;
+                                }
+
+                                label {
+                                    margin-left: 0%;
+
+                                }
+
+                                #LabelComision {
+                                    margin-left: 20%;
+                                    margin-top: 10px;
+                                    width: 80%;
+                                }
+
+                                #ComisionPara {
+                                    margin-left: 20%;
+                                    margin-top: 15px;
+                                    width: 80%;
+                                }
+
+                                input {
+                                    width: 100%;
+                                    margin-left: 0%;
+                                }
+
+                                .MsjConsulta {
+                                    width: 100%;
+                                    margin-left: 0%;
+                                }
+
+                                @media screen and (max-width: 521px) and (min-width: 280px) {
+                                    @media screen and (max-width: 480px) and (min-width: 280px) {
+                                        @media screen and (max-width: 399px) and (min-width: 280px) {
+                                            .modal-content {
+                                                width: 260px;
+                                                height: 550px;
+                                            }
+
+                                            @media screen and (max-width: 343px) and (min-width: 280px) {
+                                                @media screen and (max-width: 310px) and (min-width: 280px) {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

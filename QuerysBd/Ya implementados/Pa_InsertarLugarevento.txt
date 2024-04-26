@@ -1,0 +1,26 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Insertar_LugarSalon`(IN Nombrelugar varchar(100), IN CadenaSitios TEXT, IN ContSitios INT)
+BEGIN
+    DECLARE p_nsitio VARCHAR(100) DEFAULT Nombrelugar;
+    DECLARE P_idsitio int;
+    DECLARE p_cadena TEXT DEFAULT CadenaSitios;
+    DECLARE p_subcadena TEXT;
+    DECLARE p_salon VARCHAR(300);
+    DECLARE p_capacidad INT;
+    Declare idsalon int;
+    DECLARE contador INT DEFAULT 1;
+    DECLARE delimitador CHAR(1) DEFAULT '}';
+    DECLARE subdelimitador CHAR(1) DEFAULT ',';
+    
+    INSERT INTO sitio (Nombre_Sitio, Activo) VALUES (p_nsitio, 1);
+    Set P_idsitio  = LAST_INSERT_ID();
+
+    WHILE contador <= ContSitios DO
+        SET p_subcadena = TRIM(SUBSTRING_INDEX(SUBSTRING_INDEX(p_cadena, delimitador, contador), delimitador, -1));
+        SET p_capacidad = TRIM(SUBSTRING_INDEX(p_subcadena, subdelimitador, -1));
+        SET p_salon = TRIM(REPLACE(p_subcadena, CONCAT(subdelimitador, p_capacidad), ''));
+        INSERT INTO salon (NombreSalon, Capacidad, Activo) VALUES (p_salon, p_capacidad, 1);
+        SET idsalon = LAST_INSERT_ID();
+		INSERT INTO sitio_salon (ID_Sitio,ID_Salon,Activo) VALUES (P_idsitio, idsalon,1);
+        SET contador = contador + 1;
+    END WHILE;
+END

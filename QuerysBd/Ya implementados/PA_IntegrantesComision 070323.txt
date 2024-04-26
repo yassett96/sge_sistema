@@ -1,0 +1,49 @@
+CREATE  PROCEDURE `Obtener_NombrePAcademico`(in Id_persona bigint)
+BEGIN
+
+Declare p_idper bigint default Id_persona;
+
+Select DISTINCT concat('<tr><td><input hidden value = "',P.ID_Persona,'"</td><td>', P.Primer_Nombre,' ',P.Segundo_Nombre,
+' ',P.Primer_Apellido,' ',P.Segundo_Apellido,'</td></tr>')
+
+     from personal_academico PA 
+     inner join persona_usuario PU  on PA.ID_Persona_Usuario = PU.ID_Persona_Usuario
+     inner join Persona P on P.ID_Persona = PU.ID_Persona
+    where PA.Activo = 1 and PU.Activo = 1 AND P.Activo = 1
+    AND (P.ID_Persona = p_idper);
+
+END
+
+-----------------------------
+
+CREATE  PROCEDURE `Obtener_NombrePAcademico_Responsable`(in Id_persona bigint)
+BEGIN
+
+Declare p_idper bigint default Id_persona;
+
+
+Select DISTINCT concat('<tr style="color:#ff0000;"><td><input hidden value = "',P.ID_Persona,'"','></td><td>', P.Primer_Nombre,' ',P.Segundo_Nombre,' ',P.Primer_Apellido,' ',P.Segundo_Apellido,'</td><tr>')
+
+     from personal_academico PA 
+     inner join persona_usuario PU  on PA.ID_Persona_Usuario = PU.ID_Persona_Usuario
+     inner join Persona P on P.ID_Persona = PU.ID_Persona
+    where PA.Activo = 1 and PU.Activo = 1 AND P.Activo = 1
+    AND (P.ID_Persona = p_idper);
+
+END
+
+--------------
+
+CREATE  PROCEDURE `Lista_PersonalAcemico`()
+BEGIN
+
+
+
+select DISTINCT concat ('<option value ="',P.ID_Persona,'"','>',P.Primer_Nombre,' ',P.Segundo_Nombre,' ',P.Primer_Apellido,' ',P.Segundo_Apellido,'</option>')
+     from personal_academico PA 
+     inner join persona_usuario PU  on PA.ID_Persona_Usuario = PU.ID_Persona_Usuario
+     inner join Persona P on P.ID_Persona = PU.ID_Persona
+    where PA.Activo = 1 and PU.Activo = 1 AND P.Activo = 1
+	order by P.Primer_Nombre,P.Primer_Apellido;
+
+END

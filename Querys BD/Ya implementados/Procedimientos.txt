@@ -1,0 +1,306 @@
+CREATE PROCEDURE `Mostrar_Historial_Participante`(in idp bigint)
+
+BEGIN
+	
+
+declare p_id bigint default idp;
+  
+  
+    
+select te.Nombre_Eventos, e.Nombre_Evento, e.Eslogan, e.Fecha, s.Nombre_Sitio, ep.CalificacionFinal
+    
+from persona as per inner join persona_usuario as pu 
+    
+on per.ID_Persona = pu.ID_Persona
+    
+inner join participante as p on p.ID_Persona_Usuario = pu.ID_Persona_Usuario
+    
+inner join participante_proyecto as pp on pp.ID_Participante = p.ID_Numero_Carnet
+  inner join evento_proyecto as ep on ep.ID_Proyecto = pp.ID_Proyecto
+    
+inner join evento as e on e.ID_Evento = ep.ID_Evento
+    
+inner join tipo_eventos as te on te.ID_Tipo_Evento = e.ID_Tipo_Evento
+    
+inner join sitio as s on s.ID_Sitio = e.ID_Sitio
+    
+where per.ID_Persona = p_id and per.Activo = 1;
+    
+
+
+END
+
+*************************************************************************
+
+CREATE PROCEDURE `Actualizar_Codigo`(in correo varchar(100), in codigo varchar(10),
+in fecha datetime)
+
+BEGIN
+	
+
+declare pcorreo varchar(100) default correo;
+    
+declare pcodigo varchar(10) default codigo;
+    
+declare pfecha datetime default fecha;
+    
+    
+
+update credenciales as c inner join persona as p on c.ID_Persona = p.ID_Persona
+    set c.Codigo = pcodigo, c.Fecha_Recuperacion = pfecha
+    
+where p.Correo_Electronico = pcorreo and c.Activo = 1;
+
+
+
+END
+
+*************************************************************************
+
+CREATE PROCEDURE `Actualizar_Contraseña`(in cod varchar(10), in contra varchar(200))
+
+BEGIN
+	
+
+declare pcodigo varchar(10) default cod;
+    
+declare pcontra varchar(200) default contra;
+    
+    
+update credenciales set Contraseña = pcontra where Codigo = pcodigo and Activo = 1;
+
+
+END
+
+*************************************************************************
+
+CREATE PROCEDURE `Actualizar_Contraseña_Participante`(in idparticipante bigint, in ncontra varchar(200))
+
+
+BEGIN
+
+
+declare pid bigint default idparticipante;
+    
+declare pncontra varchar(200) default ncontra;
+ 
+   
+    
+update credenciales set Contraseña = pncontra where ID_Persona = pid and Activo = 1;
+
+
+
+END
+
+*************************************************************************
+
+CREATE PROCEDURE `Actualizar_Datos_Participante`(in id bigint, in telefono char(16),
+	in correo varchar(100), in idg bigint)
+
+
+BEGIN
+	
+    
+declare idp bigint default id;
+    
+declare p_telefono char(16) default telefono;
+    
+declare p_correo varchar(100) default correo;
+    
+declare pidg bigint default idg;
+    
+    
+    
+
+update persona as p inner join persona_usuario as pu on p.ID_Persona = pu.ID_Persona 
+    
+inner join participante as pa on pa.ID_Persona_Usuario = pu.ID_Persona_Usuario
+   set p.Telefono = p_telefono, p.Correo_Electronico = p_correo, pa.ID_Grupo = pidg  
+ where p.ID_Persona = idp and p.Activo = 1;
+    
+
+END
+
+*************************************************************************
+
+CREATE PROCEDURE `Listar_Grupo_Participante`(in idsede bigint, in idgrupo bigint)
+
+BEGIN
+
+select concat ('<option value ="',g.Id_Grupo,'"',
+    
+if(g.ID_Grupo = idgrupo, 'selected',''),'>' ,g.Grupo, '</option>')
+    
+from sede_grupo as sg
+    
+inner join grupo as g on g.ID_Grupo = sg.ID_Grupo
+    
+where sg.Activo = 1 and g.Activo = 1 
+    
+and (sg.ID_Sede = idsede) and g.ID_Grupo >= (idgrupo)
+    
+order by g.grupo;
+    
+
+END
+
+**********************************************************************
+
+CREATE PROCEDURE `Listar_Tipo_Usuario`(in id_persona bigint)
+
+
+BEGIN
+	
+	
+select concat('<option value ="',t.ID_Tipo_Usuario,'"','>',t.Tipo_Usuario,'</option>')
+    
+from persona_usuario as p inner join tipo_usuario as t 
+    
+on t.ID_Tipo_Usuario = p.ID_Tipo_Usuario
+    
+where p.Activo = 1 and t.Activo = 1 and p.ID_Persona = id_persona 
+order by t.ID_Tipo_Usuario;
+
+
+END
+
+*********************************************************************
+
+CREATE PROCEDURE `Obtener_Codigo`(in codigo varchar(10))
+
+
+BEGIN
+	
+declare pcodigo varchar(10) default codigo;
+    
+    
+
+select Codigo from credenciales where Codigo = pcodigo and Activo = 1;
+
+END
+
+*********************************************************************
+
+CREATE PROCEDURE `Obtener_Correo`(in email varchar(100))
+
+
+BEGIN
+	
+declare pmail varchar(100) default upper(trim(email));
+    
+    
+select Correo_Electronico from persona where Correo_Electronico = pmail and Activo = 1;
+
+
+END
+
+*********************************************************************
+
+CREATE PROCEDURE `Obtener_Usuario_Participante`(in usuario varchar(20), in contra varchar(200))
+
+
+BEGIN
+	
+	
+declare pusuario varchar(20) default usuario;
+    
+declare pcontra varchar(200) default contra;
+    
+
+	
+select c.Usuario, c.Contraseña, c.ID_Persona from credenciales as c
+    
+	
+inner join persona as p on c.ID_Persona = p.ID_Persona
+    
+	
+inner join persona_usuario as u on p.ID_Persona = u.ID_Persona
+    
+	
+inner join participante as a on u.ID_Persona_Usuario = a.ID_Persona_Usuario
+    
+	where c.Usuario = pusuario and c.Contraseña = pcontra and c.Activo = 1;
+
+
+
+END
+
+********************************************************************
+
+CREATE PROCEDURE `Obtener_Usuario_PersonalAcademico`(in usuario varchar(20), in contra varchar(200))
+
+
+BEGIN
+	
+	
+declare pusuario varchar(20) default usuario;
+    
+	
+declare pcontra varchar(200) default contra;
+    
+
+	
+select c.Usuario, c.Contraseña, c.ID_Persona from credenciales as c
+    
+	
+inner join persona as p on c.ID_Persona = p.ID_Persona
+    
+	
+inner join persona_usuario as u on p.ID_Persona = u.ID_Persona
+    
+	
+inner join personal_academico as a on u.ID_Persona_Usuario = a.ID_Persona_Usuario
+  where c.Usuario = pusuario and c.Contraseña = pcontra and c.Activo = 1;
+
+
+END
+
+********************************************************************
+
+CREATE PROCEDURE `Cargar_Acceso_Participante`(in idpersona bigint)
+
+
+BEGIN
+
+
+declare id_per int default idpersona;
+
+declare id_tipou int default 1;
+
+
+select p.ID_Persona, p.Primer_Nombre,p.Primer_Apellido,p.Telefono,p.Correo_Electronico, par.CodigoRegistro,
+pu.ID_Tipo_Usuario, g.grupo, par.ID_Grupo, par.ID_Sede, c.Contraseña
+
+from persona as p
+ inner join persona_usuario as pu on pu.ID_Persona = p.ID_Persona
+inner join credenciales as c on c.ID_Persona = p.ID_Persona
+
+inner join participante as par on par.ID_Persona_Usuario = pu.ID_Persona_Usuario
+inner join grupo as g on g.ID_Grupo = par.ID_Grupo
+
+where p.ID_Persona = id_per and pu.ID_Tipo_Usuario = id_tipou and pu.Activo=1 and p.Activo = 1 and g.Activo = 1;
+
+
+END
+
+************************************************************************
+
+CREATE  PROCEDURE `Cargar_Acceso_PersonaUsuario`(in idpersona bigint, in idtipousuario bigint)
+
+
+BEGIN
+
+	
+declare id_per int default idpersona;
+	
+declare id_tipou int default idtipousuario;
+
+	
+select p.Primer_Nombre, p.Primer_Apellido,p.Telefono,p.Correo_Electronico, pu.ID_Tipo_Usuario from persona as p
+	
+inner join persona_usuario as pu on pu.ID_Persona = p.ID_Persona
+	
+where p.ID_Persona = id_per and pu.ID_Tipo_Usuario = id_tipou and pu.Activo=1 and p.Activo = 1;
+
+
+END

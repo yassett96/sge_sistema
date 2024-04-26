@@ -1,0 +1,116 @@
+CREATE PROCEDURE `Actualizar_Datos_PAcademico`(in id bigint, in telefono char(16),
+	in correo varchar(100))
+BEGIN
+
+	declare idpa bigint default id;
+    
+declare p_telefono char(16) default telefono;
+    
+declare p_correo varchar(100) default correo;
+    
+    
+update persona set Telefono = p_telefono, Correo_Electronico = p_correo 
+    
+where ID_Persona = idpa and Activo = 1;
+
+
+END
+
+********************************************************
+
+CREATE PROCEDURE `Cargar_Acceso_PersonaUsuario`(in idpersona bigint, in idtipousuario bigint)
+BEGIN
+
+
+declare id_per int default idpersona;
+
+declare id_tipou int default idtipousuario;
+
+
+select p.ID_Persona, p.Primer_Nombre, p.Primer_Apellido,p.Telefono,p.Correo_Electronico, p.Avatar, pu.ID_Tipo_Usuario from persona as p
+	
+inner join persona_usuario as pu on pu.ID_Persona = p.ID_Persona
+	
+where p.ID_Persona = id_per and pu.ID_Tipo_Usuario = id_tipou and pu.Activo=1 and p.Activo = 1;
+
+
+END
+
+********************************************************
+
+CREATE PROCEDURE `BuscarRegistroTel`(in id bigint(20), in tel char(16))
+BEGIN
+
+	Declare pid bigint(20) default id;
+   
+Declare partel char(16) default tel;
+    
+    
+Select count(Telefono) as coincidencia from persona  where ID_Persona != pid and Telefono = partel and  Activo = 1; 
+
+END
+
+*******************************************************
+
+CREATE PROCEDURE `BuscarRegistroC`(in id bigint(20), email varchar(100))
+BEGIN
+	
+    Declare pid bigint(20) default id;
+    
+Declare pemail varchar(100) default upper(trim(email));
+    
+    
+Select count(Correo_Electronico) as coincidencia from persona  
+where ID_Persona != pid and Correo_Electronico = pemail and Activo = 1; 
+
+END
+
+********************************************************
+
+CREATE PROCEDURE `Actualizar_Contraseña_Participante`(in idparticipante bigint, in ncontra varchar(200))
+BEGIN
+
+	
+declare pid bigint default idparticipante;
+    
+declare pncontra varchar(200) default ncontra;
+    
+    
+update credenciales set Contraseña = pncontra where ID_Persona = pid and Activo = 1;
+
+
+END
+
+*********************************************************
+
+CREATE PROCEDURE `ActualizarAvatar_PersonaParticipante`(in Idpersona bigint, in avatar varchar(60))
+BEGIN
+
+declare id_per int default idpersona;
+
+declare p_avatar varchar(60) default avatar;
+    
+   
+UPDATE persona SET  Avatar = p_avatar WHERE ID_Persona = id_per and Activo = 1;
+    
+END
+
+********************************************************
+
+CREATE PROCEDURE `Cargar_Acceso_PersonaUsuario`(in idpersona bigint, in idtipousuario bigint)
+BEGIN
+
+	
+declare id_per int default idpersona;
+	
+declare id_tipou int default idtipousuario;
+
+	
+select p.ID_Persona, p.Primer_Nombre, p.Primer_Apellido,p.Telefono,p.Correo_Electronico, p.Avatar, pu.ID_Tipo_Usuario from persona as p
+	
+inner join persona_usuario as pu on pu.ID_Persona = p.ID_Persona
+	
+where p.ID_Persona = id_per and pu.ID_Tipo_Usuario = id_tipou and pu.Activo=1 and p.Activo = 1;
+
+
+END

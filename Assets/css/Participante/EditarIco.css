@@ -1,0 +1,457 @@
+.modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal-content{
+    width: 500px;
+    height: 420px;
+    margin: auto;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+.modal-title{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.modal-footer{
+    margin-top: 150px;
+    height: 150px;
+}
+label{
+    color: #78788c;
+    font-size: 13px;
+    position: absolute;
+    left: 7px;
+    top: -3px;
+    transition: 0.3s ease all;    
+    pointer-events: none;
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+}
+button{
+    background-color:rgb(255, 255, 255);
+    border-color: white;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 10px;
+    width: 13%;
+}
+.btncancelar{
+    position: absolute;
+    width: 98px;
+    right: 2%;
+    color: #102461;
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: -80px;
+}
+.btnguardar{
+    position: absolute;
+    width: 98px;
+    left:2%;
+    color: #102461; 
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: -80px;
+}
+
+/**/
+
+#imgAvatarSeleccionado{
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border-radius: 100%;
+}
+#divImagenSeleccion{
+    width: 250px;
+    height: 145px;
+    /*background-color: black;*/
+    visibility: hidden;
+    position: relative;
+    right: 60%;
+    top: 15px;
+    border-radius: 100px;
+    /*background-color: rgb(255, 0, 157);*/
+    background-color: transparent;
+    transition: all ease-in-out 0.8s;
+    
+}
+.divContenedorAvatar{
+    width: 450px;
+    height: 165px;
+    margin-right: -20px;
+    border-radius: 100px;
+    display: inline;               
+}
+.imgAvatar{
+    width: 30px;
+    height: 30px;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    border-radius: 100%;
+      
+}
+#divImagenSeleccionada{
+    width: 120px;
+    height: 120px;    
+    position: relative;
+    left: 38%;
+    border-radius: 100%;    
+    background-color: silver;          
+}
+.Cambiarico{
+    position: absolute;
+    width: 98px;
+    left:41%;
+    color: #0a0c8f; 
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 150px;
+    /*margin-left: 250px;*/
+}
+@media screen and (max-width: 2000px) and (min-width: 1801px) /*PC*/
+{
+}
+@media screen and  (max-width: 1800px)and (min-width: 1650px)/*PC*/
+{
+}
+@media screen and  (max-width: 1649px)and (min-width: 1501px) /*PC*/
+{
+}
+@media screen and (max-width: 1500px) and (min-width: 1201px)
+{
+}
+@media screen and (max-width: 1200px) and (min-width: 1043px)  /*Tablet*/
+{
+}
+@media screen and  (max-width: 1042px) and (min-width: 1001px) /*Tablet*/
+{
+}
+@media screen and (max-width: 1000px)and (min-width: 768px)
+{
+}
+@media screen and (max-width: 767px) and (min-width: 481px)
+{
+.modal{
+   margin-top: 30px;
+    
+}
+.modal-content{
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+
+.modal-footer{
+    margin-top: 240px;
+    height: 150px;
+}
+
+
+/**/
+
+
+#divImagenSeleccionada{
+    width: 120px;
+    height: 120px;    
+    position: relative;
+    left: 35%;
+    border-radius: 100%;    
+    background-color: silver;          
+}
+.Cambiarico{
+    position: absolute;
+    width: 98px;
+    left:40%;
+    color: #0a0c8f; 
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 150px;
+    /*margin-left: 250px;*/
+}
+#divImagenSeleccion{
+    width: 250px;
+    height: 145px;
+    /*background-color: black;*/
+    visibility: hidden;
+    position: relative;
+    /*right: 100%;*/
+    margin-left: -10px;
+    top: 15px;
+    border-radius: 100px;
+    /*background-color: rgb(255, 0, 157);*/
+    background-color: transparent;
+    transition: all ease-in-out 0.1s;
+    
+}
+.divContenedorAvatar{
+    width: 350px;
+    height: 150px;
+    margin-right: -5px;
+    border-radius: 100px;
+    display: inline;               
+}
+.imgAvatar{
+    width: 30px;
+    height: 30px;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    border-radius: 100%;
+      
+}
+}
+@media screen and (max-width: 480px) and (min-width: 372px)
+{
+.modal{
+   margin-top: 50px;
+    
+}
+    .modal-content{
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+
+.modal-footer{
+    margin-top: 240px;
+    height: 150px;
+}
+
+
+/**/
+
+
+#divImagenSeleccionada{
+    width: 120px;
+    height: 120px;    
+    position: relative;
+    left: 35%;
+    border-radius: 100%;    
+    background-color: silver;          
+}
+.Cambiarico{
+    position: absolute;
+    width: 98px;
+    left:40%;
+    color: #0a0c8f; 
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 150px;
+    /*margin-left: 250px;*/
+}
+#divImagenSeleccion{
+    width: 250px;
+    height: 145px;
+    /*background-color: black;*/
+    visibility: hidden;
+    position: relative;
+    /*right: 100%;*/
+    margin-left: -10px;
+    top: 15px;
+    border-radius: 100px;
+    /*background-color: rgb(255, 0, 157);*/
+    background-color: transparent;
+    transition: all ease-in-out 0.1s;
+    
+}
+.divContenedorAvatar{
+    width: 350px;
+    height: 150px;
+    margin-right: -5px;
+    border-radius: 100px;
+    display: inline;               
+}
+.imgAvatar{
+    width: 30px;
+    height: 30px;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    border-radius: 100%;
+      
+}
+}
+@media screen and (max-width: 371px) and (min-width: 311px)
+{
+    .modal{
+   margin-top: 50px;
+    
+}
+    .modal-content{
+    width: 300px;
+    height: 550px;
+    margin: auto;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+
+.modal-footer{
+    margin-top: 280px;
+    height: 150px;
+}
+
+
+/**/
+
+
+#divImagenSeleccionada{
+    width: 120px;
+    height: 120px;    
+    position: relative;
+    left: 30%;
+    border-radius: 100%;    
+    background-color: silver;          
+}
+.Cambiarico{
+    position: absolute;
+    width: 98px;
+    left:35%;
+    color: #0a0c8f; 
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 150px;
+    /*margin-left: 250px;*/
+}
+#divImagenSeleccion{
+    width: 250px;
+    height: 145px;
+    /*background-color: black;*/
+    visibility: hidden;
+    position: relative;
+    /*right: 100%;*/
+    margin-left: 5px;
+    top: 15px;
+    border-radius: 100px;
+    /*background-color: rgb(255, 0, 157);*/
+    background-color: transparent;
+    transition: all ease-in-out 0.1s;
+    
+}
+.divContenedorAvatar{
+    width: 350px;
+    height: 150px;
+    margin-right: 5px;
+    border-radius: 100px;
+    display: inline;               
+}
+
+}
+@media screen and (max-width: 310px) and (min-width: 280px)
+{
+.modal{
+   margin-top: 30px;
+    
+}
+    .modal-content{
+    width: 250px;
+    height: 600px;
+    margin: auto;
+    background-color: #102461;
+    border-radius: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 6px 6px #000e2979;
+    border: 1px solid #d0d0d0;
+}
+
+.modal-footer{
+    margin-top: 330px;
+    height: 150px;
+}
+
+
+/**/
+
+
+#divImagenSeleccionada{
+    width: 120px;
+    height: 120px;    
+    position: relative;
+    left: 25%;
+    border-radius: 100%;    
+    background-color: silver;          
+}
+.Cambiarico{
+    position: absolute;
+    width: 98px;
+    left:33%;
+    color: #0a0c8f; 
+    box-shadow: 1px 1px 5px#000000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 150px;
+    /*margin-left: 250px;*/
+}
+#divImagenSeleccion{
+    width: 250px;
+    height: 145px;
+    /*background-color: black;*/
+    visibility: hidden;
+    position: relative;
+    /*right: 100%;*/
+    margin-left: 25px;
+    top: 15px;
+    border-radius: 50px;
+    /*background-color: rgb(255, 0, 157);*/
+    background-color: transparent;
+    transition: all ease-in-out 0.1s;
+    
+}
+.divContenedorAvatar{
+    width: 350px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 100px;
+    display: inline;               
+}
+}
