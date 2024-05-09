@@ -1,4 +1,5 @@
 SGE_SISTEMA
+
 Sistema de gestión de eventos de la facultad de ciencias y sistemas de la Universidad Nacional de Ingeniería, ubicado en Managua, Nicaragua.
 
 Sistema que ayuda a gestionar los eventos que se realizan en la facultad en el año, como ferias, foros y congresos, desde la planeación, desarrollo, 
